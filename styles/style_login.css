@@ -1,0 +1,8 @@
+.login_ {
+	background-image: url(img/login.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 360px;
+	height: 780px;
+}
