@@ -15,24 +15,23 @@
 }
 
 .inicio__logo {
-	/* margin: auto;
+	margin: auto;
+	/*
 	display: grid;
-	place-items: center; */
-	width: 50px;
-	height: 50px;
-	background-color: red;
-	/* centrar vertical y horizontalmente */
+	place-items: center;
+	*/
 	position: absolute;
-	top: 70%;
+	top: 80%;
 	left: 50%;
-	margin: -25px 0 0 -25px;
+	transform: translate(-50%, -50%);
+	/* margin: -25px 0 0 -25px; */
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 }
 
 .btn_login {
-	display: grid;
-	place-items: center;
-	justify-content: center;
-	align-items: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -49,10 +48,10 @@
 	padding: 20px 30px;
 	border-radius: 7px;
 	margin: 10px 0;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
 }
 .btn_login a:hover {
 	background: #fff;
@@ -60,12 +59,15 @@
 }
 
 .btn_registro {
-	display: grid;
-	place-items: center;
-	justify-content: center;
-	align-items: center;
+	position: absolute;
+	top: 57%;
+	left: 50%;
+	transform: translate(-57%, -50%);
+	-webkit-transform: translate(-57%, -50%);
+	-moz-transform: translate(-57%, -50%);
+	-ms-transform: translate(-57%, -50%);
+	-o-transform: translate(-57%, -50%);
 }
-
 .btn_registro a {
 	text-decoration: none;
 	color: #fff;
@@ -82,7 +84,6 @@
 	-ms-border-radius: 7px;
 	-o-border-radius: 7px;
 }
-
 .btn_registro a:hover {
 	background: #fff;
 	color: #000;
