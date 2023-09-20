@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+<section class="fondo_login">
     <!-- Formulario de inicio de sesion -->
-    <div class="login">
-        <div class="login__logo">
-            <!-- <img style="width: 100%; height: 100%; transform: rotate(180deg); transform-origin: 0 0; border-top-left-radius: 55px; border-top-right-radius: 55px" src="https://via.placeholder.com/360x789" /> -->
-            <!-- <img src="/img/inicio.jpg" alt="Logo"> -->
+    <div class="login__formulario">
+        <div class="login_logo">           
+            <img style="width: 80px; height: 80px;" src="/img/logo.png" alt="Logo">
         </div>
-        <div class="login__formulario">
+        <div class="login_formulario">
             <form action="login.php" method="POST">
-                <div class="login__formulario--campo">
-                    <label for="usuario">Usuario</label>
+                <div class="formulario--campo">
+                    <label for="usuario">Correo o CI</label>
                     <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario">
                 </div>
-                <div class="login__formulario--campo">
-                    <label for="password">Contraseña</label>
+                <div class="formulario--campo">
+                    <label  for="password">Contraseña</label>
                     <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
                 </div>
-                <div class="login__formulario--campo">
-                    <input type="submit" value="Iniciar Sesión">
+                <div class="btn_ingresar">
+                    <a  type="submit" value="Iniciar Sesión">Ingresar</a>
                 </div>
             </form>
         </div>
+        </section>
 </body>
 </html>
