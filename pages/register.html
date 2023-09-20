@@ -8,45 +8,78 @@
 	</head>
 	<body>
 		<!--Crea un Formulario de registro pidiendo datos del usuario -->
-		<div class="register">
-			<div class="login__logo">
-				<!-- <img src="/img/inicio.jpg" alt="Logo" /> -->
+		<section class="fondo_register">
+			<div class="register_formulario">
+				<div class="login_formulario">
+					<form action="register.php" method="POST">
+						<div class="register_logo">
+							<img
+								style="width: 80px; height: 80px"
+								src="/img/logo.png"
+								alt="Logo" />
+						</div>
+						<div class="formulario--campo">
+							<label for="nombre">Nombre</label>
+							<input
+								type="text"
+								name="nombre"
+								id="nombre"
+								placeholder="Ingrese su nombre" />
+						</div>
+						<div class="formulario--campo">
+							<label for="apellido">Apellido</label>
+							<input
+								type="text"
+								name="apellido"
+								id="apellido"
+								placeholder="Ingrese su apellido" />
+						</div>
+						<div class="formulario--campo">
+							<label for="usuario">Usuario</label>
+							<input
+								type="text"
+								name="usuario"
+								id="usuario"
+								placeholder="Ingrese su usuario" />
+						</div>
+						<div class="formulario--campo">
+							<label for="password">Contraseña</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Ingrese su contraseña" />
+						</div>
+						<div class="formulario--campo">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Ingrese su email" />
+						</div>
+						<div class="formulario--campo">
+							<label for="telefono">Telefono</label>
+							<input
+								type="text"
+								name="telefono"
+								id="telefono"
+								placeholder="Ingrese su telefono" />
+						</div>
+						<div class="formulario--campo">
+							<label for="direccion">Direccion</label>
+							<input
+								type="text"
+								name="direccion"
+								id="direccion"
+								placeholder="Ingrese su direccion" />
+						</div>
+					</form>
+					<div class="btn_registrar">
+						<a type="submit" value="Registrarse">Registrar</a>
+					</div>
+				</div>
 			</div>
-			<div class="login__formulario">
-				<form action="register.php" method="POST">
-					<div class="login__formulario--campo">
-						<label for="nombre">Nombre</label>
-						<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" />
-					</div>
-					<div class="login__formulario--campo">
-						<label for="apellido">Apellido</label>
-						<input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" />
-					</div>
-					<div class="login__formulario--campo">
-						<label for="usuario">Usuario</label>
-						<input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario" />
-					</div>
-					<div class="login__formulario--campo">
-						<label for="password">Contraseña</label>
-						<input type="password" name="password" id="password" placeholder="Ingrese su contraseña" />
-					</div>
-					<div class="login__formulario--campo">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" placeholder="Ingrese su email" />
-					</div>
-					<div class="login__formulario--campo">
-						<label for="telefono">Telefono</label>
-						<input type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono" />
-					</div>
-					<div class="login__formulario--campo">
-						<label for="direccion">Direccion</label>
-						<input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion" />
-					</div>
-					<div class="login__formulario--campo">
-						<input type="submit" value="Registrarse" />
-					</div>
-				</form>
-			</div>
-
+		</section>
 	</body>
 </html>

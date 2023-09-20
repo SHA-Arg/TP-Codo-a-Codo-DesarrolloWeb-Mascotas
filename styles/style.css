@@ -200,11 +200,52 @@ input {
 }
 
 /* ESTILOS DE REGISTRO */
-.register {
+.register_logo {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.fondo_register {
 	background-image: url(/img/formularios.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	width: 360px;
-	height: 780px;
+	width: 100%;
+	height: 100vh;
+}
+.btn_registrar {
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-57%, -50%);
+	-webkit-transform: translate(-57%, -50%);
+	-moz-transform: translate(-57%, -50%);
+	-ms-transform: translate(-57%, -50%);
+	-o-transform: translate(-57%, -50%);
+}
+.btn_registrar a {
+	text-decoration: none;
+	color: #ff8080;
+	background: #000;
+	padding: 20px 30px;
+	border-radius: 7px;
+	margin: 10px 0;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+}
+.btn_registrar a:hover {
+	background: #fff;
+	color: #000;
 }
