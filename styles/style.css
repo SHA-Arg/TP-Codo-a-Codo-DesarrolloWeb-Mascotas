@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* ESTILOS DE PANTALLA DE INICIO */
+.inicio {
+	background-image: url(/img/inicio.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+.inicio__logo {
+	margin: auto;
+	display: grid;
+	place-items: center;
+}
+
+.btn_login {
+	display: grid;
+	place-items: center;
+	justify-content: center;
+	align-items: center;
+}
+.btn_login a {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+.btn_login a:hover {
+	background: #fff;
+	color: #000;
+}
+
+.btn_registro {
+	display: grid;
+	place-items: center;
+	justify-content: center;
+	align-items: center;
+}
+.btn_registro a {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+.btn_registro a:hover {
+	background: #fff;
+	color: #000;
+}
+
+/* ESTILOS DE LOGIN */
+
+.login {
+	background-image: url(/img/inicio.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 360px;
+	height: 780px;
+}
+
+/* ESTILOS DE FROMULARIO DE REGISTRO */
+
+.register {
+	background-image: url(/img/formularios.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 360px;
+	height: 780px;
+}
