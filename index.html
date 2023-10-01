@@ -6,9 +6,13 @@
 		<title>Patitas Felices</title>
 		<link rel="stylesheet" href="estilos.css" />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet" />
+		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet" />
 	</head>
+
 	<body>
 		<!-- CABECERA  -->
 		<header class="header">
@@ -34,23 +38,30 @@
 				<a href="#" style="--i: 2">Apadrinar</a>
 				<a href="#" style="--i: 3">Organizaciones</a>
 				<label for="" class="user">
-					<i class="bx bxs-user"></i>
+					<a href="#" style="--i: 4"><i class="bx bxs-user"></i></a></i>
 				</label>
 			</nav>
 		</header>
 
+		<!-- MAIN -->
 		<section class="construccion">
-			<h1>Ups!</h1>
-			<h3>Esta página está en construcción</h3>
+			<h1
+				>Ups! <br />
+				Esta página está en construcción
+			</h1>
+			<p
+				><br />Regresa por el sendero que recorriste, <br />
+				que caminar por fuera de la caja es peligroso O-O
+			</p>
 		</section>
 
 		<!-- FOOTER -->
 		<footer class="pie">
 			<div class="contenerdorPie">
-				<div class="texto-pie">
-					<a href="" class="item">Soy una organización.</a>
-					<a href="" class="item">Trabaja con nosotros!</a>
-					<a href="" class="item">Términos y condiciones.</a>
+				<div>
+					<a href="" class="item-Txt">Soy una organización.</a>
+					<a href="" class="item-Txt">Trabaja con nosotros!</a>
+					<a href="" class="item-Txt">Términos y condiciones.</a>
 				</div>
 
 				<div class="redesSociales">
@@ -60,11 +71,22 @@
 					<a href="" class="social-link"><i class="bx bxl-facebook"></i></a>
 				</div>
 
-				<div class="copyright">
-					&copy;Patitas Felices 2023. Todos los derechos reservados, Codo a
-					Codo.</div
-				>
+				<div class="contacto">
+					<h3>Contactanos!</h3>
+					<form action="" class="formContacto"
+						><input
+							class="inputContact"
+							type="text"
+							placeholder="Ingresa tu Mail!" />
+						<button class="enviar" type="submit"
+							><i class="bx bx-send" id="enviar"></i></button
+					></form>
+				</div>
 			</div>
 		</footer>
+		<div class="copyright">
+			&copy;Patitas Felices 2023. Todos los derechos reservados, Codo a
+			Codo.</div
+		>
 	</body>
 </html>
