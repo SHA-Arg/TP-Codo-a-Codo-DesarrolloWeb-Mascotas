@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 25px 12px;
+    border: 3px solid rgb(65, 10, 115);
+    border-radius: 2%;
+}
+
+.profile-title {
+    font-family: 'Courgette';
+    text-align: start;
+    margin: 25px 20px;
+}
+
+.profile-img {
+    display: flex;
+    /* flex: 2; */
+    align-items: center;
+}
+
+.profile-img img {
+    width: 100%;
+    max-width: 400px;
+    height: 230px;
+    margin: auto;
+    padding: 20px 0;
+    border-radius: 20%;
+    align-self: center;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-icons {
+    display: none;
+}
+
+.profile-details {
+    padding-left: 20px;
+    width: 100%;
+    margin: auto;
+    line-height: 3px;
+}
+
+.profile-name {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0;
+    text-align: center;
+    background-color:rgb(96, 42, 146);
+    color: whitesmoke;
+    border-radius: 10%;
+}
+
+.profile-details p,
+.profile-text-detail {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.profile-text-detail {
+    padding: 15px 30px;
+    text-align: justify;
+}
+
+.buttons-groups {
+    padding-bottom: 20px;
+}
+
+.buttons-groups a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.buttons-groups button {
+    font-size: 1rem;
+    background: linear-gradient(45deg, rgb(152, 120, 178), rgb(65, 10, 115), rgb(152, 120, 178));
+    color: whitesmoke;
+    width: 150px;
+    height: 40px;
+}
+
+.buttons-groups button:hover {
+    background: white;
+    color: rgb(36, 31, 31);
+    border: 1px solid rgb(65, 10, 115);
+}
+
+.buttons-groups button::before {
+    content: attr(title);
+    font-size: 1rem;
+    color: rgb(65, 10, 115);
+    background: whitesmoke;
+    border-radius: 5%;
+    transform: translateX(-20%) translateY(100%);
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.buttons-groups button:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-data {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .profile-details {
+        margin-top: 0px;
+    }
+
+    .profile-details h2 {
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    .profile-text-detail {
+        width: 100%;
+        max-width: 800px;
+        padding: 20px 40px;
+    }
+
+    .profile-icons {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    .buttons-groups {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 20px;
+        width: 160px;
+        gap: 20px;
+    }
+}
