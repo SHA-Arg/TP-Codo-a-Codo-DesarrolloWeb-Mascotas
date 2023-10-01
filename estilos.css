@@ -8,9 +8,9 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
-	background: url(/Navbar_Footer/img/inicio.jpg) no-repeat fixed;
+	background: url(/img/inicio.jpg) no-repeat fixed;
 	background-color: #b6aff0;
-	background-size: auto 100%;
+	background-size: cover;
 	background-position: center;
 }
 
