@@ -5,7 +5,9 @@
 }
 
 body {
+	width: 100%;
 	min-height: 100vh;
+	position: relative;
 	background: url(/Navbar_Footer/img/inicio.jpg) no-repeat fixed;
 	background-color: #b6aff0;
 	background-size: auto 100%;
@@ -77,6 +79,71 @@ body {
 	color: #fff;
 	cursor: pointer;
 	display: none;
+}
+
+.construccion {
+	height: 100vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* FOOTER */
+
+.pie {
+	width: 100%;
+	height: 70 px;
+	bottom: 0;
+	left: 0;
+	height: fit-content;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(50px);
+	color: #fff;
+}
+
+.contenedorPie {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.item {
+	font-size: 1rem;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 200;
+	margin: 0;
+}
+.texto-pie {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-direction: column;
+}
+
+.redesSocialles {
+	width: 30%;
+	height: 30%;
+	display: flexbox;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-direction: row;
+}
+
+.copyright {
+	width: 100%;
+	color: #fff;
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
 
 /* BREAKPOINTS */
