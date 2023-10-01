@@ -1,93 +1,104 @@
 * {
     margin: 0;
     width: 100%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     box-sizing: border-box;
 }
 
+main {
+    width: 93%;
+}
+
+.return-btn button {
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    background: rgb(152, 120, 178);
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
 .container {
-    width: 90%;
-    margin: 25px 12px;
+    width: 100%;
+    padding: 0;
+    margin-left: 20px;
     border: 3px solid rgb(65, 10, 115);
     border-radius: 2%;
 }
 
-.profile-title {
+.container-title {
     font-family: 'Courgette';
     text-align: start;
     margin: 25px 20px;
 }
 
 .profile-img {
-    display: flex;
-    /* flex: 2; */
-    align-items: center;
+    width: 100%;
+    padding: 0;
+    /* margin: 0 10px; */
+    margin-right: 0;
 }
 
 .profile-img img {
     width: 100%;
-    max-width: 400px;
-    height: 230px;
-    margin: auto;
-    padding: 20px 0;
-    border-radius: 20%;
-    align-self: center;
+    object-fit: cover;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 3% 3% 0 0;
+}
+
+.profile-header-data {
+    margin-top: 15px;
+    padding-left: 25px;
+    line-height: 8px;
 }
 
 .profile-data {
     display: flex;
-    flex-direction: row;
+    margin: 15px;
+    padding: 10px;
+    line-height: 8px;
+}
+
+.profile-data {
+    line-height: 14px;
 }
 
 .profile-icons {
     display: none;
 }
 
-.profile-details {
-    padding-left: 20px;
-    width: 100%;
-    margin: auto;
-    line-height: 3px;
-}
-
-.profile-name {
-    width: 100px;
-    height: 40px;
-    margin: 20px 0;
-    text-align: center;
-    background-color:rgb(96, 42, 146);
-    color: whitesmoke;
-    border-radius: 10%;
-}
-
-.profile-details p,
-.profile-text-detail {
+.health-profile {
     font-size: 0.8rem;
-    margin-bottom: 20px;
+    line-height: 5px;
+    padding-bottom: 10px;
 }
 
-.profile-text-detail {
-    padding: 15px 30px;
+.health-title {
+    padding-bottom: 10px;
+}
+
+.profile-description {
+    padding: 0 25px 40px 25px;
     text-align: justify;
 }
 
-.buttons-groups {
-    padding-bottom: 20px;
+.profile-description p {
+    padding-top: 20px;
 }
 
-.buttons-groups a {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    text-decoration: none;
+.buttons-groups {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .buttons-groups button {
     font-size: 1rem;
     background: linear-gradient(45deg, rgb(152, 120, 178), rgb(65, 10, 115), rgb(152, 120, 178));
     color: whitesmoke;
-    width: 150px;
+    width: 100px;
     height: 40px;
 }
 
@@ -115,31 +126,39 @@
 }
 
 @media screen and (min-width: 768px) {
-    .profile-data {
+    .container {
+        border: none;
+    }
+
+    .profile-header {
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
+        border: 3px solid rgb(0, 159, 127);
+        border-radius: 5%;
+        margin: 15px;
     }
 
-    .profile-details {
-        margin-top: 0px;
+    .profile-img img {
+        max-width: 600px;
+        height: 180px;
+        padding-left: 0;
+        border-radius: 3% 0 0 3%;
     }
 
-    .profile-details h2 {
-        padding-bottom: 20px;
-        text-align: left;
+    .container-profile-description {
+        display: flex;
+        margin-top: 20px;
+        margin: 15px;
+        border: 3px solid rgb(0, 159, 127);
+        border-radius: 5%;
     }
 
-    .profile-text-detail {
-        width: 100%;
-        max-width: 800px;
-        padding: 20px 40px;
+    .general-profile, .health-profile {
+        flex: 5;
     }
 
     .profile-icons {
         display: flex;
+        flex: 2;
         flex-direction: column-reverse;
         justify-content: flex-end;
         padding: 20px;
@@ -147,9 +166,10 @@
 
     .buttons-groups {
         display: flex;
-        justify-content: space-evenly;
-        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .buttons-groups button {
         width: 160px;
-        gap: 20px;
     }
 }
