@@ -1,7 +1,11 @@
-<h1 align="center"> Proyecto DesarrolloWeb CodoaCodo</h1>
+![Logo de Patitas Felices.](https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png)
+
+<h1 align="center">PATITAS FELICES </h1>
 <p align="left">
+   <h2>Proyecto DesarrolloWeb CodoaCodo</h2>
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
+
 
 Equipo: 28 
 
@@ -22,10 +26,9 @@ Con esta perspectiva buscamos crear una gran comunidad que mejore la calidad de 
 ## :hammer:Descripcion del desarrollo
 
 <h3>Desarrollo inicial:</h3>
+Mobile first, Full Responsive
 
-Mobile first, responsive
-
-<h3>Meta 1:</h3> 18/09 - maquetado ideado
+<h3>Meta 1:</h3> 18/09 - Maquetado / Ideado
 
 <h2>Secciones posibles (mínimo 4):</h2>
 
@@ -39,7 +42,6 @@ Página de contacto (puede estar en el footer)
 Página venta de emprendimientos de organizaciones
 
 ## :construction:Posibles elementos a incluir:
- 
 Formulario de inscripción 
 Formulario de contacto
 Formulario de adopción/transición 
@@ -47,9 +49,18 @@ Filtros
 ——-
 
 ## Roles dentro de la página:
+<p><b>Organizaciónes :</b> que pongan en adopción o reciban donaciones, tambien intituciones veterinarias y petshops.<br>
+<b>Refugios:</b> que comopartan las mascotas en adopcion para poder teneras en las bases de datos para conseguir un hogar temporal o definitivo.<br>
+<b>Usuario Adoptante:</b> persona física que cumpla con los requisitos necesario para poder hacerse cargo de una mascota y datos personales ( nombre completo, edad, C.I., etc.)<br>
+<b>Usuario Donante:</b> persona o grupo de personas que quieran colaborar con alguna agrupacion o actividad especifica, puede ser economicamente, como brindando su ayuda en la lista del Voluntariado.</p>
 
-Organización (que ponga en adopción)
-Usuario corriente (persona física que cumpla con determinado requisito de edad y ubicación: 18+, de Argentina) — usuario corriente puede buscar y generar publicación?
+## Posible recorrido de la App:
+
+Pantalla de inicio(Load)>>> Click en Logo >>> Pantalla index >>> <br>Iniciar Sesion (login) >>> Segun los datos ingresados sabe que tipo de acceso brindar.<br>
+                                                                Registrarse (Signup) >>> Como Adoptante ?? Como Donador ?? Como Roganizacion.
+
+
+
 
 ## Posible recorrido del sitio web:
 
