@@ -119,7 +119,7 @@ body {
 .item-Txt {
 	display: flex;
 	justify-content: left;
-	align-items: center;
+	align-items: left;
 	flex-direction: column;
 	font-size: 1rem;
 	color: #fff;
@@ -243,6 +243,7 @@ body {
 		transition: 0.2s ease;
 		opacity: 0;
 	}
+
 	#check:checked ~ .navbar a {
 		transform: translateY(0);
 		opacity: 1;
@@ -253,5 +254,66 @@ body {
 		display: block;
 		font-size: x-large;
 		text-align: center;
+	}
+
+	/* FOOTER */
+	.construccion {
+		font-size: 1rem;
+	}
+	.pie,
+	.contenerdorPie {
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+	}
+	.redesSociales {
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+	}
+
+	.contacto {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.social-link {
+		font-size: 1rem;
+	}
+
+	.inputContact {
+		width: 100%;
+		margin-top: 0;
+		height: 20px;
+	}
+
+	.enviar {
+		font-size: 1rem;
+	}
+	.item-Txt {
+		display: flex;
+		justify-content: left;
+		align-items: left;
+		flex-direction: column;
+		font-size: 0.4rem;
+		color: #fff;
+		font-weight: 80;
+		margin: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.header {
+		padding: 0rem 5%;
+	}
+	.navbar a {
+		font-size: 1rem;
+		margin: 1rem;
+	}
+	.user i {
+		color: #fff;
+		margin-left: 1rem;
+		font-size: large;
 	}
 }
