@@ -59,10 +59,6 @@ main {
     display: flex;
     margin: 15px;
     padding: 10px;
-    line-height: 8px;
-}
-
-.profile-data {
     line-height: 14px;
 }
 
@@ -89,6 +85,10 @@ main {
     padding-top: 20px;
 }
 
+.adoption-require {
+    display: none;
+}
+
 .buttons-groups {
     text-align: center;
     padding-bottom: 20px;
@@ -97,6 +97,7 @@ main {
 .buttons-groups button {
     font-size: 1rem;
     background: linear-gradient(45deg, rgb(152, 120, 178), rgb(65, 10, 115), rgb(152, 120, 178));
+    border-radius: 5%;
     color: whitesmoke;
     width: 100px;
     height: 40px;
@@ -145,7 +146,6 @@ main {
     }
 
     .container-profile-description {
-        display: flex;
         margin-top: 20px;
         margin: 15px;
         border: 3px solid rgb(0, 159, 127);
@@ -164,12 +164,74 @@ main {
         padding: 20px;
     }
 
+    .adoption-require {
+        display: block;
+        margin: 25px;
+    }
+    
+
     .buttons-groups {
         display: flex;
-        margin-bottom: 40px;
+        margin: 50px 0;
     }
 
     .buttons-groups button {
-        width: 160px;
+        width: 180px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 100%;
+        padding: 0;
+        margin-left: 20px;
+        border: 3px solid rgb(65, 10, 115);
+        border-radius: 2%;
+    }
+
+    .profile-header, .container-profile-description {
+        border: none;
+    }
+
+    .profile-header-data {
+        padding-left: 0;
+        margin-left: -50px;
+    }
+
+    .profile-img img {
+        width: 400px;
+        height: 400px;
+        padding-left: 0;
+        border-radius: 3% 0 0 3%;
+    }
+
+    .profile-icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .x {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .profile-data {
+        position: absolute;
+        width: 50%;
+        top: 120px;
+        right: 0;
+    }
+
+    .profile-description, .adoption-require {
+        width: 90%;
+        margin: 0 60px;
+        padding: 0 25px;
+    }
+
+    .buttons-groups button {
+        width: 240px;
+        height: 60px;
     }
 }
