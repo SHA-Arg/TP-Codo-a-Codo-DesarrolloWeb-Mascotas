@@ -13,20 +13,36 @@
         <div class="login_logo">           
             <img style="width: 100px; height: 100px;" src="/Prototipo/img/logo.png" alt="Logo">
         </div>
-        <div class="login_formulario">
+        <!-- contenedor -->
+        <div class="contenedor">
+        <div class="login_formulario">   
             <form action="login.php" method="POST">
-                <div class="formulario--campo">
-                    <label for="usuario">Correo o CI</label>
-                    <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario">
-                </div>
-                <div class="formulario--campo">
-                    <label  for="password">Contraseña</label>
-                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
-                </div>
+            <h2>Iniciar Sesión</h2>
+            
+            <div class="input-contenedor">               
+                <input type="text" name="usuario" id="usuario" placeholder="Ingrese mail o CI" required>
+                <label for="usuario">Correo o CI</label>
+            </div>
+
+            <div class="input-contenedor">
+                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+                <label  for="password">Contraseña</label>                    
+            </div>
+            <div class="recuperar">
+                <a href="recuperar.php">¿Olvidaste tu contraseña?</a>
+            </div>
+
+
+
+
+
+
                 <div class="btn_ingresar">
                     <a  type="submit" value="Iniciar Sesión">Ingresar</a>
                 </div>
-            </form>      
+            </form>   
+            </div>
+            
         </section>
 </body>
 </html>

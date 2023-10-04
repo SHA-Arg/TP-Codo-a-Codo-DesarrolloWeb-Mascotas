@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario de adopción de mascotas</title>
+		<link rel="stylesheet" href="/Prototipo/styles/adopt_Form.css" />
+		<script src="/Prototipo/scripts/adopt_Form.js"></script>
+	</head>
+	<body style="background-color: cornflowerblue">
+		<!--  Plantilla de formulario de adopción de mascotas -->
+		<h1>Formulario de adopción de mascotas</h1>
+		<form id="adoptionForm" method="POST">
+			<label class="formAdopt" for="nombre">Nombre Completo:</label>
+			<input type="text" id="name" name="name" required /><br /><br />
+
+			<label class="formulario" for="email">Email:</label>
+			<input type="email" id="email" name="email" required /><br /><br />
+
+			<label class="formulario" for="phone">Teléfono:</label>
+			<input type="tel" id="phone" name="phone" required /><br /><br />
+
+			<label class="formulario" for="petType">Que mascota:</label>
+			<select id="petType" name="petType" required>
+				<option value="">Cual?</option>
+				<option value="Dog">Dog</option>
+				<option value="Cat">Cat</option>
+				<option value="Other">Otra</option> </select
+			><br /><br />
+
+			<label class="formulario" for="petName">Nombre de la mascota:</label>
+			<input type="text" id="petName" name="petName" required /><br /><br />
+
+			<label for="petAge">Edad de la mascota:</label>
+			<input type="number" id="petAge" name="petAge" required /><br /><br />
+
+			<label class="formulario" for="additionalInfo"
+				>Información adicional:</label
+			><br />
+			<textarea
+				id="additionalInfo"
+				name="additionalInfo"
+				rows="4"
+				cols="50"></textarea
+			><br /><br />
+
+			<a class="btn_registrarse" type="submit" value="Registrarse">Solicitar</a>
+		</form>
+
+		<div id="confirmation" style="display: none">
+			<h2>¡Gracias por enviar su solicitud de adopción!</h2>
+			<p>Nos pondremos en contacto con usted pronto.</p>
+		</div>
+	</body>
+</html>
