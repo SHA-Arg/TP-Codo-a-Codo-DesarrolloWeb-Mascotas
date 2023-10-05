@@ -1,0 +1,126 @@
+{
+    "mascotas": {
+        "gatos": [
+        
+           {
+                "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+                "nombre": "Michifuz",
+                "edad": 5,
+                "sexo": "femenino",
+                "raza": "mestizo",
+                "tamaño": "mediano",
+                "color": "blanco",
+                "vacunas": "sí",
+                "esterilizacion": "sí",
+                "estado_de_salud": "saludable",
+                "descripcion": "lorem"
+            },
+            {
+                "img": "https://cdn2.thecatapi.com/images/MjA0NDg2Mw.jpg",
+                "nombre": "Diana",
+                "edad": 5,
+                "sexo": "femenino",
+                "raza": "mestizo",
+                "tamaño": "mediano",
+                "color": "blanco",
+                "vacunas": "sí",
+                "esterilizacion": "sí",
+                "estado_de_salud": "saludable",
+                "descripcion": "lorem"
+            },
+            {
+                "img": "https://cdn2.thecatapi.com/images/uTFc4z0wP.jpg",
+                "nombre": "Yuki",
+                "edad": 5,
+                "sexo": "femenino",
+                "raza": "mestizo",
+                "tamaño": "mediano",
+                "color": "blanco",
+                "vacunas": "sí",
+                "esterilizacion": "sí",
+                "estado_de_salud": "saludable",
+                "descripcion": "lorem"
+            },
+        {
+            "img": "https://cdn2.thecatapi.com/images/MTgyMDkwMw.jpg",
+            "nombre": "Pichiruchi",
+            "edad": 5,
+            "sexo": "femenino",
+            "raza": "mestizo",
+            "tamaño": "mediano",
+            "color": "blanco",
+            "vacunas": "sí",
+            "esterilizacion": "sí",
+            "estado_de_salud": "saludable",
+            "descripcion": "lorem"
+        },
+        {
+            "img": "https://cdn2.thecatapi.com/images/MTc4MTg0OA.gif",
+            "nombre": "Ricolgato",
+            "edad": 5,
+            "sexo": "femenino",
+            "raza": "mestizo",
+            "tamaño": "mediano",
+            "color": "blanco",
+            "vacunas": "sí",
+            "esterilizacion": "sí",
+            "estado_de_salud": "saludable",
+            "descripcion": "lorem"
+        }
+    ],
+    "perros": [
+        {
+            "img": "la",
+            "nombre": "Perlita",
+            "edad": 5,
+            "sexo": "femenino",
+            "raza": "mestizo",
+            "tamaño": "mediano",
+            "color": "blanco",
+            "vacunas": "sí",
+            "esterilizacion": "sí",
+            "estado_de_salud": "saludable",
+            "descripcion": "lorem"
+        },
+        {
+            "img": "la",
+            "nombre": "Kimchi",
+            "edad": 5,
+            "sexo": "femenino",
+            "raza": "mestizo",
+            "tamaño": "mediano",
+            "color": "blanco",
+            "vacunas": "sí",
+            "esterilizacion": "sí",
+            "estado_de_salud": "saludable",
+            "descripcion": "lorem"
+        },
+        {
+            "img": "la",
+            "nombre": "Pequitas",
+            "edad": 5,
+            "sexo": "femenino",
+            "raza": "mestizo",
+            "tamaño": "mediano",
+            "color": "blanco",
+            "vacunas": "sí",
+            "esterilizacion": "sí",
+            "estado_de_salud": "saludable",
+            "descripcion": "lorem"
+        },
+        {
+            "img": "la",
+            "nombre": "Tofi",
+            "edad": 5,
+            "sexo": "femenino",
+            "raza": "mestizo",
+            "tamaño": "mediano",
+            "color": "blanco",
+            "vacunas": "sí",
+            "esterilizacion": "sí",
+            "estado_de_salud": "saludable",
+            "descripcion": "lorem"
+        }
+    ]
+}
+}
