@@ -68,7 +68,7 @@ body {
 
 .navbar a {
 	font-size: 1.15rem;
-	color: #fff;
+	color: #0e0d0d;
 	text-decoration: none;
 	font-weight: 500;
 	margin: 1rem;
@@ -153,7 +153,6 @@ img .img_constructor {
 
 .redesSociales {
 	display: flex;
-
 	justify-content: space-evenly;
 	gap: 1rem;
 	margin-top: 1rem;
