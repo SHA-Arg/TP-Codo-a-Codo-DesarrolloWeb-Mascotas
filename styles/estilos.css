@@ -68,7 +68,7 @@ body {
 
 .navbar a {
 	font-size: 1.15rem;
-	color: #fff;
+	color: #0e0d0d;
 	text-decoration: none;
 	font-weight: 500;
 	margin: 1rem;
@@ -78,7 +78,6 @@ body {
 .user a i::before {
 	color: #776ecb;
 	font-size: 2rem;
-	text-shadow: #1b1a1a 0 0 10px;
 }
 
 #check {
@@ -104,8 +103,7 @@ body {
 	text-align: center;
 	flex-direction: column;
 	font-size: larger;
-	color: #fff;
-	text-shadow: 0 0 10px #000;
+	color: #322828;
 	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
 	backdrop-filter: blur(15px);
@@ -117,8 +115,7 @@ body {
 	text-align: center;
 	flex-direction: column;
 	font-size: larger;
-	color: #fff;
-	text-shadow: 0 0 10px #000;
+	color: #776ecb;
 	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
 	backdrop-filter: blur(15px);
@@ -156,7 +153,6 @@ img .img_constructor {
 
 .redesSociales {
 	display: flex;
-
 	justify-content: space-evenly;
 	gap: 1rem;
 	margin-top: 1rem;
@@ -201,7 +197,7 @@ img .img_constructor {
 
 .copyright {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: black;
 	backdrop-filter: blur(50px);
 	color: #fff;
 	font-size: 13px;
@@ -283,15 +279,16 @@ img .img_constructor {
 		text-align: center;
 	}
 
-	/* FOOTER */
 	.construccion {
 		font-size: 1rem;
 	}
-	.pie,
-	.contenerdorPie {
-		flex-direction: row;
-		align-items: center;
-		margin: 0;
+	.pie {
+		background-color: #776ecb;
+		backdrop-filter: blur(-50px);
+		color: #fff;
+	}
+	.list {
+		display: none;
 	}
 	.redesSociales {
 		flex-direction: row;
@@ -302,9 +299,7 @@ img .img_constructor {
 	}
 
 	.contacto {
-		flex-direction: column;
-		align-items: center;
-		margin: 0;
+		display: none;
 	}
 
 	.social-link {
@@ -312,9 +307,7 @@ img .img_constructor {
 	}
 
 	.inputContact {
-		width: 100%;
-		margin-top: 0;
-		height: 20px;
+		display: none;
 	}
 
 	.enviar {
