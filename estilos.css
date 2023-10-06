@@ -201,7 +201,7 @@ img .img_constructor {
 
 .copyright {
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: black;
 	backdrop-filter: blur(50px);
 	color: #fff;
 	font-size: 13px;
