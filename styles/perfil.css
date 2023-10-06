@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 93%;
+}
+
+.return-btn button {
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    background: rgb(152, 120, 178);
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin-left: 20px;
+    border: 3px solid rgb(65, 10, 115);
+    border-radius: 2%;
+}
+
+.container-title {
+    font-family: 'Courgette';
+    text-align: start;
+    margin: 25px 20px;
+}
+
+.profile-img {
+    width: 100%;
+    padding: 0;
+    /* margin: 0 10px; */
+    margin-right: 0;
+}
+
+.profile-img img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 3% 3% 0 0;
+}
+
+.profile-header-data {
+    margin-top: 15px;
+    padding-left: 25px;
+    line-height: 8px;
+}
+
+.profile-data {
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+    line-height: 14px;
+}
+
+.profile-icons {
+    display: none;
+}
+
+.health-profile {
+    font-size: 0.8rem;
+    line-height: 5px;
+    padding-bottom: 10px;
+}
+
+.health-title {
+    padding-bottom: 10px;
+}
+
+.profile-description {
+    padding: 0 25px 40px 25px;
+    text-align: justify;
+}
+
+.profile-description p {
+    padding-top: 20px;
+}
+
+.adoption-require {
+    display: none;
+}
+
+.buttons-groups {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.buttons-groups button {
+    font-size: 1rem;
+    background: linear-gradient(45deg, rgb(152, 120, 178), rgb(65, 10, 115), rgb(152, 120, 178));
+    border-radius: 5%;
+    color: whitesmoke;
+    width: 100px;
+    height: 40px;
+}
+
+.buttons-groups button:hover {
+    background: white;
+    color: rgb(36, 31, 31);
+    border: 1px solid rgb(65, 10, 115);
+}
+
+.buttons-groups button::before {
+    content: attr(title);
+    font-size: 1rem;
+    color: rgb(65, 10, 115);
+    background: whitesmoke;
+    border-radius: 5%;
+    transform: translateX(-20%) translateY(100%);
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.buttons-groups button:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        border: none;
+    }
+
+    .profile-header {
+        display: flex;
+        border: 3px solid rgb(0, 159, 127);
+        border-radius: 5%;
+        margin: 15px;
+    }
+
+    .profile-img img {
+        max-width: 600px;
+        height: 180px;
+        padding-left: 0;
+        border-radius: 3% 0 0 3%;
+    }
+
+    .container-profile-description {
+        margin-top: 20px;
+        margin: 15px;
+        border: 3px solid rgb(0, 159, 127);
+        border-radius: 5%;
+    }
+
+    .general-profile, .health-profile {
+        flex: 5;
+    }
+
+    .profile-icons {
+        display: flex;
+        flex: 2;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    .adoption-require {
+        display: block;
+        margin: 25px;
+    }
+    
+
+    .buttons-groups {
+        display: flex;
+        margin: 50px 0;
+    }
+
+    .buttons-groups button {
+        width: 180px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 100%;
+        padding: 0;
+        margin-left: 20px;
+        border: 3px solid rgb(65, 10, 115);
+        border-radius: 2%;
+    }
+
+    .profile-header, .container-profile-description {
+        border: none;
+    }
+
+    .profile-header-data {
+        padding-left: 0;
+        margin-left: -50px;
+    }
+
+    .profile-img img {
+        width: 400px;
+        height: 400px;
+        padding-left: 0;
+        border-radius: 3% 0 0 3%;
+    }
+
+    .profile-icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .x {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .profile-data {
+        position: absolute;
+        width: 50%;
+        top: 120px;
+        right: 0;
+    }
+
+    .profile-description, .adoption-require {
+        width: 90%;
+        margin: 0 60px;
+        padding: 0 25px;
+    }
+
+    .buttons-groups button {
+        width: 240px;
+        height: 60px;
+    }
+}
