@@ -78,7 +78,6 @@ body {
 .user a i::before {
 	color: #776ecb;
 	font-size: 2rem;
-	text-shadow: #1b1a1a 0 0 10px;
 }
 
 #check {
@@ -104,8 +103,7 @@ body {
 	text-align: center;
 	flex-direction: column;
 	font-size: larger;
-	color: #fff;
-	text-shadow: 0 0 10px #000;
+	color: #322828;
 	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
 	backdrop-filter: blur(15px);
