@@ -115,8 +115,7 @@ body {
 	text-align: center;
 	flex-direction: column;
 	font-size: larger;
-	color: #fff;
-	text-shadow: 0 0 10px #000;
+	color: #776ecb;
 	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
 	backdrop-filter: blur(15px);
