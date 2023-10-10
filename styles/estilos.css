@@ -173,9 +173,6 @@ div.list {
 	font-weight: 200;
 	margin: 0;
 }
-.social-link:hover {
-	color: aliceblue;
-}
 
 .contacto {
 	display: flex;
@@ -330,8 +327,22 @@ h3.contact_foot {
 		display: none;
 	}
 
+	.redesSociales {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 50px;
+		margin: 20px;
+	}
+
 	.social-link {
-		font-size: 1rem;
+		font-size: 2rem;
+		color: #000000;
+		text-decoration: none;
+		font-weight: 200;
+		margin: 0;
+	}
+	.social-link:hover {
+		color: aliceblue;
 	}
 
 	.inputContact {
