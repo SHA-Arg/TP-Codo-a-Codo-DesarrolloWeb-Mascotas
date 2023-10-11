@@ -20,13 +20,40 @@
     
 </head>
 
-<body>
-    <header>
-        <h3>Aquí va el header</h3>
-    </header>
-    <main>
+    <body>
+
+        <!-- CABECERA  -->
+		<header class="header" id="header">
+			<!-- LOGO -->
+			<img
+				href="#"
+				class="logo"
+				src="../img/logo_2.png"
+				style="width: 60px; height: 60px"
+				alt="Logo Patitas Felices" />
+
+			<!-- MENU MOBILE -->
+			<input type="checkbox" id="check" />
+			
+			<label for="check" class="menu">
+				<a href="/pages/login.html" style="--i: 4"><i id="menu_log" class="bx bxs-user"></i></a></i>
+				<i class="bx bx-menu" id="menu-icon"></i>
+				<i class="bx bx-x" id="close-icon"></i>
+			</label>
+
+			<!-- NAVBAR -->			<nav class="navbar">
+				<a href="/pages/adoptar.html" style="--i: 0">Adoptar</a>
+				<a href="/pages/transitar.html" style="--i: 1">Transitar</a>
+				<a href="/pages/apadrinar.html" style="--i: 2">Apadrinar</a>
+				<a href="/pages/organizaciones.html" style="--i: 3">Organizaciones</a>	
+				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
+			</nav>
+		</header>
+
+        <!-- SECTION MAIN -->
+        <main>
         <div class="return-btn">
-            <a href="cards.html"><button>Volver</button></a>
+            <a href="/pages/cards.html"><button>Volver</button></a>
         </div>
         <h1 class="container-title">Un poco de mí...</h1>
         <div class="container container-profile">
@@ -83,10 +110,10 @@
                         <p>Compromiso de seguimiento de calendario de vacunas</p>
                     </div>
                     <div class="buttons-groups">
-                        <a href="adoptar.html"><button type="button" href="adoptar.html" class="btn"
+                        <a href="/pages/adoptar.html"><button type="button" class="btn"
                                 title="Felicidades por este gran paso">Adoptar</button></a>
-                        <a href="apadrinar.html"><button type="button" class="btn">Apadrinar</button></a>
-                        <a href="transitar.html"><button type="button" class="btn">Transitar</button></a>
+                        <a href="/pages/apadrinar.html"><button type="button" class="btn">Apadrinar</button></a>
+                        <a href="/pages/transitar.html"><button type="button" class="btn">Transitar</button></a>
                     </div>
                 </div> -->
             </div>

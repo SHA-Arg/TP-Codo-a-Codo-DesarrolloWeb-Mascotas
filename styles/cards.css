@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
     margin: 0;
     width: 100%;
@@ -24,11 +26,11 @@ p {
 }
 
 .container hr {
-    width: 200px;
-    color: rgb(65, 10, 115);
-    margin: auto;
-    margin-bottom: 40px;
-    margin-top: 20px;
+	width: 200px;
+	color: rgb(65, 10, 115);
+	margin: auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
 }
 
 .cards-group {
@@ -54,8 +56,8 @@ p {
 }
 
 .card-principal {
-    position: relative;
-    padding: 0;
+	position: relative;
+	padding: 0;
 }
 
 .name-box {
@@ -81,7 +83,7 @@ p {
 }
 
 .card-img:hover {
-    opacity: 0.6;
+	opacity: 0.6;
 }
 
 .card-title {
@@ -93,14 +95,14 @@ p {
 }
 
 .profile-icons {
-    display: none;
+	display: none;
 }
 
 .card-text-lg {
-    display: flex;
-    flex-direction: column;
-    line-height: 3px;
-    padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	line-height: 3px;
+	padding-left: 10px;
 }
 
 .card-text-lg p.raza,
@@ -170,11 +172,11 @@ p.color {
         margin-bottom: 20px;
     }
 
-    .card-body-info {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
+	.card-body-info {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+	}
 
     .profile-icons {
         display: flex;
@@ -198,26 +200,26 @@ p.color {
         line-height: 12px;
     }
 
-    .card-text-lg p {
-        display: block;
-        margin-left: 15px;
-    }
+	.card-text-lg p {
+		display: block;
+		margin-left: 15px;
+	}
 
-    .card-text.edad {
-        order: 1;
-    }
+	.card-text.edad {
+		order: 1;
+	}
 
-    .card-text.sexo {
-        order: 2;
-    }
+	.card-text.sexo {
+		order: 2;
+	}
 
-    .card-text.tamanio {
-        order: 3;
-    }
+	.card-text.tamanio {
+		order: 3;
+	}
 
-    .card-text.ubicacion {
-        order: 4;
-    }
+	.card-text.ubicacion {
+		order: 4;
+	}
 
     .card-text-lg p.raza,
     p.color {
@@ -233,19 +235,19 @@ p.color {
         cursor: pointer;
     }
 
-    .card-button {
-        display: block;
-    }
+	.card-button {
+		display: block;
+	}
 
-    .card-button {
-        width: 120px;
-        margin-right: 20px;
-    }
+	.card-button {
+		width: 120px;
+		margin-right: 20px;
+	}
 
-    .container-btn-results {
-        display: flex;
-        justify-content: center;
-    }
+	.container-btn-results {
+		display: flex;
+		justify-content: center;
+	}
 
     .btn-results {
         width: 200px;
