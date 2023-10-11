@@ -363,18 +363,3 @@ h3.contact_foot {
 		margin: 0;
 	}
 }
-/* 
-@media (max-width: 576px) {
-	.header {
-		padding: 0rem 5%;
-	}
-	.navbar a {
-		font-size: 1rem;
-		margin: 1rem;
-	}
-	.user i {
-		color: #fff;
-		margin-left: 1rem;
-		font-size: medium;
-	}
-} */

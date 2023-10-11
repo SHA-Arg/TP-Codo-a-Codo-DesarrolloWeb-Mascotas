@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Organizaciones</title>
 		<link rel="stylesheet" href="../styles/estilos.css" />
+		<link rel="stylesheet" href="../styles/formulario.css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"	rel="stylesheet" />
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 	</head>
@@ -39,25 +41,105 @@
 				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
 			</nav>
 		</header>
-		<!-- MAIN -->
-		<section class="construccion">
-			<div class="contenedor">
-				<h1
-					>Ups! <br />
-					Esta página está en construcción
-				</h1>
-				<p
-					><br />Regresa por el sendero que recorriste, <br />
-					que caminar por fuera de la caja es peligroso O-O
-				</p>
-				<img
-					src="/img/construccion.jpg"
-					alt="gato y perro en construccion"
-					class="img_construct" />
+		
+	<!-- MAIN -->
+	<!--! ESTA SECCION ESTA EN CONSTRUCCION MIENTRAS TANTO DEJO ESTO COMO PARA CUBRIR EL ESPACIO  -->
+		<section>
+			<main>
+				<div class="banner">
+					<img src="../img/sponsor.jpg" alt="Snow" style="width:100%;">
+					<h2 class="centered_title">Apadrina</h2>
+				</div>
+				<div class="main-container-form">
+					<div class="description-form">
+						<p class="desciption-title">Formulario de <strong>Apadrinamiento</strong></p>
+						<p class="description-text">
+							Las donaciones que realices, al rellenar el siguiente formulario, serán utilizadas por la organización a cargo para sustentar el modo de vida del animal que has elegido apoyar, y/o el de otros animales que estén bajo su cuidado.
+						</p>
+						<p class="description-text">
+							Las donaciones pueden ser por única vez, o mensuales, en cuyo caso no generarán deuda (si es que el medio de pago elegido no posee fondos)
+						</p>
+					</div>
+					<div class="container-form">
+						<div class="container-from-gobal">
+							<p class="container-from-title">Quiero donar</p>
+							<div class="container-from-imput">
+								<label class="checkbox" for="type-donation-only">Por única vez
+									<input type="checkbox" name="type-donation-only" value="only">
+								</label>
+								<label class="checkbox" for="type-donation-month">Mensualmente
+									<input type="checkbox" name="type-donation-month" value="month">
+								</label>
+							</div>
+							<p class="container-from-title">Con</p>
+							<div class="container-from-imput">
+								<label class="checkbox" for="amount-900">900 ars
+									<input type="checkbox" name="amount-900" value="900">
+								</label>
+								<label class="checkbox" for="amount-1400">1400 ars
+									<input type="checkbox" name="amount-1400" value="1400">
+								</label>
+								<label class="checkbox" for="amount-2000">2000 ars
+									<input type="checkbox" name="amount-2000" value="2000">
+								</label>
+							</div>
+							<div class="container-from-imput">
+								<label for="another_amount">Otro monto (indicar cuál)</label>
+								<input type="text" name="another_amount">
+							</div>
+						</div>
+						<hr>
+						<div class="container-from-gobal">
+							<p class="container-from-title">Información de contacto</p>
+							<div class="container-from-imput">
+								<label for="contac-name">Nombre Completo*:</label>
+								<input type="text" name="contac-name">
+							</div>
+							<div class="container-from-imput">
+								<label for="date">Fecha de nacimiento (dd/mm/aa)*:</label>
+								<input type="date" name="date">
+							</div>
+							<div class="container-from-imput">
+								<label for="dni">DNI (sin puntos)*:</label>
+								<input type="text" name="dni">
+							</div>
+							<div class="container-from-imput">
+								<label for="email">Correo electrónico*:</label>
+								<input type="email" name="email">
+							</div>
+							<div class="container-from-imput">
+								<label for="phone">Teléfono de contacto*:</label>
+								<input type="text" name="phone">
+							</div>
+						</div>
+						<hr>
+						<div class="container-from-gobal">
+							<p class="container-from-title">Datos de tarjeta</p>
+							<div class="container-from-imput">
+								<label for="card-number">Número de la tarjeta*:</label>
+								<input type="text" name="card-number">
+							</div>
+							<div class="container-from-imput">
+								<label for="catd-name">Nombre y apellido del titular (como aparece en la tarjeta)*:</label>
+								<input type="text" name="catd-name">
+							</div>
+							<div class="container-from-imput">
+								<label for="card-date">Fecha de vencimiento (mm/aa)*:</label>
+								<input type="date" name="card-date">
+							</div>
+							<div class="container-from-imput">
+								<label for="card-cvv">CVV*:</label>
+								<input type="text" name="card-cvv">
+							</div>
+						</div>
+						<div class="container-from-gobal button-send">
+							<button>Enviar</button>
+						</div>
+					</div>
+				</div>
 			</div>
-
-			<a href="/index.html" class="btn">Volver al inicio</a>
 		</section>
+
 
 		<!-- FOOTER -->
 		<footer class="pie">
