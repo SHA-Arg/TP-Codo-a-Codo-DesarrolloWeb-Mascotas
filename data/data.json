@@ -13,9 +13,7 @@
                 "vacunas": "sí",
                 "esterilizacion": "sí",
                 "estado_de_salud": "saludable",
-                "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-                "ubicacion": "CABA, Buenos Aires, Arg.",
-                "organizacion": "Techito"
+                "descripcion": "lorem"
             },
             {
                 "img": "https://cdn2.thecatapi.com/images/MjA0NDg2Mw.jpg",
@@ -28,9 +26,7 @@
                 "vacunas": "sí",
                 "esterilizacion": "sí",
                 "estado_de_salud": "saludable",
-                "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-                "ubicacion": "Santa Fe, Arg.",
-                "organizacion": "Techito"
+                "descripcion": "lorem"
             },
             {
                 "img": "https://cdn2.thecatapi.com/images/uTFc4z0wP.jpg",
@@ -43,9 +39,7 @@
                 "vacunas": "sí",
                 "esterilizacion": "sí",
                 "estado_de_salud": "saludable",
-                "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-                "ubicacion": "Bahía Blanca, Buenos Aires, Arg.",
-                "organizacion": "Techito"
+                "descripcion": "lorem"
             },
         {
             "img": "https://cdn2.thecatapi.com/images/MTgyMDkwMw.jpg",
@@ -58,9 +52,7 @@
             "vacunas": "sí",
             "esterilizacion": "sí",
             "estado_de_salud": "saludable",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-            "ubicacion": "CABA, Buenos Aires, Arg.",
-            "organizacion": "Vida Buena"
+            "descripcion": "lorem"
         },
         {
             "img": "https://cdn2.thecatapi.com/images/MTc4MTg0OA.gif",
@@ -73,14 +65,12 @@
             "vacunas": "sí",
             "esterilizacion": "sí",
             "estado_de_salud": "saludable",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-            "ubicacion": "Rafaela, Santa Fe, Arg.",
-            "organizacion": "Vida Buena"
+            "descripcion": "lorem"
         }
     ],
     "perros": [
         {
-            "img": "https://images.dog.ceo/breeds/ridgeback-rhodesian/n02087394_310.jpg",
+            "img": "la",
             "nombre": "Perlita",
             "edad": 5,
             "sexo": "femenino",
@@ -90,12 +80,10 @@
             "vacunas": "sí",
             "esterilizacion": "sí",
             "estado_de_salud": "saludable",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-            "ubicacion": "Bahía Blanca, Buenos Aires, Arg.",
-            "organizacion": "Patitas"
+            "descripcion": "lorem"
         },
         {
-            "img": "https://images.dog.ceo/breeds/terrier-fox/n02095314_2.jpg",
+            "img": "la",
             "nombre": "Kimchi",
             "edad": 5,
             "sexo": "femenino",
@@ -105,12 +93,10 @@
             "vacunas": "sí",
             "esterilizacion": "sí",
             "estado_de_salud": "saludable",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-            "ubicacion": "CABA, Buenos Aires, Arg.",
-            "organizacion": "Patitas"
+            "descripcion": "lorem"
         },
         {
-            "img": "https://images.dog.ceo/breeds/finnish-lapphund/mochilamvan.jpg",
+            "img": "la",
             "nombre": "Pequitas",
             "edad": 5,
             "sexo": "femenino",
@@ -120,12 +106,10 @@
             "vacunas": "sí",
             "esterilizacion": "sí",
             "estado_de_salud": "saludable",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium.",
-            "ubicacion": "Avellaneda, Buenos Aires, Arg.",
-            "organizacion": "Pet Care"
+            "descripcion": "lorem"
         },
         {
-            "img": "https://images.dog.ceo/breeds/hound-blood/n02088466_10545.jpg",
+            "img": "la",
             "nombre": "Tofi",
             "edad": 5,
             "sexo": "femenino",
@@ -135,9 +119,7 @@
             "vacunas": "sí",
             "esterilizacion": "sí",
             "estado_de_salud": "saludable",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod deleniti, rem accusantium aut quibusdam, recusandae ipsa repellat dolorum impedit voluptatibus eligendi quia aliquam minus repellendus ratione vero temporibus animi ex a facilis. Exercitationem quisquam maxime accusamus architecto aliquid laudantium",
-            "ubicacion": "CABA, Buenos Aires, Arg.",
-            "organizacion": "Pet Care"
+            "descripcion": "lorem"
         }
     ]
 }

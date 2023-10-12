@@ -3,36 +3,31 @@
 * {
 	margin: 0;
 	width: 100%;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
 	box-sizing: border-box;
 }
 
 main {
-	width: 95%;
-	margin: auto;
-}
-
-p {
-	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
+	width: 93%;
 }
 
 .return-btn button {
 	width: 100px;
 	height: 30px;
 	margin-left: 30px;
-	background: #B6AFF0;
+	background: rgb(152, 120, 178);
 	color: white;
-	font-weight: bold;
 	border: none;
 	border-radius: 5%;
 }
 
-.container-profile {
-	/* width: 95%; */
-	/* padding: 0;
-	margin: auto; */
-	border: 3px solid #B6AFF0;
-	border-radius: 15px;
+.container {
+	width: 100%;
+	padding: 0;
+	margin-left: 20px;
+	border: 3px solid rgb(65, 10, 115);
+	border-radius: 2%;
 }
 
 .container-title {
@@ -64,9 +59,8 @@ p {
 
 .profile-data {
 	display: flex;
-	width: 90%;
-	margin: 20px 10px 25px 25px;
-	margin-top: 35px;
+	margin: 15px;
+	padding: 10px;
 	line-height: 14px;
 }
 
@@ -76,6 +70,7 @@ p {
 
 .health-profile {
 	font-size: 0.8rem;
+	line-height: 5px;
 	padding-bottom: 10px;
 }
 
@@ -97,45 +92,35 @@ p {
 }
 
 .buttons-groups {
-	display: flex;
 	text-align: center;
 	padding-bottom: 20px;
 }
 
 .buttons-groups button {
-	font-family: 'Oswald', sans-serif;
 	font-size: 1rem;
-	font-weight: 700;
-	margin: 0 auto;
-	background: #B6AFF0;
-	border: none;
-	border-radius: 12px;
-	color: white;
+	background: linear-gradient(
+		45deg,
+		rgb(152, 120, 178),
+		rgb(65, 10, 115),
+		rgb(152, 120, 178)
+	);
+	border-radius: 5%;
+	color: whitesmoke;
 	width: 100px;
-	height: 30px;
-}
-
-.buttons-groups a:nth-of-type(2) button {
-	background: #B8B7B7;
-}
-
-.buttons-groups a:nth-of-type(2) button:hover {
-	background: white;
-	color: #B8B7B7;
-	border: 1px solid #B8B7B7;
+	height: 40px;
 }
 
 .buttons-groups button:hover {
 	background: white;
-	color: #B6AFF0;
-	border: 1px solid #B6AFF0;
+	color: rgb(36, 31, 31);
+	border: 1px solid rgb(65, 10, 115);
 }
 
 .buttons-groups button::before {
 	content: attr(title);
 	font-size: 1rem;
-	color: #B6AFF0;
-	background: white;
+	color: rgb(65, 10, 115);
+	background: whitesmoke;
 	border-radius: 5%;
 	transform: translateX(-20%) translateY(100%);
 	position: absolute;
@@ -148,54 +133,34 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-	p {
-		font-size: 16px;
-	}
-
-	li {
-		font-size: 14px;
-	}
-
-	.container-profile {
+	.container {
 		border: none;
-	}
-
-	.profile-data {
-		width: 100%;
-	}
-
-	.profile-header-data {
-		margin-top: 20px;
-	}
-
-	.profile-header-data h2 {
-		font-family: 'Oswald', sans-serif;
-		font-weight: 900;
 	}
 
 	.profile-header {
 		display: flex;
-		border: 4px solid #B6AFF0;
-		border-radius: 20px;
-		margin: auto;
-		margin-bottom: 20px;
+		border: 3px solid rgb(0, 159, 127);
+		border-radius: 5%;
+		margin: 15px;
 	}
 
 	.profile-img img {
-		height: 242px;
-		border-radius: 20px 0 0 20px;
+		max-width: 600px;
+		height: 180px;
+		padding-left: 0;
+		border-radius: 3% 0 0 3%;
 	}
 
 	.container-profile-description {
-		margin: auto;
-		border: 4px solid #B6AFF0;
-		border-radius: 20px;
+		margin-top: 20px;
+		margin: 15px;
+		border: 3px solid rgb(0, 159, 127);
+		border-radius: 5%;
 	}
 
 	.general-profile,
 	.health-profile {
 		flex: 5;
-
 	}
 
 	.profile-icons {
@@ -206,44 +171,29 @@ p {
 		padding: 20px;
 	}
 
-	.profile-description {
-		padding: 0 25px 10px 25px;
-	}
-
 	.adoption-require {
 		display: block;
 		margin: 25px;
 	}
 
-	.adoption-require h6 {
-		margin-left: -15px;
-	}
-
 	.buttons-groups {
 		display: flex;
-		margin: 50px 0 35px 0;
-		padding: 0;
+		margin: 50px 0;
 	}
 
 	.buttons-groups button {
-		font-size: 1.6rem;
-		width: 200px;
-		height: 40px;
-		border-radius: 20px;
+		width: 180px;
+		height: 50px;
 	}
 }
 
 @media screen and (min-width: 1280px) {
-	p {
-		font-size: 16px;
-	}
-
-	.container-profile {
-		width: 90%;
+	.container {
+		width: 100%;
 		padding: 0;
-		margin: auto;
-		border: 5px solid #B6AFF0;
-		border-radius: 15px;
+		margin-left: 20px;
+		border: 3px solid rgb(65, 10, 115);
+		border-radius: 2%;
 	}
 
 	.profile-header,
@@ -257,10 +207,10 @@ p {
 	}
 
 	.profile-img img {
-		width: 500px;
+		width: 400px;
 		height: 400px;
-		padding: 15px;
-		border-radius: 25px;
+		padding-left: 0;
+		border-radius: 3% 0 0 3%;
 	}
 
 	.profile-icons {
@@ -274,14 +224,6 @@ p {
 		position: relative;
 	}
 
-	.general-profile {
-		padding-right: 10px;
-	}
-
-	.health-profile {
-		margin-left: 30px;
-	}
-
 	.profile-data {
 		position: absolute;
 		width: 50%;
@@ -292,13 +234,12 @@ p {
 	.profile-description,
 	.adoption-require {
 		width: 90%;
-		margin: 0 60px 50px 60px;
+		margin: 0 60px;
 		padding: 0 25px;
 	}
 
 	.buttons-groups button {
 		width: 240px;
-		height: 50px;
-		border-radius: 25px;
+		height: 60px;
 	}
 }
