@@ -1,34 +1,33 @@
-import { recuperarData } from './cards.js';
+import { recuperarData } from "./cards.js";
 
 async function verPerfil() {
-    const params = new URLSearchParams(window.location.search);
-    const index = params.get('index');
+	const params = new URLSearchParams(window.location.search);
+	const index = params.get("index");
 
-    const DATA = await recuperarData();
-    const datosMascotas = DATA.mascotas;
-    const mascotaPerro = datosMascotas.perros[index];
-    const mascotaGato = datosMascotas.gatos[index];
-   
-    const containerProfile = document.querySelector('.x');
+	const DATA = await recuperarData();
+	const datosMascotas = DATA.mascotas;
+	const mascotaPerro = datosMascotas.perros[index];
+	const mascotaGato = datosMascotas.gatos[index];
 
-    if (mascotaPerro && index !== null) {
-        const perfil = crearPerfil(mascotaPerro, index);
-        containerProfile.innerHTML = perfil;
-    } else if (mascotaGato && index !== null) {
-        const perfil = crearPerfil(mascotaGato, index);
-        containerProfile.innerHTML = perfil;
-    } else {
-        console.log('Índice no encontrado en la URL');
-    }
+	const containerProfile = document.querySelector(".x");
+
+	if (mascotaPerro && index !== null) {
+		const perfil = crearPerfil(mascotaPerro, index);
+		containerProfile.innerHTML = perfil;
+	} else if (mascotaGato && index !== null) {
+		const perfil = crearPerfil(mascotaGato, index);
+		containerProfile.innerHTML = perfil;
+	} else {
+		console.log("Índice no encontrado en la URL");
+	}
 }
 
-verPerfil()
+verPerfil();
 
 function crearPerfil(mascota, index) {
-    let perfil =
-        `<div class="profile-header">
-        <div class="profile-img">
-            <img src="${mascota.img}" alt="imagen mascota">
+	let perfil = `<div class="profile-header">
+        <div >
+            <img class="profile-img" src="${mascota.img}" alt="imagen mascota">
         </div>
         <div class="profile-header-data">
             <h2 class="profile-header-title">${mascota.nombre}</h2>
@@ -76,9 +75,7 @@ function crearPerfil(mascota, index) {
             <a href="apadrinar.html" value="${index}"><button type="button" class="btn-profile">Apadrinar</button></a>
             <a href="transitar.html" value="${index}"><button type="button" class="btn-profile">Transitar</button></a>
         </div>
-    </div>`
+    </div>`;
 
-    return perfil;
+	return perfil;
 }
-
-
