@@ -1,28 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* ! REVISAR Y TRATAR DE UNIR Y PULIR EL CODIGO! */
-p,
-a {
-	font-size: 12px;
+.container {
+    margin-top: 100px;
 }
+/* p,
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+} */
 
 p {
-	line-height: 1rem;
-	margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1rem;
+    margin-bottom: 0;
 }
 
-.container h1 {
-	font-size: 1.5rem;
-	font-weight: 150;
-	text-align: center;
-	margin: auto;
+.container h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+}
+
+.container hr {
+    width: 200px;
+    color: rgb(65, 10, 115);
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .cards-group {
@@ -47,8 +59,8 @@ p {
 }
 
 .card-principal {
-	position: relative;
-	padding: 0;
+    position: relative;
+    padding: 0;
 }
 
 .name-box {
@@ -75,7 +87,7 @@ p {
 }
 
 .card-img:hover {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 
 .card-title {
@@ -87,14 +99,15 @@ p {
 }
 
 .profile-icons {
-	display: none;
+    display: none;
 }
 
 .card-text-lg {
-	display: flex;
-	flex-direction: column;
-	line-height: 3px;
-	padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 3px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 .card-text-lg p.raza,
@@ -132,16 +145,21 @@ p.color {
 	color: black;
 }
 
+.container-btn-results {
+    display: flex;
+    margin: 20px 0;
+}
+
 .btn-results {
-	font-family: "Oswald", sans-serif;
-	font-size: 1rem;
-	font-weight: 700;
-	margin: 0 auto;
-	background: #b6aff0;
-	border: none;
-	border-radius: 12px;
-	color: white;
-	width: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    background: #B6AFF0;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    width: 120px;
 }
 
 /* ! REVISAR BREAKPOINTS */
@@ -164,10 +182,16 @@ p.color {
 }
 
 @media screen and (min-width: 768px) {
-	.cards-group {
-		display: flex;
-		margin: auto;
-	}
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .cards-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
 
 	.card {
 		display: flex;
@@ -181,12 +205,13 @@ p.color {
 		margin-bottom: 20px;
 	}
 
-	.card-body-info {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-around;
-		height: 130px;
-	}
+    .card-body-info {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        height: 130px;
+        margin-top: 25px;
+    }
 
 	.profile-icons {
 		display: flex;
@@ -210,26 +235,27 @@ p.color {
 		line-height: 12px;
 	}
 
-	.card-text-lg p {
-		display: block;
-		margin-left: 15px;
-	}
+    .card-text-lg p {
+        display: block;
+        margin-left: 15px;
+        line-height: 25px;
+    }
 
-	.card-text.edad {
-		order: 1;
-	}
+    .card-text.edad {
+        order: 1;
+    }
 
-	.card-text.sexo {
-		order: 2;
-	}
+    .card-text.sexo {
+        order: 2;
+    }
 
-	.card-text.tamanio {
-		order: 3;
-	}
+    .card-text.tamanio {
+        order: 3;
+    }
 
-	.card-text.ubicacion {
-		order: 4;
-	}
+    .card-text.ubicacion {
+        order: 4;
+    }
 
 	.card-text-lg p.raza,
 	p.color {
@@ -245,28 +271,34 @@ p.color {
 		cursor: pointer;
 	}
 
-	.card-button {
-		display: block;
-	}
+    .card-button {
+        display: block;
+        width: 120px;
+        margin-right: 20px;
+    }
 
-	.card-button {
-		width: 120px;
-		margin-right: 20px;
-	}
+    .btnProfile {
+        display: flex;
+        margin-top: 15px;
+        padding-top: 5px;
+        padding-left: 25px;
+        border-radius: 15px;
+    }
 
-	.container-btn-results {
-		display: flex;
-		justify-content: center;
-	}
+    .container-btn-results {
+        display: flex;
+        justify-content: center;
+    }
 
-	.btn-results {
-		width: 200px;
-		height: 50px;
-		background: #b6aff0;
-		color: white;
-		font-size: 18px;
-		border-radius: 5%;
-	}
+    .btn-results {
+        width: 200px;
+        height: 50px;
+        margin: 40px;
+        background: #B6AFF0;
+        color: white;
+        font-size: 18px;
+        border-radius: 25px;
+    }
 
 	.btn-results:hover {
 		background: white;
@@ -292,23 +324,30 @@ p.color {
 		justify-content: center;
 	}
 
-	.card {
-		width: 430px;
-		margin: auto;
-	}
-} */
+    .card {
+        width: 470px;
+        margin: auto;
+    }
 
-/* @media screen and (min-width: 1280px) {
-	.cards-group {
-		margin-left: 5px;
-		gap: 20px;
-	}
+    .card-body-info {
+        margin-top: 5px;
+    }
 
-	.card {
-		width: 520px;
-		margin: auto;
-		margin-left: 0;
-	}
+    .btnProfile {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .cards-group {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -317,10 +356,10 @@ p.color {
 		gap: 20px;
 	}
 
-	.card {
-		width: 1000px;
-		margin: auto;
-		margin-left: 0;
-		margin-bottom: 20px;
-	}
-} */
+    .card {
+        width: 1000px;
+        margin: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
