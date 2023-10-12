@@ -38,25 +38,24 @@ p {
 }
 
 .cards-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 95%;
-    margin: auto;
-    gap: 5px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 95%;
+	margin: auto;
+	gap: 5px;
 }
 
 .card {
-
-    width: 98%;
-    height: 260px;
-    padding: 0;
-    margin: auto;
-    margin-bottom: 10px;
-    /* margin-right: 0; */
-    border: 3px solid #B6AFF0;
-    border-radius: 20px;
-    box-shadow: 0px 1px 15px #B8B7B7;
-    transition: all 400ms ease;
+	width: 98%;
+	height: 260px;
+	padding: 0;
+	margin: auto;
+	margin-bottom: 10px;
+	/* margin-right: 0; */
+	border: 3px solid #b6aff0;
+	border-radius: 20px;
+	box-shadow: 0px 1px 15px #b8b7b7;
+	transition: all 400ms ease;
 }
 
 .card-principal {
@@ -65,25 +64,26 @@ p {
 }
 
 .name-box {
-    display: flex;
-    position: absolute;
-    top: 6px;
-    left: 3px;
-    z-index: 2;
-    width: 40%;
-    height: 35px;
-    background-color: #B6AFF0;
-    color: #000000;
-    border-radius: 20px;
+	display: flex;
+	position: absolute;
+	top: 6px;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	width: 80%;
+	height: 35px;
+	background-color: #b6aff0;
+	color: #000000;
+	border-radius: 20px;
 }
 
 .card-img {
-    object-fit: cover;
-    width: 100%;
-    height: 160px;
-    z-index: 1;
-    border-radius: 18px 18px 0 0;
-    cursor: none;
+	object-fit: cover;
+	width: 100%;
+	height: 160px;
+	z-index: 1;
+	border-radius: 18px 18px 0 0;
+	cursor: none;
 }
 
 .card-img:hover {
@@ -91,11 +91,11 @@ p {
 }
 
 .card-title {
-    text-align: center;
-    padding-top: 8px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900;
-    font-size: 1rem;
+	text-align: center;
+	padding-top: 8px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 900;
+	font-size: 1rem;
 }
 
 .profile-icons {
@@ -113,36 +113,36 @@ p {
 .card-text-lg p.raza,
 p.tamanio,
 p.color {
-    display: none;
+	display: none;
 }
 
 .card-text.ubicacion {
-    line-height: 1.5;
+	line-height: 1.5;
 }
 
 .card-button {
-    width: 120px;
-    margin: auto;
-    margin-bottom: 20px;
-    display: none;
+	width: 120px;
+	margin: auto;
+	margin-bottom: 20px;
+	display: none;
 }
 
 .btnProfile {
-    background: #B6AFF0;
-    color: white;
-    font-size: 1.1rem;
-    text-decoration: none;
-    text-align: center;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
+	background: #b6aff0;
+	color: white;
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-align: center;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 30px;
 }
 
 .btnProfile:hover {
-    background: white;
-    border: 2px solid #B6AFF0;
-    color: black;
+	background: white;
+	border: 2px solid #b6aff0;
+	color: black;
 }
 
 .container-btn-results {
@@ -162,20 +162,23 @@ p.color {
     width: 120px;
 }
 
-@media screen and (max-width: 400px) {
-    .cards-group {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-bottom: 30px;
-    }
+/* ! REVISAR BREAKPOINTS */
+/* ? PORQUE TANTOS ?? */
 
-    .card {
-        width: 90%;
-        height: 270px;
-        padding: 0;
-        margin: auto;
-        margin-bottom: 10px;
-    }
+@media screen and (max-width: 400px) {
+	.cards-group {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-bottom: 30px;
+	}
+
+	.card {
+		width: 90%;
+		height: 270px;
+		padding: 0;
+		margin: auto;
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -190,17 +193,17 @@ p.color {
         margin: auto;
     }
 
-    .card {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
-        height: 230px;
-        /* max-width: 600px; */
-        margin: auto;
-        margin-bottom: 20px;
-    }
+	.card {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+		width: 100%;
+		height: 230px;
+		/* max-width: 600px; */
+		margin: auto;
+		margin-bottom: 20px;
+	}
 
     .card-body-info {
         display: flex;
@@ -210,14 +213,14 @@ p.color {
         margin-top: 25px;
     }
 
-    .profile-icons {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: start;
-    }
+	.profile-icons {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: start;
+	}
 
-    /* .material-symbols-outlined {
+	/* .material-symbols-outlined {
         cursor: pointer;
         color: black;
     }
@@ -226,11 +229,11 @@ p.color {
         color: red;
     } */
 
-    .card-text-lg {
-        flex: 3;
-        margin: 22px 0;
-        line-height: 12px;
-    }
+	.card-text-lg {
+		flex: 3;
+		margin: 22px 0;
+		line-height: 12px;
+	}
 
     .card-text-lg p {
         display: block;
@@ -254,19 +257,19 @@ p.color {
         order: 4;
     }
 
-    .card-text-lg p.raza,
-    p.color {
-        display: none;
-    }
+	.card-text-lg p.raza,
+	p.color {
+		display: none;
+	}
 
-    .card-img {
-        width: 100%;
-        height: 225.8px;
-        padding: 0;
-        object-fit: cover;
-        border-radius: 18px 0 0 18px;
-        cursor: pointer;
-    }
+	.card-img {
+		width: 100%;
+		height: 225.8px;
+		padding: 0;
+		object-fit: cover;
+		border-radius: 18px 0 0 18px;
+		cursor: pointer;
+	}
 
     .card-button {
         display: block;
@@ -297,31 +300,29 @@ p.color {
         border-radius: 25px;
     }
 
-    .btn-results:hover {
-        background: white;
-        color: #B6AFF0;
-        border: 2px solid #B6AFF0;
-        ;
-    }
+	.btn-results:hover {
+		background: white;
+		color: #b6aff0;
+		border: 2px solid #b6aff0;
+	}
 }
-
+/* 
 @media screen and (min-width: 992px) {
-    .cards-group {
-        display: flex;
-        margin-left: 80px;
-    }
+	.cards-group {
+		display: flex;
+	}
 
-    .card {
-        max-width: 550px;
-    }
-}
+	.card {
+		max-width: 550px;
+	}
+} */
 
-@media screen and (min-width: 1024px) {
-
-    .cards-group {
-        margin-left: 20px;
-        gap: 20px;
-    }
+/* @media screen and (min-width: 1024px) {
+	.cards-group {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
     .card {
         width: 470px;
@@ -350,11 +351,10 @@ p.color {
 }
 
 @media screen and (min-width: 1440px) {
-
-    .cards-group {
-        margin: auto;
-        gap: 20px;
-    }
+	.cards-group {
+		margin: auto;
+		gap: 20px;
+	}
 
     .card {
         width: 1000px;
