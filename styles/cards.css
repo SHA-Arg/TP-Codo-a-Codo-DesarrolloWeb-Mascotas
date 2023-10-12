@@ -8,7 +8,7 @@
 }
 
 p,
-button {
+a {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
@@ -44,7 +44,7 @@ p {
 .card {
 
     width: 98%;
-    height: 250px;
+    height: 260px;
     padding: 0;
     margin: auto;
     margin-bottom: 10px;
@@ -125,10 +125,13 @@ p.color {
 .btnProfile {
     background: #B6AFF0;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
     height: 30px;
     border: none;
     border-radius: 5px;
+    margin-top: 30px;
 }
 
 .btnProfile:hover {
@@ -137,6 +140,17 @@ p.color {
     color: black;
 }
 
+.btn-results {
+    font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0 auto;
+	background: #B6AFF0;
+	border: none;
+	border-radius: 12px;
+	color: white;
+	width: 100px;
+}
 
 @media screen and (max-width: 400px) {
     .cards-group {
@@ -176,6 +190,7 @@ p.color {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-around;
+        height: 130px;
 	}
 
     .profile-icons {

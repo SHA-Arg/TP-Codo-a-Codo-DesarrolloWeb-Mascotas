@@ -3,13 +3,13 @@ import { recuperarData } from './cards.js';
 async function verPerfil() {
     const params = new URLSearchParams(window.location.search);
     const index = params.get('index');
-    const containerProfile = document.querySelector('.x');
+
     const DATA = await recuperarData();
     const datosMascotas = DATA.mascotas;
     const mascotaPerro = datosMascotas.perros[index];
-    console.log(mascotaPerro)
     const mascotaGato = datosMascotas.gatos[index];
-    console.log(mascotaGato)
+   
+    const containerProfile = document.querySelector('.x');
 
     if (mascotaPerro && index !== null) {
         const perfil = crearPerfil(mascotaPerro, index);
@@ -17,10 +17,9 @@ async function verPerfil() {
     } else if (mascotaGato && index !== null) {
         const perfil = crearPerfil(mascotaGato, index);
         containerProfile.innerHTML = perfil;
+    } else {
+        console.log('Índice no encontrado en la URL');
     }
-    // } else {
-    //     console.log('Índice no encontrado en la URL');
-    // }
 }
 
 verPerfil()
@@ -36,7 +35,7 @@ function crearPerfil(mascota, index) {
             <p><b>Ubicación:</b> ${mascota.ubicacion}</p>
         </div>
     </div>
-    <div class="containerProfileDescription">
+    <div class="container-profile-description">
         <div class="profile-data">
             <div class="general-profile">
                 <h6 class="profile-title"><b>Información general</b></h6>
@@ -47,7 +46,7 @@ function crearPerfil(mascota, index) {
             </div>
             <div class="health-profile">
                 <h6 class="health-title"><b>Datos de salud</b></h6>
-                <p><b>Vacunas:</b> ${mascota.vacunas}</p>
+                <p><b>Desparacitación:</b> ${mascota.vacunas}</p>
                 <p><b>Esterilización:</b> ${mascota.esterilizacion}</p>
                 <p><b>Estado de salud:</b> ${mascota.estado_de_salud}</p>
             </div>
@@ -64,18 +63,18 @@ function crearPerfil(mascota, index) {
             <p>${mascota.descripcion}</p>
             <p><b>Organización:</b> ${mascota.organizacion}</p>
         </div>
-        <div class="adoption-require">
-            <h5><b>Requisitos de adopción</b></h5>
-            <p>Adoptante titular mayor de 21 años</p>
-            <p>Residencia cercana al lugar de adopción</p>
-            <p>Compromiso de castración a los 8 meses</p>
-            <p>Compromiso de seguimiento de calendario de vacunas</p>
-        </div>
+        <ul class="adoption-require">
+            <h6><b>Requisitos de adopción</b></h6>
+            <li>Adoptante titular mayor de 21 años</li>
+            <li>Residencia cercana al lugar de adopción</li>
+            <li>Compromiso de castración a los 8 meses</li>
+            <li>Compromiso de seguimiento de calendario de vacunas</li>
+        </ul>
         <div class="buttons-groups">
-            <a href="adoptar.html" value="${index}"><button type="button" href="adoptar.html" class="btn"
+            <a href="adoptar.html" value="${index}"><button type="button" href="adoptar.html" class="btn-profile"
                     title="Felicidades por este gran paso">Adoptar</button></a>
-            <a href="apadrinar.html" value="${index}"><button type="button" class="btn">Apadrinar</button></a>
-            <a href="transitar.html" value="${index}"><button type="button" class="btn">Transitar</button></a>
+            <a href="apadrinar.html" value="${index}"><button type="button" class="btn-profile">Apadrinar</button></a>
+            <a href="transitar.html" value="${index}"><button type="button" class="btn-profile">Transitar</button></a>
         </div>
     </div>`
 

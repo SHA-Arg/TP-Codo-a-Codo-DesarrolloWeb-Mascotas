@@ -30,7 +30,7 @@ function crearCards(mascota, index) {
     let card =
         `<div class="card col-sm-5">
                 <div class="card-principal">
-                    <a href="perfil.html"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
+                    <a href="perfil.html?index=${index}" data-index="${index}" class="btnProfile" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
                     <div class="name-box">
                     <h3 class="card-title"><b>${mascota.nombre}</b></h3>
                     </div>
@@ -55,7 +55,7 @@ function crearCards(mascota, index) {
                         </div>
                     </div>
                     <div class="card-button">
-                    <a href="perfil.html?index=${index}" data-index="${index}" type="button" class="btnProfile" id="btnProfile" onclick="verPerfil(${index})">Ver más</a>
+                    <a href="perfil.html?index=${index}" data-index="${index}" type="button" class="btnProfile" onclick="verPerfil(${index})">Ver más</a>
                         
                     </div>
                 </div>      
