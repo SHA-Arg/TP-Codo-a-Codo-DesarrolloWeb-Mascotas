@@ -5,36 +5,41 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Patitas Felices</title>
-	<link rel="stylesheet" href="estilos.css" />
+	<link rel="stylesheet" href="../styles/estilos.css" />
 	<link rel="stylesheet" href="/styles/landing.css">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+			<link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
 </head>
 
-<body>
-	<!-- CABECERA  -->
-	<header class="header">
-		<!-- LOGO -->
-		<img href="#" class="logo" src="img/logo_2.png" style="width: 60px; height: 60px" alt="Logo Patitas Felices" />
+	<body>
+		<!-- CABECERA  -->
+			<header class="header" id="header">
+			<!-- LOGO -->
+			<img
+				href="#"
+				class="logo"
+				src="../img/logo_2.png"
+				style="width: 60px; height: 60px"
+				alt="Logo Patitas Felices" />
 
-		<!-- MENU MOBILE -->
-		<input type="checkbox" id="check" />
-		<label for="check" class="menu">
-			<i class="bx bx-menu" id="menu-icon"></i>
-			<i class="bx bx-x" id="close-icon"></i>
-		</label>
-
-		<!-- NAVBAR -->
-		<nav class="navbar">
-			<a href="/pages/adoptar.html" style="--i: 0">Adoptar</a>
-			<a href="/pages/transitar.html" style="--i: 1">Transitar</a>
-			<a href="/pages/apadrinar.html" style="--i: 2">Apadrinar</a>
-			<a href="/pages/organizaciones.html" style="--i: 3">Organizaciones</a>
-			<label for="" class="user">
-				<a href="/Prototipo/pages/login.html" style="--i: 4"><i class="bx bxs-user"></i></a></i>
+			<!-- MENU MOBILE -->
+			<input type="checkbox" id="check" />
+			
+			<label for="check" class="menu">
+				<a href="/pages/login.html" style="--i: 4"><i id="menu_log" class="bx bxs-user"></i></a></i>
+				<i class="bx bx-menu" id="menu-icon"></i>
+				<i class="bx bx-x" id="close-icon"></i>
 			</label>
-		</nav>
-	</header>
+
+			<!-- NAVBAR -->			<nav class="navbar">
+				<a href="/pages/adoptar.html" style="--i: 0">Adoptar</a>
+				<a href="/pages/transitar.html" style="--i: 1">Transitar</a>
+				<a href="/pages/apadrinar.html" style="--i: 2">Apadrinar</a>
+				<a href="/pages/organizaciones.html" style="--i: 3">Organizaciones</a>	
+				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
+			</nav>
+		</header>
 
 	<!-- MAIN -->
 
@@ -94,7 +99,7 @@
 	</div>
 		<div>
 			<!-- FOOTER -->
-			<footer class="pie">
+			<footer class="pie" id="footer">
 				<div class="contenerdorPie">
 					<div class="list">
 						<a href="" class="item-Txt">Soy una organización.</a>
@@ -109,18 +114,22 @@
 						<a href="" class="social-link"><i class="bx bxl-facebook"></i></a>
 					</div>
 
-					<div class="contacto">
-						<h3>Contactanos!</h3>
-						<form action="" class="formContacto"><input class="inputContact" type="text"
-								placeholder="Ingresa tu Mail!" />
-							<button class="enviar" type="submit"><i class="bx bx-send" id="enviar"></i></button>
-						</form>
-					</div>
+				<div class="contacto">
+					<h3 class="contact_foot">Contactanos!</h3>
+					<form action="" class="formContacto"
+						><input
+							class="inputContact"
+							type="text"
+							placeholder="Ingresa tu Mail!" />
+						<button class="enviar" type="submit"
+							><i class="bx bx-send" id="enviar"></i></button
+					></form>
 				</div>
-			</footer>
-			<div class="copyright">
-				&copy;Patitas Felices 2023. Todos los derechos reservados, Codo a
-				Codo.</div>
-</body>
-
+			</div>
+		</footer>
+		<div class="copyright">
+			&copy;Patitas Felices 2023. Todos los derechos reservados, Codo a
+			Codo.</div
+		>
+	</body>
 </html>

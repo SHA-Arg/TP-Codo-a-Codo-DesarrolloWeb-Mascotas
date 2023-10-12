@@ -1,7 +1,8 @@
-![Logo de Patitas Felices.](https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png)
 
-<h1 align="center">PATITAS FELICES </h1>
-<p align="left">
+
+<h1 align="center">PATITAS FELICES<img src="https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png" style="width: 200px; height: 200px"> </h1>
+
+<p align="right">
    <h2>Proyecto DesarrolloWeb CodoaCodo</h2>
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
