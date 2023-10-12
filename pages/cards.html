@@ -9,60 +9,39 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courgette&family=Ingrid+Darling&family=Syne+Tactile&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="../styles/cards.css">        
-    <link rel="stylesheet" href="../styles/estilos.css" />
-	<link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"	rel="stylesheet" />
-	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <script src="../js/main.js" defer></script>
-    </head>
+    <link rel="stylesheet" href="../styles/cards.css">
+    
+</head>
 
-    <body>
-
-        <!-- CABECERA  -->
-		<header class="header" id="header">
-			<!-- LOGO -->
-			<img
-				href="#"
-				class="logo"
-				src="../img/logo_2.png"
-				style="width: 60px; height: 60px"
-				alt="Logo Patitas Felices" />
-
-			<!-- MENU MOBILE -->
-			<input type="checkbox" id="check" />
-			
-			<label for="check" class="menu">
-				<a href="/pages/login.html" style="--i: 4"><i id="menu_log" class="bx bxs-user"></i></a></i>
-				<i class="bx bx-menu" id="menu-icon"></i>
-				<i class="bx bx-x" id="close-icon"></i>
-			</label>
-
-			<!-- NAVBAR -->			<nav class="navbar">
-				<a href="/pages/adoptar.html" style="--i: 0">Adoptar</a>
-				<a href="/pages/transitar.html" style="--i: 1">Transitar</a>
-				<a href="/pages/apadrinar.html" style="--i: 2">Apadrinar</a>
-				<a href="/pages/organizaciones.html" style="--i: 3">Organizaciones</a>	
-				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
-			</nav>
-		</header>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- aquí se carga el nav -->
+        </nav>>
+    </header>
 
         <!-- MAIN -->
         <main>
         <div class="container">
-            <h1>Tú puedes cambiar su vida</h1>
+            <h2>Tú puedes cambiar su vida</h2>
             <hr>
             <div class="cards-group row">
                 <!-- AQUÍ VAN LAS CARDS CREADAS DINÁMICAMENTE -->
             </div>
             <div class="container-btn-results">
-            <button class="btn-results">Más resultados</button>
-        </div>
+                <button class="btn-results">Más resultados</button>
+            </div>
         </div>
 
         <!-- <aside>
@@ -76,40 +55,11 @@
         </aside> -->
         </main>
 
-        <!-- FOOTER -->
-		<footer class="pie">
-			<div class="contenerdorPie">
-				<div class="list">
-					<a href="" class="item-Txt">Soy una organización.</a>
-					<a href="" class="item-Txt">Trabaja con nosotros!</a>
-					<a href="" class="item-Txt">Términos y condiciones.</a>
-				</div>
-
-				<div class="redesSociales">
-					<a href="" class="social-link"><i class="bx bxl-instagram"></i></a>
-					<a href="" class="social-link"><i class="bx bxl-twitter"></i></a>
-					<a href="" class="social-link"><i class="bx bxl-whatsapp"></i></a>
-					<a href="" class="social-link"><i class="bx bxl-facebook"></i></a>
-				</div>
-
-				<div class="contacto">
-					<h3>Contactanos!</h3>
-					<form action="" class="formContacto"
-						><input
-							class="inputContact"
-							type="text"
-							placeholder="Ingresa tu Mail!" />
-						<button class="enviar" type="submit"
-							><i class="bx bx-send" id="enviar"></i></button
-					></form>
-				</div>
-			</div>
-		</footer>
-		<div class="copyright">
-			&copy;Patitas Felices 2023. Todos los derechos reservados, Codo a
-			Codo.</div
-		>
-
-    </body>
+    <footer>
+        <h3>Aquí va el footer</h3>
+    </footer>
+    <script type="module" src="../js/cards.js"></script>
+    <script type="module" src="../js/perfil.js"></script>
+</body>
 
 </html>
