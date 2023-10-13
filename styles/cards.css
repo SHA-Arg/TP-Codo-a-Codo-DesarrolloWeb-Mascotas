@@ -115,6 +115,13 @@ p.color {
     width: 30%;
     height: 30px;
     padding-bottom: 2%;
+    cursor: pointer;
+}
+
+.btn-results:hover {
+    background: white;
+    color: black;
+    border: 2px solid #b6aff0;
 }
 
 @media screen and (max-width: 400px) {
@@ -250,20 +257,9 @@ p.color {
 
     .btn-results {
         width: 25%;
-        height: 12%;
-        background: #B6AFF0;
-        color: white;
+        height: 35px;
         font-size: 20px;
-        border-radius: 25px;
-        padding-top: 1;
-        justify-content: center;
-        padding-bottom: 1%;
-    }
-
-    .btn-results:hover {
-        background: white;
-        color: #b6aff0;
-        border: 2px solid #b6aff0;
+        border-radius: 20px;
     }
 }
 
@@ -330,5 +326,14 @@ p.color {
         height: 35px;
         margin: 32% 0% 0 36%;
         padding-left: 17%;
+    }
+
+    .btn-results {
+        font-size: 1.5rem;
+        border-radius: 20px;
+        
+        width: 20%;
+        height: 45px;
+        padding-bottom: 2%;
     }
 }

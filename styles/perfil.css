@@ -28,6 +28,13 @@ p {
 	color: white;
 	border: none;
 	border-radius: 20px;
+	cursor: pointer;
+}
+
+.return-btn button:hover {
+	background: white;
+	color: black;
+	border: 2px solid #b6aff0;
 }
 
 .container-profile {
