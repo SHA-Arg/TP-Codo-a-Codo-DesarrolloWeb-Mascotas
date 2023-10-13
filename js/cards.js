@@ -31,7 +31,7 @@ function crearCards(mascota, index, tipoMascota) {
     let card =
         `<div class="card">
                 <div class="card-principal">
-                    <a href="perfil.html?index=${index}" data-index="${index}" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
+                    <a href="perfil.html?index=${index}&tipo=${tipoMascota}" data-index="${index}" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
                     <div class="name-box">
                     <h3 class="card-title"><b>${mascota.nombre}</b></h3>
                     </div>

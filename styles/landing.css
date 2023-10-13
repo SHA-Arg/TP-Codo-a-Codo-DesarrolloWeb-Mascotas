@@ -97,7 +97,6 @@ display: inline-flex;*/
     border-top-right-radius: 100px 100px;
     border-bottom-right-radius: 100px 100px;
     padding: 5% 10% 5% 10%;
-    ;
     border-width: 1px;
     border-color: #B6AFF0;
     justify-content: center;
@@ -200,7 +199,6 @@ display: inline-flex;*/
         opacity: .8;
 
     }
-
 
     .btnIzq {
         padding: 3% 20% 3% 20%;
