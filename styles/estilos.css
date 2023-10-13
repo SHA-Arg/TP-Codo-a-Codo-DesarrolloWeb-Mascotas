@@ -6,18 +6,18 @@
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 
-body {
+/* body {
 	width: 100%;
 	min-height: 100vh;
 	background: url(/img/inicio.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	background: #fff;
-}
+} */
 
 .header {
 	position: fixed;

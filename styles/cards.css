@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.container-cards {
     margin-top: 18%;
 }
 
@@ -17,7 +17,7 @@ p {
     margin-bottom: 0;
 }
 
-.container h2 {
+.container-cards h2 {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
@@ -41,7 +41,6 @@ p {
     border-radius: 20px;
     background-color: #f1efef;
     box-shadow: 0px 1px 15px #b8b7b7;
-    transition: all 400ms ease;
 }
 
 .card-principal {
@@ -138,7 +137,7 @@ p.color {
 
 @media screen and (min-width: 768px) {
 
-    .container h2 {
+    .container-cards h2 {
         font-size: 1.5rem;
     }
 
@@ -269,7 +268,7 @@ p.color {
 }
 
 @media screen and (min-width: 1024px) {
-    .container {
+    .container-cards {
         margin-top: 12%;
     }
 
@@ -294,7 +293,7 @@ p.color {
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
+    .container-cards {
         margin-top: 8%;
     }
 

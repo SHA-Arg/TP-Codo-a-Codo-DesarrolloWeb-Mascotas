@@ -10,7 +10,7 @@ async function verPerfil() {
 	const mascotaPerro = datosMascotas.perros[index];
 	const mascotaGato = datosMascotas.gatos[index];
 
-	const containerProfile = document.querySelector(".x");
+	const containerProfile = document.querySelector(".profile");
 
     if (tipoMasc == 'perro' && index !== null) {
         const perfil = crearPerfil(mascotaPerro, index);
@@ -31,7 +31,7 @@ function crearPerfil(mascota, index) {
             <img class="profile-img" src="${mascota.img}" alt="imagen mascota">
         </div>
         <div class="profile-header-data">
-            <h2 class="profile-header-title">${mascota.nombre}</h2>
+            <h1 class="profile-header-title">${mascota.nombre}</h1>
             <p><b>Ubicación:</b> ${mascota.ubicacion}</p>
         </div>
     </div>
