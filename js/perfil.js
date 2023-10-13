@@ -3,6 +3,7 @@ import { recuperarData } from "./cards.js";
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
 	const index = params.get("index");
+    const tipoMasc = params.get("tipo");
 
 	const DATA = await recuperarData();
 	const datosMascotas = DATA.mascotas;
@@ -11,10 +12,10 @@ async function verPerfil() {
 
 	const containerProfile = document.querySelector(".x");
 
-    if (mascotaPerro || index !== null) {
+    if (tipoMasc == 'perro' && index !== null) {
         const perfil = crearPerfil(mascotaPerro, index);
         containerProfile.innerHTML = perfil;
-    } else if (mascotaGato || index !== null) {
+    } else if (tipoMasc == 'gato' && index !== null) {
         const perfil = crearPerfil(mascotaGato, index);
         containerProfile.innerHTML = perfil;
     } else {
