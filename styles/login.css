@@ -14,34 +14,32 @@ section {
 	align-items: center;
 	width: 100%;
 	min-height: 100vh;
-	background: url(/img/inicio.jpg) no-repeat;
+	background: url(/img/matchea.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.contenedor {
-	position: relative;
-	width: 400px;
-	border: 2px solid rgba(211, 88, 207, 0.6);
-	border-radius: 20px;
-	backdrop-filter: blur(15px);
-	height: 500px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.login_logo {
-	position: absolute;
+.img {
 	top: -90px;
 	left: 50%;
-	background-color: #776ecb;
 	backdrop-filter: blur(80px);
 	transform: translateX(-50%);
-	border-radius: 50%;
+	border-radius: solid #776ecb 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	-webkit-border-radius: solid #776ecb 5px;
+	-moz-border-radius: solid #776ecb 5px;
+	-ms-border-radius: solid #776ecb 5px;
+	-o-border-radius: solid #776ecb 5px;
+}
+.login_logo {
+	background-color: #776ecb;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 .contenedor h2 {
@@ -120,7 +118,7 @@ input:valid ~ label {
 .ingresar {
 	width: 100%;
 	height: 50px;
-	background-color: #7a707067;
+	background-color: #58247667;
 	border-radius: 40px;
 	border: none;
 	color: #fff;
@@ -150,4 +148,6 @@ input:valid ~ label {
 
 .crear_cuenta p a:hover {
 	text-decoration: underline;
+}
+@media (max-width: 375px) {
 }

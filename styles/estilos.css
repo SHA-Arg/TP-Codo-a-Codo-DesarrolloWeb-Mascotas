@@ -23,8 +23,9 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
+	height: 60px;
 	width: 100%;
-	padding: 0.5rem 3%;
+	padding: 5px 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -52,6 +53,10 @@ body {
 	height: 100%;
 	background: linear-gradient(90deg, transparent, #b7b4d0e3, transparent);
 	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
 }
 
 .header:hover::after {
@@ -68,16 +73,8 @@ body {
 
 /* NAVBAR */
 
-/* .navbar a {
-	font-size: 1.15rem;
-	color: #0e0d0d;
-	text-decoration: none;
-	font-weight: 500;
-	margin: 1rem;
-} */
-
 .navbar a {
-	font-size: 1.15rem;
+	font-size: 1rem;
 	color: #0e0d0d;
 	text-decoration: none;
 	font-weight: 500;
@@ -86,9 +83,9 @@ body {
 
 #icon_log {
 	color: #000000;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	justify-content: center;
-	align-items: center;
+	align-items: baseline;
 }
 
 #check {
@@ -140,8 +137,7 @@ img .img_constructor {
 /* FOOTER */
 
 .pie {
-	background-color: #776ecb;
-	backdrop-filter: blur(-50px);
+	background-color: #b6aff0;
 	color: #fff;
 }
 
@@ -162,11 +158,11 @@ div.list {
 	justify-content: left;
 	align-items: left;
 	flex-direction: column;
-	font-size: 0.9rem;
+	font-size: 0.6rem;
 	color: #000000;
 	text-decoration: none;
 	font-weight: 400;
-	margin: 0;
+	margin: 5px;
 }
 .item-Txt:hover {
 	color: #fff;
@@ -180,7 +176,7 @@ div.list {
 }
 
 .social-link {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: #000000;
 	text-decoration: none;
 	font-weight: 200;
@@ -215,7 +211,7 @@ h3.contact_foot {
 	border: none;
 	background: transparent;
 	color: #000000;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .enviar:hover {
 	color: #fff;
@@ -247,7 +243,6 @@ h3.contact_foot {
 	.user i {
 		color: #fff;
 		margin-left: 1rem;
-		font-size: large;
 	}
 }
 
@@ -255,14 +250,22 @@ h3.contact_foot {
 	.menu {
 		display: inline-flex;
 		align-items: center;
+		font-size: 1.9rem;
 	}
 
 	#check:checked ~ .menu #menu-icon {
 		display: none;
 	}
 
+	#menu-icon {
+		display: block;
+		margin-left: 10px;
+	}
+
 	.menu #close-icon {
 		display: none;
+		margin-left: 10px;
+		font-size: 2rem;
 	}
 
 	#check:checked ~ .menu #close-icon {
@@ -283,14 +286,14 @@ h3.contact_foot {
 	}
 
 	#check:checked ~ .navbar {
-		height: 17rem;
+		height: 10rem;
 	}
 
 	nav.navbar a {
 		display: flex;
-		font-size: 2rem;
-		justify-content: center;
-		align-items: center;
+		font-size: 1rem;
+		justify-content: left;
+		align-items: baseline;
 		text-align: center;
 		transform: translateY(-50px);
 		transition: 0.2s ease;
@@ -308,12 +311,10 @@ h3.contact_foot {
 	}
 
 	#menu_log {
-		font-size: 2.3rem;
+		font-size: 1.6rem;
+		color: #000000;
 	}
 
-	.construccion {
-		font-size: 1rem;
-	}
 	.pie {
 		background-color: #776ecb;
 		backdrop-filter: blur(-50px);
@@ -344,11 +345,11 @@ h3.contact_foot {
 		display: flex;
 		justify-content: space-evenly;
 		gap: 50px;
-		margin: 20px;
+		margin: 10px;
 	}
 
 	.social-link {
-		font-size: 2rem;
+		font-size: 1rem;
 		color: #000000;
 		text-decoration: none;
 		font-weight: 200;
@@ -357,30 +358,11 @@ h3.contact_foot {
 	.social-link:hover {
 		color: aliceblue;
 	}
-
-	.inputContact {
-		display: none;
-	}
-
-	.enviar {
-		font-size: 1rem;
-	}
-	.item-Txt {
-		display: flex;
-		justify-content: left;
-		align-items: left;
-		flex-direction: column;
-		font-size: 0.6rem;
-		color: #fff;
-		font-weight: 80;
-		margin: 0;
-	}
-
 }
 
-@media screen and (min-width= 800px){
+@media screen and (min-width= 800px) {
 	.navbar {
-		display: block !important;
-		position: absolute !important;
+		display: block;
+		position: absolute;
 	}
 }
