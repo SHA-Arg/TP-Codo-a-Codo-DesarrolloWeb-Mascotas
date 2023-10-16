@@ -62,8 +62,11 @@ function createFooter() {
 			<button class="enviar" type="submit"
 				><i class="bx bx-send" id="enviar"></i></button
 		></form>
-	</div>
-</div>`;
+	</div>		
+</div>
+<div class="copyright">
+			&copy;Patitas Felices 2023. Todos los derechos reservados
+			</div>`;
 
 	return footerCode;
 }
