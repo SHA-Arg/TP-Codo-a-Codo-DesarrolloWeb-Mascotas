@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin-top: 15%;
+}
+
+section {
+    margin: 10%;
+}
+
+.about-section p {
+    text-align: justify;
+    line-height: 1.5;
+    padding-top: 5%;
+}
+
+.about-section h2,
+.about-section h3 {
+    padding-top: 8%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.team-section p {
+    margin-top: 5%;
+}
+
+.container-team {
+    margin-top: 5%;
+}
+
+.team-member {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 5%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.team-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-data a {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin: 5% 3%;
+    }
+
+    .container-team {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2%;
+    }
+    
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+    }
+
+    .team-member img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .team-data {
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 0;
+    }
+
+    section {
+        margin: 4%;
+    }
+
+    .mision-vision {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .mision, .vision {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-team {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+}
