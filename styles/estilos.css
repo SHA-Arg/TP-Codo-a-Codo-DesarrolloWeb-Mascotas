@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
 /* ESTILOS GLOBALES */
 * {
 	margin: 0;
@@ -102,39 +102,6 @@
 	color: #1b1a1a;
 	cursor: pointer;
 	display: none;
-}
-
-/* MAIN */
-
-.construccion {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
-	font-size: larger;
-	color: #322828;
-	border: 2px solid rgba(255, 255, 255, 0.6);
-	border-radius: 20px;
-	backdrop-filter: blur(15px);
-}
-
-.contenedor {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
-	font-size: larger;
-	border: 2px solid rgba(255, 255, 255, 0.6);
-	border-radius: 20px;
-	backdrop-filter: blur(15px);
-}
-
-img .img_constructor {
-	width: 300px;
-	height: 300px;
 }
 
 /* FOOTER */

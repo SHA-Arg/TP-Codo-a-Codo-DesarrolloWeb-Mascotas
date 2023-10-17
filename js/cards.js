@@ -4,7 +4,7 @@ export async function recuperarData() {
     return DATA;
 }
 
-async function getMascotas() {
+export async function getMascotas() {
     const DATA = await recuperarData();
     let datosMascotas = DATA.mascotas;
     let listadoMascotas = '';
@@ -27,7 +27,7 @@ async function getMascotas() {
     changePage()
 }
 
-function crearCards(mascota, index, tipoMascota) {
+export function crearCards(mascota, index, tipoMascota) {
     let card =
         `<div class="card">
                 <div class="card-principal">
