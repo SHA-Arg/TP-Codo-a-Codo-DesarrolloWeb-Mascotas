@@ -1,26 +1,25 @@
-import { recuperarData } from "./cards.js";
+import { recuperarData } from "../js/cards.js";
 
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
 	const index = params.get("index");
-    const tipoMasc = params.get("tipo");
 
 	const DATA = await recuperarData();
 	const datosMascotas = DATA.mascotas;
 	const mascotaPerro = datosMascotas.perros[index];
 	const mascotaGato = datosMascotas.gatos[index];
 
-	const containerProfile = document.querySelector(".profile");
+	const containerProfile = document.querySelector(".x");
 
-    if (tipoMasc == 'perro' && index !== null) {
-        const perfil = crearPerfil(mascotaPerro, index);
-        containerProfile.innerHTML = perfil;
-    } else if (tipoMasc == 'gato' && index !== null) {
-        const perfil = crearPerfil(mascotaGato, index);
-        containerProfile.innerHTML = perfil;
-    } else {
-        console.log('Índice no encontrado en la URL');
-    }
+	if (mascotaPerro || index !== null) {
+		const perfil = crearPerfil(mascotaPerro, index);
+		containerProfile.innerHTML = perfil;
+	} else if (mascotaGato || index !== null) {
+		const perfil = crearPerfil(mascotaGato, index);
+		containerProfile.innerHTML = perfil;
+	} else {
+		console.log("Índice no encontrado en la URL");
+	}
 }
 
 verPerfil();
@@ -31,7 +30,7 @@ function crearPerfil(mascota, index) {
             <img class="profile-img" src="${mascota.img}" alt="imagen mascota">
         </div>
         <div class="profile-header-data">
-            <h1 class="profile-header-title">${mascota.nombre}</h1>
+            <h2 class="profile-header-title">${mascota.nombre}</h2>
             <p><b>Ubicación:</b> ${mascota.ubicacion}</p>
         </div>
     </div>

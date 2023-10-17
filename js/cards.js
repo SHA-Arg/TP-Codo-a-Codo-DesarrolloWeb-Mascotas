@@ -13,12 +13,12 @@ export async function getMascotas() {
     
 
     await datosMascotas.gatos.forEach((e, index) => {
-        listadoMascotas += crearCards(e, index, 'gato')
+        listadoMascotas += crearCards(e, index)
         
     });
 
     await datosMascotas.perros.forEach((e, index) => {
-        listadoMascotas += crearCards(e, index, 'perro')
+        listadoMascotas += crearCards(e, index)
         
     });
 
@@ -27,11 +27,11 @@ export async function getMascotas() {
     changePage()
 }
 
-export function crearCards(mascota, index, tipoMascota) {
+function crearCards(mascota, index) {
     let card =
         `<div class="card">
                 <div class="card-principal">
-                    <a href="perfil.html?index=${index}&tipo=${tipoMascota}" data-index="${index}" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
+                    <a href="perfil.html?index=${index}" data-index="${index}" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
                     <div class="name-box">
                     <h3 class="card-title"><b>${mascota.nombre}</b></h3>
                     </div>
@@ -56,7 +56,7 @@ export function crearCards(mascota, index, tipoMascota) {
                         </div>
                     </div>
                     <div class="card-button">
-                    <a href="perfil.html?index=${index}&tipo=${tipoMascota}" data-index="${index}" type="button" class="btnProfile">Ver más</a>
+                    <a href="perfil.html?index=${index}" data-index="${index}" type="button" class="btnProfile" onclick="verPerfil(${index})">Ver más</a>
                         
                     </div>
                 </div>      
