@@ -5,12 +5,22 @@ section {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	background: url(/img/matchea.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
+.contenedor {
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+	height: 500px;
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
 .img {
 	top: -90px;
 	left: 50%;
@@ -37,10 +47,6 @@ section {
 	margin: 30px 30px;
 	width: 300px;
 	border-bottom: 2px solid #fff;
-}
-input #usuario {
-	align-items: center;
-	justify-content: center;
 }
 
 .input-contenedor label {
@@ -71,39 +77,7 @@ input:valid ~ label {
 	height: 50px;
 }
 
-.input-contenedor span {
-	position: absolute;
-	right: 8px;
-	top: 20px;
-	color: #fff;
-	font-size: 1.2rem;
-}
-
-.recuperar {
-	margin: -15px 0 15px;
-	font-size: 0.9em;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-}
-
-.recuperar label input {
-	margin: 3px;
-}
-
-.recuperar label a {
-	color: #fff;
-	text-decoration: none;
-	transition: 0.3s;
-	font-size: 0.9em;
-	margin-left: 3px;
-}
-
-.recuperar label a:hover {
-	text-decoration: underline;
-}
-
-.ingresar {
+.enviar {
 	width: 60%;
 	height: 50px;
 	background-color: #58247667;
@@ -114,26 +88,7 @@ input:valid ~ label {
 	outline: none;
 	font-size: 1rem;
 }
-.ingresar:hover {
+.enviar:hover {
 	background: #776ecb;
 	opacity: 0.9;
-}
-
-.crear_cuenta {
-	margin: 20px 0 10px;
-	text-align: center;
-	color: #fff;
-	font-size: 0.9em;
-}
-
-.crear_cuenta p a {
-	color: #fff;
-	text-decoration: none;
-	transition: 0.3s;
-	font-size: 0.9em;
-	margin-left: 3px;
-}
-
-.crear_cuenta p a:hover {
-	text-decoration: underline;
 }
