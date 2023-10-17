@@ -23,7 +23,7 @@ p {
 	height: 30px;
 	margin-left: 5%;
 	background: #b6aff0;
-	font-family: 'Oswald', sans-serif;
+	font-family: "Oswald", sans-serif;
 	font-size: 14px;
 	color: white;
 	border: none;
@@ -40,7 +40,7 @@ p {
 .container-profile {
 	width: 95%;
 	margin: 6% auto;
-	border: 3px solid #B6AFF0;
+	border: 3px solid #b6aff0;
 	border-radius: 20px;
 	box-shadow: 0px 1px 15px #b8b7b7;
 }
@@ -236,7 +236,6 @@ p {
 	.adoption-require h6 {
 		font-size: 13px;
 		margin-left: -3%;
-
 	}
 
 	.buttons-groups {
@@ -263,7 +262,7 @@ p {
 
 	.container-profile {
 		width: 90%;
-		border: 5px solid #B6AFF0;
+		border: 5px solid #b6aff0;
 		border-radius: 20px;
 		margin-top: 4%;
 	}

@@ -1,35 +1,31 @@
 export async function recuperarData() {
-    const RESPONSE = await fetch('../data/data.json');
-    const DATA = await RESPONSE.json();
-    return DATA;
+	const RESPONSE = await fetch("../data/data.json");
+	const DATA = await RESPONSE.json();
+	return DATA;
 }
 
 export async function getMascotas() {
-    const DATA = await recuperarData();
-    let datosMascotas = DATA.mascotas;
-    let listadoMascotas = '';
-    // let cardMascotas = document.querySelector('.cards-group');
-    let cardMascotas = document.querySelector('.cards-group');
-    
+	const DATA = await recuperarData();
+	let datosMascotas = DATA.mascotas;
+	let listadoMascotas = "";
+	// let cardMascotas = document.querySelector('.cards-group');
+	let cardMascotas = document.querySelector(".cards-group");
 
-    await datosMascotas.gatos.forEach((e, index) => {
-        listadoMascotas += crearCards(e, index)
-        
-    });
+	await datosMascotas.gatos.forEach((e, index) => {
+		listadoMascotas += crearCards(e, index);
+	});
 
-    await datosMascotas.perros.forEach((e, index) => {
-        listadoMascotas += crearCards(e, index)
-        
-    });
+	await datosMascotas.perros.forEach((e, index) => {
+		listadoMascotas += crearCards(e, index);
+	});
 
-    cardMascotas.innerHTML = listadoMascotas
-    
-    changePage()
+	cardMascotas.innerHTML = listadoMascotas;
+
+	changePage();
 }
 
-function crearCards(mascota, index) {
-    let card =
-        `<div class="card">
+export function crearCards(mascota, index, tipoMascota) {
+	let card = `<div class="card">
                 <div class="card-principal">
                     <a href="perfil.html?index=${index}" data-index="${index}" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.img}" alt="imagen mascota"></a>
                     <div class="name-box">
@@ -60,11 +56,9 @@ function crearCards(mascota, index) {
                         
                     </div>
                 </div>      
-            </div>`
-    
-            return card;
-};
+            </div>`;
+
+	return card;
+}
 
 getMascotas();
-
-
