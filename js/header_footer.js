@@ -1,23 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+	const header = document.querySelector(".header");
+	const footer = document.querySelector(".pie");
 
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.header');  
-    const footer = document.querySelector('.pie');
-    
-    header.innerHTML = createHeader();
+	header.innerHTML = createHeader();
 	footer.innerHTML = createFooter();
-})
-
+});
 
 function createHeader() {
-    let headerCode = '';
+	let headerCode = "";
 
-    headerCode =
-        `<img
-				href="#"
+	headerCode = `<a href="/index.html"><img
+				href="/index.html"
 				class="logo"
 				src="../img/logo_2.png"
 				style="width: 60px; height: 60px"
-				alt="Logo Patitas Felices" />
+				alt="Logo Patitas Felices"/img></a>
 
 			<input type="checkbox" id="check" />
 			
@@ -35,14 +32,13 @@ function createHeader() {
 				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
 			</nav>`;
 
- return headerCode;
+	return headerCode;
 }
 
 function createFooter() {
-	let footerCode = '';
+	let footerCode = "";
 
-	footerCode =
-    `<div class="contenerdorPie">
+	footerCode = `<div class="contenerdorPie">
 	<div class="list">
 		<a href="" class="item-Txt">Soy una organización.</a>
 		<a href="" class="item-Txt">Trabaja con nosotros!</a>
@@ -66,9 +62,11 @@ function createFooter() {
 			<button class="enviar" type="submit"
 				><i class="bx bx-send" id="enviar"></i></button
 		></form>
-	</div>
-</div>`
+	</div>		
+</div>
+<div class="copyright">
+			&copy;Patitas Felices 2023. Todos los derechos reservados
+			</div>`;
 
-return footerCode;
-
+	return footerCode;
 }

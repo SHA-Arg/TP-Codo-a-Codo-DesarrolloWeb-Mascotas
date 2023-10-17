@@ -234,6 +234,7 @@ p.color {
 
     .btnProfile {
         display: flex;
+        justify-content: center;
         background: #b6aff0;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -245,7 +246,6 @@ p.color {
         border: none;
         border-radius: 15px;
         margin: 25% 0 0 20%;
-        padding: 1% 0 0 18%;
     }
 
     .btnProfile:hover {
