@@ -1,4 +1,4 @@
-import { recuperarData } from "./cards.js";
+import { recuperarData } from "../js/cards.js";
 
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
@@ -11,15 +11,15 @@ async function verPerfil() {
 
 	const containerProfile = document.querySelector(".x");
 
-    if (mascotaPerro || index !== null) {
-        const perfil = crearPerfil(mascotaPerro, index);
-        containerProfile.innerHTML = perfil;
-    } else if (mascotaGato || index !== null) {
-        const perfil = crearPerfil(mascotaGato, index);
-        containerProfile.innerHTML = perfil;
-    } else {
-        console.log('Índice no encontrado en la URL');
-    }
+	if (mascotaPerro || index !== null) {
+		const perfil = crearPerfil(mascotaPerro, index);
+		containerProfile.innerHTML = perfil;
+	} else if (mascotaGato || index !== null) {
+		const perfil = crearPerfil(mascotaGato, index);
+		containerProfile.innerHTML = perfil;
+	} else {
+		console.log("Índice no encontrado en la URL");
+	}
 }
 
 verPerfil();
