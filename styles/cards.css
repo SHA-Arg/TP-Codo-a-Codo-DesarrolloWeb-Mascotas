@@ -10,6 +10,15 @@
 	margin-top: 18%;
 	width: 100%;
 }
+* {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container {
+	margin-top: 100px;
+}
 
 p {
 	font-family: "Roboto", sans-serif;
