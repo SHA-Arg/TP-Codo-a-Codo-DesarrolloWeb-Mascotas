@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
 
+/* ESTILOS GLOBALES */
+* {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 section {
 	display: flex;
 	justify-content: center;
@@ -20,10 +28,18 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	-webkit-border-radius: solid #776ecb 5px;
+	-moz-border-radius: solid #776ecb 5px;
+	-ms-border-radius: solid #776ecb 5px;
+	-o-border-radius: solid #776ecb 5px;
 }
 .login_logo {
 	background-color: #776ecb;
 	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 .contenedor h2 {
@@ -34,13 +50,9 @@ section {
 
 .input-contenedor {
 	position: relative;
-	margin: 30px 30px;
+	margin: 30px 0;
 	width: 300px;
 	border-bottom: 2px solid #fff;
-}
-input #usuario {
-	align-items: center;
-	justify-content: center;
 }
 
 .input-contenedor label {
@@ -104,7 +116,7 @@ input:valid ~ label {
 }
 
 .ingresar {
-	width: 60%;
+	width: 100%;
 	height: 50px;
 	background-color: #58247667;
 	border-radius: 40px;
@@ -136,4 +148,6 @@ input:valid ~ label {
 
 .crear_cuenta p a:hover {
 	text-decoration: underline;
+}
+@media (max-width: 375px) {
 }
