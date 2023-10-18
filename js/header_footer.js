@@ -25,10 +25,10 @@ function createHeader() {
 			</label>
 
 			<nav class="navbar">
-				<a href="/pages/adoptar.html" style="--i: 0">Adoptar</a>
-				<a href="/pages/transitar.html" style="--i: 1">Transitar</a>
-				<a href="/pages/apadrinar.html" style="--i: 2">Apadrinar</a>
-				<a href="/pages/organizaciones.html" style="--i: 3">Organizaciones</a>	
+				<a href="/pages/cards.html" style="--i: 0">Mascotas</a>
+				<a href="/pages/nosotros.html" style="--i: 1">Nosotros</a>
+				<a href="/pages/apadrinar.html" style="--i: 2">Organizaciones</a>
+				<a href="/pages/contacto.html" style="--i: 3">Contacto</a>	
 				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
 			</nav>`;
 
@@ -62,11 +62,8 @@ function createFooter() {
 			<button class="enviar" type="submit"
 				><i class="bx bx-send" id="enviar"></i></button
 		></form>
-	</div>		
-</div>
-<div class="copyright">
-			&copy;Patitas Felices 2023. Todos los derechos reservados
-			</div>`;
+	</div>
+</div>`;
 
 	return footerCode;
 }

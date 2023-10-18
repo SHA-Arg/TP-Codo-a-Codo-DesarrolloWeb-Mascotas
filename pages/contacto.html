@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patitas Felices</title>
+    <link rel="stylesheet" href="../styles/estilos.css" />
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png" />
+</head>
+
+<body>
+    <!-- CABECERA  -->
+    <header class="header" id="header">
+        <!-- ACÁ SE CARGA EL HEADER -->
+    </header>
+
+    <!-- SECCION CONTACTO -->
+    <section>
+        <!-- inicio de sesion -->
+        <div class="contenedor">
+            <div class="login_logo">
+                <img style="width: 130px; height: 130px;" src="/img/logo_2.png" alt="Logo">
+            </div>
+            <form action="login.php" method="POST">
+                <h2>Contacto</h2>
+
+                <div class="input-contenedor">
+                    <input type="text" name="nombre" id="nombre" required>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="input-contenedor">
+                    <input type="text" name="phone" id="telefono" required>
+                    <label for="">Telefono</label>
+                </div>
+                <div class="input-contenedor">
+                    <input type="email" name="email" id="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-contenedor">
+                    <input type="text" name="message" id="mensaje" required>
+                    <label for="">Mensaje</label>
+                </div>
+            </form>
+            <button class="enviar">Enviar</button>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <!-- ACÁ SE CARGA EL FOOTER -->
+    </footer>
+
+    <script src="/js/header_footer.js"></script>
+</body>
+
+</html>
