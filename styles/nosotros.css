@@ -24,7 +24,12 @@ section {
     padding-top: 8%;
 }
 
-.image-gallery {
+.about-img {
+    display: none;
+}
+
+
+/* .image-gallery {
     display: flex;
     flex-wrap: wrap;
 }
@@ -32,7 +37,7 @@ section {
 .image-gallery img {
     max-width: 300px;
     margin: 10px;
-}
+} */
 
 .team-section p {
     margin-top: 5%;
@@ -65,26 +70,45 @@ section {
         margin: 5% 3%;
     }
 
+    .about-container {
+        display: flex;
+    }
+
+
+    .about-container img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 8% 0 0 6%;
+    }
+
+    .about-img {
+        display: block;
+    }
+
     .container-team {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2%;
     }
-    
+
     .team-member {
         display: flex;
         flex-direction: column;
+        height: 260px;
         margin-bottom: 2%;
         border: 1px solid lightgrey;
         border-radius: 5px;
     }
 
     .team-member img {
+        width: 200px;
         border-radius: 5px 5px 0 0;
     }
 
     .team-data {
-        padding: 5%;
+        margin-left: 5%;
     }
 }
 
@@ -97,18 +121,78 @@ section {
         margin: 4%;
     }
 
+    .about-text {
+        flex: 4;
+    }
+
+    .about-img {
+        flex: 3;
+    }
+
+    .about-container img {
+        width: 350px;
+        height: 300px;
+        margin: 15% 10% 0 6%;
+    }
+
+    .container-team {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .team-member {
+        flex-wrap: wrap;
+        width: 200px;
+    }
+
     .mision-vision {
         display: flex;
         flex-direction: row;
         gap: 10%;
+        border-top: 3px solid rgb(174, 174, 174);
+        border-bottom: 3px solid rgb(174, 174, 174);
+        margin: 5% 0 5% 0;
     }
 
-    .mision, .vision {
+    .mision,
+    .vision {
         display: flex;
         flex-direction: column;
+        margin: 0 0 4% 0;
     }
+
+}
+
+@media screen and (min-width: 1280px) {
+    section {
+        margin: 4% 8%;
+    }
+
+    .container-team {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .about-container img {
+        width: 440px;
+        height: 380px;
+    }
+
+    .about-section p, .team-section p {
+        font-size: 20px;
+    }
+
+    .team-section p {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
     .container-team {
         grid-template-columns: repeat(6, 1fr);
     }
-    
+
+    .about-container img {
+        width: 520px;
+        height: 380px;
+    }
 }
