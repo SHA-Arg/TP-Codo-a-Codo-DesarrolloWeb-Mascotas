@@ -26,7 +26,7 @@ function createHeader() {
 
 			<nav class="navbar">
 				<a href="/pages/cards.html" style="--i: 0">Mascotas</a>
-				<a href="/pages/transitar.html" style="--i: 1">Nosotros</a>
+				<a href="/pages/nosotros.html" style="--i: 1">Nosotros</a>
 				<a href="/pages/apadrinar.html" style="--i: 2">Organizaciones</a>
 				<a href="/pages/contacto.html" style="--i: 3">Contacto</a>	
 				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			

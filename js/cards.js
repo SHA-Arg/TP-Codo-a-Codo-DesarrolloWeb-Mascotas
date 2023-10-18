@@ -1,29 +1,38 @@
 export async function recuperarData() {
-    const RESPONSE = await fetch('../data/data.json');
-    const DATA = await RESPONSE.json();
-    return DATA;
+    const response = await fetch('../data/data.json');
+    try {
+
+        if (response.ok) {
+            const DATA = await response.json();
+            return DATA;
+        } else {
+            console.error('Algo no funcionó')
+        }
+    } catch {
+        console.error('Error en el servidor')
+    }
 }
 
 export async function getMascotas() {
     const DATA = await recuperarData();
     let datosMascotas = DATA.mascotas;
     let listadoMascotas = '';
-    // let cardMascotas = document.querySelector('.cards-group');
+
     let cardMascotas = document.querySelector('.cards-group');
-    
+
 
     await datosMascotas.gatos.forEach((e, index) => {
         listadoMascotas += crearCards(e, index, 'gato')
-        
+
     });
 
     await datosMascotas.perros.forEach((e, index) => {
         listadoMascotas += crearCards(e, index, 'perro')
-        
+
     });
 
     cardMascotas.innerHTML = listadoMascotas
-    
+
     changePage()
 }
 
@@ -61,8 +70,8 @@ export function crearCards(mascota, index, tipoMascota) {
                     </div>
                 </div>      
             </div>`
-    
-            return card;
+
+    return card;
 };
 
 getMascotas();
