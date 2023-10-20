@@ -71,6 +71,27 @@ section {
 	height: 50px;
 }
 
+#message {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 1.2rem;
+	height: 100px;
+	margin-top: 10px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+	top: -5px;
+}
+
+label.mensaje {
+	margin-top: 10px;
+	top: -15px;
+}
+
 .enviar_form {
 	width: 100%;
 	height: 50px;

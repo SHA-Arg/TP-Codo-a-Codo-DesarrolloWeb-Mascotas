@@ -23,26 +23,25 @@
         <!-- inicio de sesion -->
         <div class="contenedor">
             <div class="login_formulario">
-                <form action="login.php" method="POST">
+                <!-- Formulario funcionanado con Netlify, con CAPTCHA -->
+                <form id="form" action="../pages/mensaje_enviado.html" method="POST" data-netlify="true"
+                    data-netlify-recaptcha="true">
                     <h2>Contacto</h2>
 
                     <div class="input-contenedor">
-                        <input type="text" name="nombre" id="nombre" required>
-                        <label for="">Nombre</label>
+                        <input type="text" name="name" id="nombre" required>
+                        <label for="name">Nombre</label>
                     </div>
-                    <div class="input-contenedor">
-                        <input type="text" name="phone" id="telefono" required>
-                        <label for="">Telefono</label>
-                    </div>
+
                     <div class="input-contenedor">
                         <input type="email" name="email" id="email" required>
-                        <label for="">Email</label>
+                        <label for="email">Email</label>
                     </div>
                     <div class="input-contenedor">
-                        <input type="text" name="message" id="mensaje" required>
-                        <label for="">Mensaje</label>
+                        <label class="mensaje" for="">Mensaje</label>
+                        <textarea class="text_area" name="message" id="message" cols="30" required> </textarea>
                     </div>
-                    <button class="enviar_form">Enviar</button>
+                    <button type="submit" class="enviar_form">Enviar</button>
                 </form>
             </div>
         </div>

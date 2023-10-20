@@ -92,6 +92,10 @@ section {
 	text-decoration: underline;
 }
 
+input:focus ~ label,
+input:valid ~ label {
+	top: -5px;
+}
 .ingresar {
 	width: 100%;
 	height: 50px;
