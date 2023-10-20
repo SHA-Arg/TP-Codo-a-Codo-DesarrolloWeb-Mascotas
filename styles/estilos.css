@@ -101,6 +101,44 @@
 	display: none;
 }
 
+/* Pagina 404  */
+
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	background-color: #b6aff0;
+	color: #fff;
+}
+.error h1 {
+	font-size: 10rem;
+}
+
+.error h2 {
+	font-size: 3rem;
+}
+
+.error a {
+	width: 30%;
+	height: 40px;
+	margin: 20px;
+	font-size: 1.5rem;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background-color: #58247667;
+	border-radius: 40px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.error a:hover {
+	opacity: 0.9;
+	background: #776ecb;
+}
 /* FOOTER */
 
 .pie {
