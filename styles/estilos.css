@@ -70,7 +70,7 @@
 	color: #0e0d0d;
 	text-decoration: none;
 	font-weight: 500;
-	margin: 1rem;
+	margin: 0.8rem;
 }
 
 #icon_log {
@@ -78,6 +78,14 @@
 	font-size: 1.5rem;
 	justify-content: center;
 	align-items: baseline;
+}
+.brand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.brand_logo {
+	font-size: large;
 }
 
 #check {
@@ -192,21 +200,16 @@ h3.contact_foot {
 
 /* BREAKPOINTS */
 
-@media (max-width: 992px) {
-	.header {
-		padding: 0rem 5%;
+@media (max-width: 778px) {
+	.brand {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-	.navbar a {
-		font-size: 1rem;
-		margin: 1rem;
+	.brand_logo {
+		font-size: medium;
 	}
-	.user i {
-		color: #fff;
-		margin-left: 1rem;
-	}
-}
 
-@media (max-width: 768px) {
 	.menu {
 		display: inline-flex;
 		align-items: center;
@@ -240,9 +243,12 @@ h3.contact_foot {
 		height: 0;
 		background-color: rgba(0, 0, 0, 0.1);
 		backdrop-filter: blur(50px);
-		box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 		overflow: hidden;
 		transition: 0.5s ease-in-out;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		-ms-transition: 0.5s ease-in-out;
+		-o-transition: 0.5s ease-in-out;
 	}
 
 	#check:checked ~ .navbar {
@@ -251,7 +257,7 @@ h3.contact_foot {
 
 	nav.navbar a {
 		display: flex;
-		font-size: 1rem;
+		font-size: 1.3rem;
 		justify-content: left;
 		align-items: baseline;
 		text-align: center;
@@ -271,8 +277,9 @@ h3.contact_foot {
 	}
 
 	#menu_log {
-		font-size: 1.6rem;
+		font-size: 1.9rem;
 		color: #000000;
+		margin: 15px;
 	}
 
 	.pie {

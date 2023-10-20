@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function createHeader() {
 	let headerCode = "";
 
-	headerCode = `<a href="/index.html"><img
+	headerCode = `<div class="brand"><a href="/index.html"><img
 				href="/index.html"
 				class="logo"
 				src="../img/logo_2.png"
 				style="width: 60px; height: 60px"
 				alt="Logo Patitas Felices"/img></a>
+				<p class="brand_logo">Patitas Felices</p></div>
 
 			<input type="checkbox" id="check" />
 			
