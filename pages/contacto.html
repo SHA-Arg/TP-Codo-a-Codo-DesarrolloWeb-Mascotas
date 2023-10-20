@@ -22,32 +22,30 @@
     <section>
         <!-- inicio de sesion -->
         <div class="contenedor">
-            <div class="login_logo">
-                <img style="width: 130px; height: 130px;" src="/img/logo_2.png" alt="Logo">
+            <div class="login_formulario">
+                <form action="login.php" method="POST">
+                    <h2>Contacto</h2>
+
+                    <div class="input-contenedor">
+                        <input type="text" name="nombre" id="nombre" required>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="text" name="phone" id="telefono" required>
+                        <label for="">Telefono</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="email" name="email" id="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <input type="text" name="message" id="mensaje" required>
+                        <label for="">Mensaje</label>
+                    </div>
+                    <button class="enviar_form">Enviar</button>
+                </form>
             </div>
-            <form action="login.php" method="POST">
-                <h2>Contacto</h2>
-
-                <div class="input-contenedor">
-                    <input type="text" name="nombre" id="nombre" required>
-                    <label for="">Nombre</label>
-                </div>
-                <div class="input-contenedor">
-                    <input type="text" name="phone" id="telefono" required>
-                    <label for="">Telefono</label>
-                </div>
-                <div class="input-contenedor">
-                    <input type="email" name="email" id="email" required>
-                    <label for="">Email</label>
-                </div>
-                <div class="input-contenedor">
-                    <input type="text" name="message" id="mensaje" required>
-                    <label for="">Mensaje</label>
-                </div>
-            </form>
-            <button class="enviar">Enviar</button>
         </div>
-
     </section>
 
     <!-- FOOTER -->

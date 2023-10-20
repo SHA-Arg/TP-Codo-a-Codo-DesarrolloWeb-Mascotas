@@ -1,59 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
 p {
-    font-size: 0.9rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.9rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
-    color: white;
-    margin: 25%;
+	color: white;
+	margin: 25%;
 }
 
-
 .landing {
-    display: flex;
-    justify-content: center;
-    margin: 20% 3% 10% 3%;
-    padding: 2% 0 10% 0;
-    border-color: #BBB9B9;
-    border-width: 3px;
-    border-style: dotted;
-    border-radius: 5%;
-
+	display: flex;
+	justify-content: center;
+	margin: 20% 3% 10% 3%;
+	padding: 2% 0 10% 0;
+	border-color: #bbb9b9;
+	border-width: 3px;
+	border-style: dotted;
+	border-radius: 5%;
 }
 
 .imgMatch {
-    display: flex;
-    background-image: url("/img/matchea.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    width: 90%;
-    height: 30%;
-    border-radius: 5% 5% 0 0;
+	display: flex;
+	background-image: url("/img/matchea.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	width: 90%;
+	height: 30%;
+	border-radius: 5% 5% 0 0;
 }
 
 .matchea {
-    margin-top: 80%;
-
+	margin-top: 80%;
 }
 
 .btnQuiero {
-    display: flex;
-    height: 10%;
-    margin: 10% 10%;
-    text-align: center;
-    justify-content: center;
+	display: flex;
+	height: 10%;
+	margin: 10% 10%;
+	text-align: center;
+	justify-content: center;
 }
 
 .btnIzq {
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    padding: 0.4% 30% 0.3% 30%;
-    border-width: 1px;
-    border-color: #B6AFF0;
-    align-items: center;
-    display: inline-flex;
+	border-top-left-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
+	padding: 0.4% 30% 0.3% 30%;
+	border-width: 1px;
+	border-color: #b6aff0;
+	align-items: center;
+	display: inline-flex;
 }
 
 /*border-radius: 0 35% 35% 0;
@@ -64,80 +61,79 @@ justify-content: center;
 display: inline-flex;*/
 
 .btnDer {
-    border-top-right-radius: 100px 100px;
-    border-bottom-right-radius: 100px 100px;
-    background-color: #B6AFF0;
-    padding: 0.5% 35% 0.5% 35%;
-    border-width: 1px;
-    border-color: #B6AFF0;
-    align-items: center;
-    display: inline-flex;
+	border-top-right-radius: 100px 100px;
+	border-bottom-right-radius: 100px 100px;
+	background-color: #b6aff0;
+	padding: 0.5% 35% 0.5% 35%;
+	border-width: 1px;
+	border-color: #b6aff0;
+	align-items: center;
+	display: inline-flex;
 }
 
 .btnSexo {
-    display: flex;
-    padding: 1% 0 1% 0;
-    height: 13%;
-    margin: 10% 10%;
-    text-align: center;
-    justify-content: center;
+	display: flex;
+	padding: 1% 0 1% 0;
+	height: 13%;
+	margin: 10% 10%;
+	text-align: center;
+	justify-content: center;
 }
 
 .btnIzqSex {
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    background-color: #B6AFF0;
-    padding: 5% 10% 5% 10%;
-    border-width: 1px;
-    border-color: #B6AFF0;
-    justify-content: center;
-    display: inline-flex;
+	border-top-left-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
+	background-color: #b6aff0;
+	padding: 5% 10% 5% 10%;
+	border-width: 1px;
+	border-color: #b6aff0;
+	justify-content: center;
+	display: inline-flex;
 }
 
 .btnDerSex {
-    border-top-right-radius: 100px 100px;
-    border-bottom-right-radius: 100px 100px;
-    padding: 5% 10% 5% 10%;
-    border-width: 1px;
-    border-color: #B6AFF0;
-    justify-content: center;
-    display: inline-flex;
+	border-top-right-radius: 100px 100px;
+	border-bottom-right-radius: 100px 100px;
+	padding: 5% 10% 5% 10%;
+	border-width: 1px;
+	border-color: #b6aff0;
+	justify-content: center;
+	display: inline-flex;
 }
 
 .btnEspecie {
-    display: inline-flex;
-    justify-content: center;
-    margin-left: 30%;
+	display: inline-flex;
+	justify-content: center;
+	margin-left: 30%;
 }
 
 .btnEsp {
-    border-radius: 20%;
-    padding: 20%;
-    margin: 10% 35% 0 35%;
-    border-width: 1px;
-    background-color: #B6AFF0;
-    justify-content: center;
-    border-color: #B6AFF0;
-    display: flex;
+	border-radius: 20%;
+	padding: 20%;
+	margin: 10% 35% 0 35%;
+	border-width: 1px;
+	background-color: #b6aff0;
+	justify-content: center;
+	border-color: #b6aff0;
+	display: flex;
 }
 
 .btnFooter {
-    margin-top: 15%;
+	margin-top: 15%;
 }
 
 .cardFooter {
-    border-radius:100px;
-    background-color: #B6AFF0;
-    padding: 5%;
-    margin: 0 0 5% 23%;
-    border-color: #B6AFF0;
-    border-width: 1px;
-    display: flex;
-
+	border-radius: 100px;
+	background-color: #b6aff0;
+	padding: 5%;
+	margin: 0 0 5% 23%;
+	border-color: #b6aff0;
+	border-width: 1px;
+	display: flex;
 }
 
 .question {
-    padding: 3% 0 10% 0;
+	padding: 3% 0 10% 0;
 }
 
 /*
@@ -172,67 +168,63 @@ display: inline-flex;*/
 }*/
 
 @media screen and (min-width: 1024px) {
+	.landing {
+		margin: 0;
+		padding: 0;
+		border-width: none;
+		border-radius: none;
+	}
 
-    .landing {
-        margin: 0;
-        padding: 0;
-        border-width: none;
-        border-radius: none;
-    }
+	.imgMatch {
+		width: 100%;
+		height: 100vh;
+		border-radius: none;
+	}
 
-    .imgMatch {
-        width: 100%;
-        height: 100%;
-        border-radius: none;
-    }
+	.matchea {
+		margin: 10% 0 0 50%;
+		display: inline-block;
+		padding: 3%;
+		height: 15%;
+		width: 300px;
+		background-color: #bbb9b9;
+		border-color: #bbb9b9;
+		border-width: 3px;
+		border-style: dotted;
+		border-radius: 5%;
+		opacity: 0.8;
+	}
 
-    .matchea {
-        margin: 10% 0 0 50%;
-        display: inline-block;
-        padding: 3%;
-        height: 15%;
-        width: 300px;
-        background-color: #BBB9B9;
-        border-color: #BBB9B9;
-        border-width: 3px;
-        border-style: dotted;
-        border-radius: 5%;
-        opacity: .8;
+	.btnIzq {
+		padding: 3% 20% 3% 20%;
+	}
 
-    }
+	.btnDer {
+		padding: 3% 20% 3% 20%;
+	}
 
-    .btnIzq {
-        padding: 3% 20% 3% 20%;
-    }
+	.btnEspecie {
+		margin-left: 30%;
+	}
 
-    .btnDer {
-        padding: 3% 20% 3% 20%;
-    }
+	.btnEsp {
+		margin: 10% 25% 0 25%;
+	}
 
-    .btnEspecie {
-        margin-left: 30%;
-    }
+	.btnIzqSex {
+		padding: 1% 10% 1% 10%;
+	}
 
-    .btnEsp {
-        margin: 10% 25% 0 25%;
-    }
+	.btnDerSex {
+		padding: 1% 10% 1% 10%;
+	}
 
-    .btnIzqSex {
-        padding: 1% 10% 1% 10%;
-    }
+	.cardFooter {
+		padding: 3% 10% 3% 10%;
+		margin: 20% 0 2% 20%;
+	}
 
-    .btnDerSex {
-        padding: 1% 10% 1% 10%;
-        ;
-    }
-
-    .cardFooter {
-        padding: 3% 10% 3% 10%;
-        margin: 20% 0 2% 20%;
-    }
-
-    .question {
-        padding: 3% 0 10% 5%;
-    }
-
+	.question {
+		padding: 3% 0 10% 5%;
+	}
 }
