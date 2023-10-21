@@ -13,7 +13,7 @@ function createHeader() {
 				href="/index.html"
 				class="logo"
 				src="../img/logo_2.png"
-				style="width: 60px; height: 60px"
+				style="width: 75px; height: 75px;"
 				alt="Logo Patitas Felices"/img></a>
 				<p class="brand_logo">Patitas Felices</p></div>
 
