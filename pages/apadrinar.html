@@ -11,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"	rel="stylesheet" />
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 		<link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	</head>
 
 	<body>
@@ -38,86 +39,88 @@
 						</p>
 					</div>
 					<div class="container-form">
-						<div class="container-from-gobal">
-							<div class="container-from-data">
-								<div class="container-from-imput">
-									<p class="container-from-title">Quiero donar</p>
-									<label class="checkbox" for="type-donation-only">Por única vez
-										<input type="checkbox" name="type-donation-only" value="only">
-									</label>
-									<label class="checkbox" for="type-donation-month">Mensualmente
-										<input type="checkbox" name="type-donation-month" value="month">
-									</label>
-								</div>
-								<div class="container-from-imput">
-									<p class="container-from-title">Con</p>
-									<label class="checkbox" for="amount-900">900 ars
-										<input type="checkbox" name="amount-900" value="900">
-									</label>
-									<label class="checkbox" for="amount-1400">1400 ars
-										<input type="checkbox" name="amount-1400" value="1400">
-									</label>
-									<label class="checkbox" for="amount-2000">2000 ars
-										<input type="checkbox" name="amount-2000" value="2000">
-									</label>
-								</div>
-								<div class="container-from-imput">
-									<label for="another_amount">Otro monto (indicar cuál)</label>
-									<input type="text" name="another_amount">
-								</div>
-							</div>
-						</div>
-						<hr>
-						<div class="container-from-gobal">
-							<p class="container-from-title">Información de contacto</p>
-							<div class="container-from-data">
-								<div class="container-from-imput">
-									<label for="contac-name">Nombre Completo*:</label>
-									<input type="text" name="contac-name">
-								</div>
-								<div class="container-from-imput">
-									<label for="date">Fecha de nacimiento (dd/mm/aa)*:</label>
-									<input type="date" name="date">
-								</div>
-								<div class="container-from-imput">
-									<label for="dni">DNI (sin puntos)*:</label>
-									<input type="text" name="dni">
-								</div>
-								<div class="container-from-imput">
-									<label for="email">Correo electrónico*:</label>
-									<input type="email" name="email">
-								</div>
-								<div class="container-from-imput">
-									<label for="phone">Teléfono de contacto*:</label>
-									<input type="text" name="phone">
+						<form name="sponsor-form">
+							<div class="container-from-gobal">
+								<div class="container-from-data">
+									<div class="container-from-imput">
+										<p class="container-from-title">Quiero donar</p>
+										<label class="checkbox" for="type-donation-only">Por única vez
+											<input type="checkbox" name="type-donation-only" value="only">
+										</label>
+										<label class="checkbox" for="type-donation-month">Mensualmente
+											<input type="checkbox" name="type-donation-month" value="month">
+										</label>
+									</div>
+									<div class="container-from-imput">
+										<p class="container-from-title">Con</p>
+										<label class="checkbox" for="amount-900">900 ars
+											<input type="checkbox" name="amount-900" value="900">
+										</label>
+										<label class="checkbox" for="amount-1400">1400 ars
+											<input type="checkbox" name="amount-1400" value="1400">
+										</label>
+										<label class="checkbox" for="amount-2000">2000 ars
+											<input type="checkbox" name="amount-2000" value="2000">
+										</label>
+									</div>
+									<div class="container-from-imput">
+										<label for="another_amount">Otro monto (indicar cuál)</label>
+										<input type="text" name="another_amount">
+									</div>
 								</div>
 							</div>
-						</div>
-						<hr>
-						<div class="container-from-gobal">
-							<p class="container-from-title">Datos de tarjeta</p>
-							<div class="container-from-data">
-								<div class="container-from-imput">
-									<label for="card-number">Número de la tarjeta*:</label>
-									<input type="text" name="card-number">
-								</div>
-								<div class="container-from-imput">
-									<label for="catd-name">Nombre y apellido del titular (como aparece en la tarjeta)*:</label>
-									<input type="text" name="catd-name">
-								</div>
-								<div class="container-from-imput">
-									<label for="card-date">Fecha de vencimiento (mm/aa)*:</label>
-									<input type="date" name="card-date">
-								</div>
-								<div class="container-from-imput">
-									<label for="card-cvv">CVV*:</label>
-									<input type="text" name="card-cvv">
+							<hr>
+							<div class="container-from-gobal">
+								<p class="container-from-title">Información de contacto</p>
+								<div class="container-from-data">
+									<div class="container-from-imput">
+										<label for="contac-name">Nombre Completo*:</label>
+										<input type="text" name="contac-name">
+									</div>
+									<div class="container-from-imput">
+										<label for="date">Fecha de nacimiento (dd/mm/aa)*:</label>
+										<input type="date" name="date">
+									</div>
+									<div class="container-from-imput">
+										<label for="dni">DNI (sin puntos)*:</label>
+										<input type="text" name="dni">
+									</div>
+									<div class="container-from-imput">
+										<label for="email">Correo electrónico*:</label>
+										<input type="email" name="email">
+									</div>
+									<div class="container-from-imput">
+										<label for="phone">Teléfono de contacto*:</label>
+										<input type="text" name="phone">
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="container-from-gobal button-send">
-							<button>Enviar</button>
-						</div>
+							<hr>
+							<div class="container-from-gobal">
+								<p class="container-from-title">Datos de tarjeta</p>
+								<div class="container-from-data">
+									<div class="container-from-imput">
+										<label for="card-number">Número de la tarjeta*:</label>
+										<input type="text" name="card-number">
+									</div>
+									<div class="container-from-imput">
+										<label for="catd-name">Nombre y apellido del titular (como aparece en la tarjeta)*:</label>
+										<input type="text" name="catd-name">
+									</div>
+									<div class="container-from-imput">
+										<label for="card-date">Fecha de vencimiento (mm/aa)*:</label>
+										<input type="date" name="card-date">
+									</div>
+									<div class="container-from-imput">
+										<label for="card-cvv">CVV*:</label>
+										<input type="text" name="card-cvv">
+									</div>
+								</div>
+							</div>
+							<div class="container-from-gobal button-send">
+								<button id="sendForm" type="submit">Enviar</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -132,6 +135,7 @@
 			</div>
 
 		<script src="../js/header_footer.js"></script>
+		<script src="../js/apadrinar.js"></script>
 	</body>
 	
 </html>
