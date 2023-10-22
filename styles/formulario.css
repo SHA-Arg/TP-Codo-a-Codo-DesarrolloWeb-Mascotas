@@ -115,6 +115,10 @@
 }
 
 @media (min-width: 1024px) {
+
+    .banner img {
+        height: 450px;
+    }
     .centered_title{
         font-size: 6em;
     }
