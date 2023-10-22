@@ -24,7 +24,8 @@
         <div class="contenedor">
             <div class="login_formulario">
                 <!-- Formulario funcionanado con Netlify, con CAPTCHA -->
-                <form id="form" action="/" autocomplete="off" method="POST" netlify data-netlify="true">
+                <form id="form" action="/" autocomplete="off" method="POST" netlify data-netlify="true"
+                    data-netlify-recaptcha="true">
                     <h2>Contacto</h2>
 
                     <div class="input-contenedor">
@@ -40,8 +41,9 @@
                         <label class="mensaje" for="">Mensaje</label>
                         <textarea class="text_area" name="message" id="message" cols="30" required> </textarea>
                     </div>
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="enviar_form"> <a type="submit" style="text-decoration: none; color: azure;"
-                            href="mensaje_enviado.html">Enviar</a>
+                            href="./mensaje_enviado.html">Enviar</a>
                     </button>
                 </form>
             </div>
