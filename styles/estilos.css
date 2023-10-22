@@ -400,7 +400,6 @@ h3.contact_foot {
 		display: flex;
 		justify-content: space-evenly;
 		gap: 50px;
-		/* margin: 10px; */
 	}
 
 	.contacto {
@@ -416,12 +415,5 @@ h3.contact_foot {
 	}
 	.social-link:hover {
 		color: aliceblue;
-	}
-}
-
-@media screen and (min-width= 800px) {
-	.navbar {
-		display: block;
-		position: absolute;
 	}
 }
