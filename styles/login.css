@@ -4,7 +4,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 0px;
+	margin-top: 41px;
 	width: 100%;
 	min-height: 100vh;
 	background: url(/img/inicio.jpg) no-repeat;
@@ -96,6 +96,7 @@ input:focus ~ label,
 input:valid ~ label {
 	top: -5px;
 }
+
 .ingresar {
 	width: 100%;
 	height: 50px;
@@ -107,6 +108,7 @@ input:valid ~ label {
 	outline: none;
 	font-size: 1rem;
 }
+
 .ingresar:hover {
 	opacity: 0.9;
 	background: #776ecb;
@@ -129,4 +131,32 @@ input:valid ~ label {
 
 .crear_cuenta p a:hover {
 	text-decoration: underline;
+}
+
+/* Breakpoints */
+/*? Falla en tamaño tableta!!  */
+
+@media (max-width: 768px) {
+	.contenedor {
+		width: 330px;
+		height: 450px;
+	}
+	.contenedor h2 {
+		font-size: 1.5rem;
+	}
+	.input-contenedor input {
+		font-size: 1rem;
+	}
+	.input-contenedor span {
+		font-size: 1rem;
+	}
+	.ingresar {
+		font-size: 1rem;
+	}
+	.crear_cuenta {
+		font-size: 0.8rem;
+	}
+	.recuperar {
+		font-size: 0.8rem;
+	}
 }

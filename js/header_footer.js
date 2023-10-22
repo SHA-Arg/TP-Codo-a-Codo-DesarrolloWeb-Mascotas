@@ -40,6 +40,7 @@ function createFooter() {
 	let footerCode = "";
 
 	footerCode = `<div class="contenerdorPie">
+		<div class="img_foot"> <img src="../img/logo_2.png" alt="Logo Patitas Felices" style="width: 60px; height: 60px;"/></div>
 	<div class="list">
 		<a href="" class="item-Txt">Soy una organización.</a>
 		<a href="" class="item-Txt">Trabaja con nosotros!</a>

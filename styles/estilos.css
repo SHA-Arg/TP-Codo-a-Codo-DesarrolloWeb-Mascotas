@@ -194,9 +194,9 @@
 
 .contenerdorPie {
 	display: flex;
-	height: 60px;
-	justify-content: space-around;
-	gap: 7rem;
+	height: 90px;
+	justify-content: space-evenly;
+	gap: 5rem;
 	flex-direction: row;
 	align-items: center;
 }
@@ -213,8 +213,8 @@ div.list {
 	font-size: 0.6rem;
 	color: #000000;
 	text-decoration: none;
-	font-weight: 400;
-	margin: 5px;
+	font-weight: 700;
+	margin: 10px;
 }
 .item-Txt:hover {
 	color: #fff;
@@ -243,6 +243,7 @@ div.list {
 }
 h3.contact_foot {
 	font-size: 0.8rem;
+	margin: 9px;
 }
 
 .formContacto {
@@ -252,8 +253,9 @@ h3.contact_foot {
 .inputContact {
 	margin-top: 0;
 	height: 30px;
+	width: 300px;
 	text-align: center;
-	background: #ffffff36;
+	background: #ffffff;
 	border-radius: 50px;
 	border: none;
 	color: #000000;
@@ -291,13 +293,16 @@ h3.contact_foot {
 		justify-content: center;
 	}
 	.brand_logo {
-		font-size: medium;
+		font-size: large;
+		margin-left: 0;
+		font-weight: 700;
 	}
 
 	.menu {
 		display: inline-flex;
 		align-items: center;
 		font-size: 1.9rem;
+		margin-top: 30px;
 	}
 
 	#check:checked ~ .menu #menu-icon {
@@ -306,7 +311,9 @@ h3.contact_foot {
 
 	#menu-icon {
 		display: block;
-		margin-left: 10px;
+		margin-left: 15px;
+
+		font-size: 2rem;
 	}
 
 	.menu #close-icon {
@@ -325,7 +332,8 @@ h3.contact_foot {
 		left: 0;
 		width: 100%;
 		height: 0;
-		margin: 10px 10px;
+		margin: 0;
+		align-items: space-around;
 		background-color: rgba(255, 255, 255, 0.452);
 		backdrop-filter: blur(50px);
 		overflow: hidden;
@@ -339,7 +347,8 @@ h3.contact_foot {
 	nav.navbar a {
 		display: flex;
 		font-size: 1.3rem;
-		justify-content: left;
+		margin: 15px;
+		justify-content: space-around;
 		align-items: baseline;
 		text-align: center;
 		transform: translateY(-50px);
@@ -360,7 +369,6 @@ h3.contact_foot {
 	#menu_log {
 		font-size: 1.9rem;
 		color: #000000;
-		margin: 15px;
 	}
 
 	.pie {
@@ -369,6 +377,7 @@ h3.contact_foot {
 		color: #fff;
 		width: 100%;
 	}
+
 	.contenerdorPie {
 		width: 100%;
 	}
