@@ -104,6 +104,13 @@
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1em;
+    cursor: pointer;
+}
+
+.button-send button:hover {
+    background: white;
+    color: #b6aff0;
+    border: 1px solid #b6aff0;
 }
 
 @media (min-width: 768px) {

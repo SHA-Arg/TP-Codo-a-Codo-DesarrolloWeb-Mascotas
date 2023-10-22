@@ -47,27 +47,27 @@
 							<div class="container-from-data">
 								<div class="container-from-imput">
 									<label for="full-name">Nombre Completo*:</label>
-									<input type="text" name="full-name">
+									<input type="text" name="full-name" required>
 								</div>
 								<div class="container-from-imput">
 									<label for="person-age">Edad*:</label>
-									<input type="number" name="person-age">
+									<input type="number" name="person-age" required>
 								</div>
 								<div class="container-from-imput">
 									<label for="dni">DNI (sin puntos)*:</label>
-									<input type="text" name="dni">
+									<input type="text" name="dni" required>
 								</div>
 								<div class="container-from-imput">
 									<label for="address">Dirección (calle y altura)*:</label>
-									<input type="text" name="address">
+									<input type="text" name="address" required>
 								</div>
 								<div class="container-from-imput">
 									<label for="locale">Localidad*:</label>
-									<input type="text" name="locale">
+									<input type="text" name="locale" required>
 								</div>
 								<div class="container-from-imput">
 									<label for="province">Provincia*:</label>
-									<input type="text" name="province">
+									<input type="text" name="province" required>
 								</div>
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 							<div class="container-from-data">
 								<div class="container-from-imput">
 									<label for="email">Correo electrónico*:</label>
-									<input type="email" name="email">
+									<input type="email" name="email" required>
 								</div>
 								<div class="container-from-imput">
 									<label for="facebook">Perfil de Facebook:</label>
@@ -89,7 +89,7 @@
 								</div>
 								<div class="container-from-imput">
 									<label for="phone">Teléfono de contacto*:</label>
-									<input type="text" name="phone">
+									<input type="text" name="phone" required>
 								</div>
 							</div>
 						</div>
@@ -140,7 +140,7 @@
 								<div class="container-from-textarea">
 									<label for="another-pet">¿Tienes otros animales? De ser así, Cuéntanos cuántos, de qué
 										especies, y si se llevan bien con otros animales*:</label>
-									<textarea name="another-pet" rows="5"></textarea>
+									<textarea name="another-pet" rows="5" required></textarea>
 								</div>
 								<div class="container-from-textarea">
 									<label for="agree-pet">En caso de tenerlos, ¿Están vacunados y/o castrados?</label>
@@ -184,7 +184,7 @@
 							</div>
 						</div>
 						<div class="container-from-gobal button-send">
-							<button>Enviar</button>
+							<button id="sendForm" type="submit" class="btn-profile">Enviar</button>
 						</div>
 					</form>
 				</div>
