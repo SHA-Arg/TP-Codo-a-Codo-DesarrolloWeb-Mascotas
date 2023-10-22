@@ -1,4 +1,5 @@
-p {
+.fontStyle {
+    margin-top: 10%;
     font-size: 0.9rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -8,16 +9,19 @@ h1 {
     margin: 25%;
 }
 
+a{
+    color: #8074eb;
+}
+
 
 .landing {
     display: flex;
-    justify-content: center;
     margin: 20% 3% 10% 3%;
-    padding: 2% 0 10% 0;
+    padding: 0 0 10% 0;
     border-color: #BBB9B9;
     border-width: 3px;
     border-style: dotted;
-    border-radius: 5%;
+    border-radius: 3%;
 
 }
 
@@ -27,93 +31,62 @@ h1 {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    width: 90%;
-    height: 30%;
+    width: 92%;
+    height: 32%;
     border-radius: 5% 5% 0 0;
 }
 
 .matchea {
     margin-top: 80%;
+    margin-left: 14%;
 
 }
 
-.btnQuiero {
-    display: flex;
-    height: 10%;
-    margin: 10% 10%;
-    text-align: center;
-    justify-content: center;
-}
-
-.btnIzq {
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    padding: 0.4% 30% 0.3% 30%;
-    border-width: 1px;
-    border-color: #B6AFF0;
-    align-items: center;
-    display: inline-flex;
-}
-
-/*border-radius: 0 35% 35% 0;
-padding:5% 10% 5% 10%;;
-border-width: 1px;
-border-color: #B6AFF0;
-justify-content: center;
-display: inline-flex;*/
-
-.btnDer {
-    border-top-right-radius: 100px 100px;
-    border-bottom-right-radius: 100px 100px;
-    background-color: #B6AFF0;
-    padding: 0.5% 35% 0.5% 35%;
-    border-width: 1px;
-    border-color: #B6AFF0;
-    align-items: center;
-    display: inline-flex;
+.selectStyle {
+ width:250px;
+ background-color: white;
+ border-radius: 5px;
+ border-color: #B6AFF0;
 }
 
 .btnSexo {
     display: flex;
-    padding: 1% 0 1% 0;
-    height: 13%;
-    margin: 10% 10%;
+    height: 10%;
+    margin: 15% 0 0 0;
     text-align: center;
-    justify-content: center;
+    
 }
 
 .btnIzqSex {
     border-top-left-radius: 100px 100px;
     border-bottom-left-radius: 100px 100px;
     background-color: #B6AFF0;
-    padding: 5% 10% 5% 10%;
+    padding: 1% 10% 1% 29%;
     border-width: 1px;
     border-color: #B6AFF0;
-    justify-content: center;
+    text-justify: center;
     display: inline-flex;
 }
 
 .btnDerSex {
     border-top-right-radius: 100px 100px;
     border-bottom-right-radius: 100px 100px;
-    padding: 5% 10% 5% 10%;
-    ;
+    padding: 1% 29% 1% 10%;
     border-width: 1px;
     border-color: #B6AFF0;
-    justify-content: center;
+    text-justify: center;
     display: inline-flex;
 }
 
 .btnEspecie {
     display: inline-flex;
-    justify-content: center;
-    margin-left: 30%;
+    padding-right: 5%;
 }
 
 .btnEsp {
     border-radius: 20%;
-    padding: 20%;
-    margin: 10% 35% 0 35%;
+    padding: 15%;
+    margin: 30% 57% 0 5%;
     border-width: 1px;
     background-color: #B6AFF0;
     justify-content: center;
@@ -128,8 +101,8 @@ display: inline-flex;*/
 .cardFooter {
     border-radius:100px;
     background-color: #B6AFF0;
-    padding: 5%;
-    margin: 0 0 5% 23%;
+    padding: 3%;
+    margin: 0 0 5% 30%;
     border-color: #B6AFF0;
     border-width: 1px;
     display: flex;
@@ -137,47 +110,219 @@ display: inline-flex;*/
 }
 
 .question {
-    padding: 3% 0 10% 0;
+    padding: 3% 0 10% 13%;
 }
 
-/*
-.landing {
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-}
+@media screen and (max-width: 280px) {
+    
+    .fontStyle {
+        margin-top: 10%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        margin: 25%;
+    }
+    
+    a{
+        color: #8074eb;
+    }
+    
+    
+    .landing {
+        display: flex;
+        margin: 25% 3% 10% 3%;
+        padding: 0 0 10% 0;
+        border-radius: 3%;
+    }
 
-.eslogan {
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    .matchea {
+        margin-top: 95%;
+        margin-left: 10%;
+    
+    }
+    
+    .selectStyle {
+     width:200px;
+     background-color: white;
+     border-radius: 5px;
+     border-color: #B6AFF0;
+    }
+
+    .btnEspecie {
+        display: inline-flex;
+        padding-right: 5%;
+    }
+    
+    .btnEsp {
+        border-radius: 20%;
+        padding: 10%;
+        margin: 30% 40% 0 5%;
+        border-width: 1px;
+        background-color: #B6AFF0;
+        justify-content: center;
+        border-color: #B6AFF0;
+        display: flex;
+    }
+    
+    
+    .btnSexo {
+        display: flex;
+        height: 8%;
+        margin-top: 15%;
+        text-align: center;
+        
+    }
+    
+    .btnIzqSex {
+        padding: 1% 19% 1% 19%;
+    }
+    
+    .btnDerSex {
+        padding: 1% 19% 1% 19%;
+    }
+    
+    
+    .btnFooter {
+        margin-top: 15%;
+    }
+    
+    .cardFooter {
+        border-radius:100px;
+        background-color: #B6AFF0;
+        padding: 3%;
+        margin: 25% 0 5% 25%;
+        border-color: #B6AFF0;
+        border-width: 1px;
+        display: flex;
+    
+    }
+    
+    .question {
+        padding: 3% 0 5% 0;
+        text-align: center;
+    }
 
 }
 
 
 @media screen and (min-width: 768px) {
-
-    .landing {
-        margin: none;
-        padding: none;
-        border-color: none;
+   
+    h1{
+        font-size: 2.5rem;
+        margin-left: 20%;
+        font-weight: bolder;
     }
-
-    .imgMatch {
-        width: 100% ;
-        height: 100%;
-        border-radius: none;
+    .fontStyle {
+        font-size: 1.5rem;
     }
-
-
-}*/
-
-@media screen and (min-width: 1024px) {
-
+    .selectStyle {
+        width:400px;
+        height: 35px;
+        border-width: 3px;
+        border-radius: 10px;
+       }
+    
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
     .landing {
         margin: 0;
         padding: 0;
-        border-width: none;
+        border: none;
+        min-height:1055px;
+    }
+
+    .imgMatch {
+        width: 100%;
+        height: 90%;
         border-radius: none;
+        opacity: .95;
+    }
+
+    .matchea {
+        margin: 37% 0 0 19%;
+        display: inline-block;
+        padding: 5%;
+        height: 15%;
+        width: 500px;
+        background-color: #BBB9B9;
+        border-color: #BBB9B9;
+        border-width: 3px;
+        border-style: dotted;
+        border-radius: 5%;
+        opacity: .9;
+
+    }
+
+    .btnEsp {
+        height: 80px;
+        width: 80px;
+        margin: 2% 25% 0 5%;
+    }
+
+    .btnSexo {
+        display: flex;
+        height: 15%;
+        margin-top: 15%;
+        text-align: center;
+        
+    }
+    
+    .btnIzqSex {
+        padding: 1% 10% 1% 32%;
+    }
+
+    .btnDerSex {
+        padding: 1% 32% 1% 10%;
+        ;
+    }
+
+    .cardFooter {
+        padding: 3% 20% 3% 20%;
+        margin: 20% 0 2% 13%;
+        font-size: 1.2rem;
+        font-weight:normal;
+
+    }
+
+    .question {
+        padding: 3% 0 10% 14%;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+    h1{
+        font-size: 2.5rem;
+        margin-left: 20%;
+        font-weight: bolder;
+    }
+    .fontStyle {
+        font-size: 1.5rem;
+    }
+    .selectStyle {
+        width:300px;
+        height: 30px;
+       }
+    
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
+    .landing {
+        margin: 0;
+        padding: 0;
+        min-height:800px;
     }
 
     .imgMatch {
@@ -187,11 +332,10 @@ display: inline-flex;*/
     }
 
     .matchea {
-        margin: 10% 0 0 50%;
+        margin: 10% 0 0 57%;
         display: inline-block;
         padding: 3%;
-        height: 15%;
-        width: 300px;
+        width: 30%;
         background-color: #BBB9B9;
         border-color: #BBB9B9;
         border-width: 3px;
@@ -200,30 +344,20 @@ display: inline-flex;*/
         opacity: .8;
 
     }
-
-
-    .btnIzq {
-        padding: 3% 20% 3% 20%;
-    }
-
-    .btnDer {
-        padding: 3% 20% 3% 20%;
-    }
-
     .btnEspecie {
-        margin-left: 30%;
+        margin-left: 0;
     }
 
     .btnEsp {
-        margin: 10% 25% 0 25%;
+        margin: 10% 12% 0 0;
     }
 
     .btnIzqSex {
-        padding: 1% 10% 1% 10%;
+        padding: 1% 21% 1% 21%;
     }
 
     .btnDerSex {
-        padding: 1% 10% 1% 10%;
+        padding: 1% 21% 1% 21%;
         ;
     }
 
@@ -237,3 +371,12 @@ display: inline-flex;*/
     }
 
 }
+
+
+
+
+@media screen and (min-width: 1440px){
+
+
+}
+    
