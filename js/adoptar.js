@@ -2,6 +2,16 @@ const adoptForm = document.forms["adopt-form"];
 
 adoptForm.onsubmit = (e) => {
     e.preventDefault();
+    valuesForm = getFormValues()
+    console.log(values);
+    Swal.fire( 
+        'Gracias', 
+        'Su solicitud fue enviada con éxito', 
+        'success' 
+    );
+}
+
+const getFormValues = () => {
     values = {
         "fullname": adoptForm.elements["full-name"].value,
         "age": adoptForm.elements["full-name"].value,
@@ -29,10 +39,5 @@ adoptForm.onsubmit = (e) => {
         "pet_vaccines": true,
         "pet_anothers": false,
     }
-    console.log(values);
-    Swal.fire( 
-        'Gracias', 
-        'Su solicitud fue enviada con éxito', 
-        'success' 
-    );
+    return values
 }
