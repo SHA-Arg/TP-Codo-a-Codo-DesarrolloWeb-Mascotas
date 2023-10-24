@@ -13,7 +13,6 @@ function createHeader() {
 				href="/index.html"
 				class="logo"
 				src="../img/logo_2.png"
-				style="width: 75px; height: 75px;"
 				alt="Logo Patitas Felices"/img></a>
 				<p class="brand_logo">Patitas Felices</p></div>
 
@@ -42,16 +41,16 @@ function createFooter() {
 	footerCode = `<div class="contenerdorPie">
 		<div class="img_foot"> <img src="../img/logo_2.png" alt="Logo Patitas Felices" style="width: 60px; height: 60px;"/></div>
 	<div class="list">
-		<a href="" class="item-Txt">Soy una organización.</a>
-		<a href="" class="item-Txt">Trabaja con nosotros!</a>
-		<a href="" class="item-Txt">Términos y condiciones.</a>
+		<a href="/pages/construccion.html" class="item-Txt">Soy una organización.</a>
+		<a href="/pages/nosotros.html" class="item-Txt">Trabaja con nosotros!</a>
+		<a href="/pages/construccion.html" class="item-Txt">Términos y condiciones.</a>
 	</div>
 
 	<div class="redesSociales">
-		<a href="" class="social-link"><i class="bx bxl-instagram"></i></a>
-		<a href="" class="social-link"><i class="bx bxl-twitter"></i></a>
-		<a href="" class="social-link"><i class="bx bxl-whatsapp"></i></a>
-		<a href="" class="social-link"><i class="bx bxl-facebook"></i></a>
+		<a href="#" class="social-link"><i class="bx bxl-instagram"></i></a>
+		<a href="#" class="social-link"><i class="bx bxl-twitter"></i></a>
+		<a href="#" class="social-link"><i class="bx bxl-whatsapp"></i></a>
+		<a href="#" class="social-link"><i class="bx bxl-facebook"></i></a>
 	</div>
 
 	<div class="contacto">
