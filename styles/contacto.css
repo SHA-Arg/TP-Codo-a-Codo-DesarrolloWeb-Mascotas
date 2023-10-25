@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.error {
-	color: red;
-	font-size: 0.8rem;
-	display: block;
-}
 section {
 	display: flex;
 	justify-content: center;
@@ -18,6 +13,7 @@ section {
 }
 
 .contenedor {
+	margin: 30px;
 	position: relative;
 	width: 400px;
 	border: 2px solid rgba(255, 255, 255, 0.6);
@@ -27,6 +23,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .img {
@@ -107,7 +104,7 @@ label.mensaje {
 .enviar_form {
 	width: 100%;
 	height: 50px;
-	margin-top: 63px;
+	margin-top: 60px;
 	background-color: #58247667;
 	border-radius: 40px;
 	border: none;
@@ -121,7 +118,7 @@ label.mensaje {
 	opacity: 0.9;
 }
 
-@media (min-width: 778px) and (max-width: 1280px) {
+/* @media (min-width: 778px) and (max-width: 1280px) {
 	section {
 		display: flex;
 		justify-content: center;
@@ -133,4 +130,4 @@ label.mensaje {
 		background-size: cover;
 		background-position: center;
 	}
-}
+} */

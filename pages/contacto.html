@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png" />
-    <script src="/js/contact-validation.js"></script>
 </head>
 
 <body>
@@ -23,27 +22,22 @@
     <section>
         <div class="contenedor">
             <div class="login_formulario">
-
-                <form id="form" action="/" autocomplete="off" method="POST" netlify data-netlify="true"
-                    data-netlify-recaptcha="true">
+                <form id="form" autocomplete="off" method="POST" class="needs-validation" novalidate>
                     <h2>Contacto</h2>
-
                     <div class="input-contenedor">
-                        <input type="text" name="name" id="name">
-
-                        <label for="name">Nombre</label>
+                        <input type="text" name="name" class="form-control" id="validationDefault01">
+                        <label for="name" for="validationDefault01" class="form-label">Nombre</label>
                     </div>
-
                     <div class="input-contenedor">
                         <input type="email" name="email" id="email">
-                        <label for="email">Email</label>
+                        <label for="email" for="validationDefault01" class="form-label">Email</label>
                     </div>
                     <div class="input-contenedor">
                         <label class="mensaje" for="">Mensaje</label>
                         <textarea class="text_area" name="message" id="message" cols="30"> </textarea>
                     </div>
-                    <div class="captcha" data-netlify-recaptcha="true"></div>
-                    <button class="enviar_form" id="btn-enviar" type="submit">Enviar</button>
+                    <!-- <div class="captcha" data-netlify-recaptcha="true"></div> -->
+                    <button class="enviar_form" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
@@ -53,6 +47,8 @@
     <footer class="pie">
         <!-- ACÁ SE CARGA EL FOOTER -->
     </footer>
+
+
 
     <script src="/js/header_footer.js"></script>
 

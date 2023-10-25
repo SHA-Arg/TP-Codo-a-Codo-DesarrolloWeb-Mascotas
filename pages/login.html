@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
+
 </head>
 
 <body>
@@ -23,17 +24,19 @@
         <!-- inicio de sesion -->
         <div class="contenedor">
             <div class="login_formulario">
-                <form action="#" method="POST" id="formulario">
+                <form action="#" method="POST" id="form" class="needs-validation">
                     <h2>Iniciar Sesión</h2>
                     <div class="input-contenedor">
                         <span class="material-symbols-outlined">mail</span>
-                        <input type="text" name="usuario" id="usuario" required>
-                        <label for="usuario">Correo o CI</label>
+                        <input type="text" name="" id="name">
+                        <label for="" class="form-label">Correo o CI</label>
+                        <p class="warnings" id="warnings"></p>
                     </div>
                     <div class="input-contenedor">
                         <span class="material-symbols-outlined">lock</span>
-                        <input type="password" name="password" id="clave" required>
-                        <label for="password">Contraseña</label>
+                        <input type="password" name="" id="password">
+                        <label for="">Contraseña</label>
+                        <p class="warnings" id="warnings"></p>
                     </div>
                     <div class="recuperar">
                         <label for="#">
@@ -42,12 +45,14 @@
                         </label>
                     </div>
                 </form>
-                <button type="submit" class="ingresar" id="ingresar">Acceder</button>
+                <button type="submit" class="ingresar" id="ingresar" href="/pages/nosotros.html">Acceder</button>
+
                 <div class="crear_cuenta">
                     <p>¿No tienes una cuenta? <a href="/index.html">Volver</a></p>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- FOOTER -->
@@ -55,9 +60,10 @@
         <!-- ACÁ SE CARGA EL FOOTER -->
     </footer>
 
+
     <!-- Los Script´s -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/header_footer.js"></script>
-    <script src="../js/login-validation.js"></script>
     <script type="module" src="../js/cards.js"></script>
     <script type="module" src="../js/index.js"></script>
 
