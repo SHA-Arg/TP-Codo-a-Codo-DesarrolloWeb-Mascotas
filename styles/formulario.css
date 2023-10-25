@@ -1,5 +1,5 @@
 .banner {
-    margin-top: 60px;
+    margin-top: 80px;
     width: 100%;
     position: relative;
 }
@@ -104,6 +104,13 @@
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1em;
+    cursor: pointer;
+}
+
+.button-send button:hover {
+    background: white;
+    color: #b6aff0;
+    border: 1px solid #b6aff0;
 }
 
 @media (min-width: 768px) {
@@ -115,6 +122,10 @@
 }
 
 @media (min-width: 1024px) {
+
+    .banner img {
+        height: 450px;
+    }
     .centered_title{
         font-size: 6em;
     }

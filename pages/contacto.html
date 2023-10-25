@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png" />
+    <script src="/js/contact-validation.js"></script>
 </head>
 
 <body>
@@ -20,34 +21,32 @@
 
     <!-- SECCION CONTACTO -->
     <section>
-        <!-- inicio de sesion -->
         <div class="contenedor">
-            <div class="login_logo">
-                <img style="width: 130px; height: 130px;" src="/img/logo_2.png" alt="Logo">
+            <div class="login_formulario">
+
+                <form id="form" action="/" autocomplete="off" method="POST" netlify data-netlify="true"
+                    data-netlify-recaptcha="true">
+                    <h2>Contacto</h2>
+
+                    <div class="input-contenedor">
+                        <input type="text" name="name" id="name">
+
+                        <label for="name">Nombre</label>
+                    </div>
+
+                    <div class="input-contenedor">
+                        <input type="email" name="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <label class="mensaje" for="">Mensaje</label>
+                        <textarea class="text_area" name="message" id="message" cols="30"> </textarea>
+                    </div>
+                    <div class="captcha" data-netlify-recaptcha="true"></div>
+                    <button class="enviar_form" id="btn-enviar" type="submit">Enviar</button>
+                </form>
             </div>
-            <form action="login.php" method="POST">
-                <h2>Contacto</h2>
-
-                <div class="input-contenedor">
-                    <input type="text" name="nombre" id="nombre" required>
-                    <label for="">Nombre</label>
-                </div>
-                <div class="input-contenedor">
-                    <input type="text" name="phone" id="telefono" required>
-                    <label for="">Telefono</label>
-                </div>
-                <div class="input-contenedor">
-                    <input type="email" name="email" id="email" required>
-                    <label for="">Email</label>
-                </div>
-                <div class="input-contenedor">
-                    <input type="text" name="message" id="mensaje" required>
-                    <label for="">Mensaje</label>
-                </div>
-            </form>
-            <button class="enviar">Enviar</button>
         </div>
-
     </section>
 
     <!-- FOOTER -->
@@ -56,6 +55,7 @@
     </footer>
 
     <script src="/js/header_footer.js"></script>
+
 </body>
 
 </html>

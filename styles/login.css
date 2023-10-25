@@ -1,17 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
-
-/* ESTILOS GLOBALES */
-* {
-	font-family: "Roboto", sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,800&display=swap");
 
 section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 41px;
 	width: 100%;
 	min-height: 100vh;
 	background: url(/img/matchea.jpg) no-repeat;
@@ -19,24 +12,16 @@ section {
 	background-position: center;
 }
 
-.img {
-	top: -90px;
-	left: 50%;
-	backdrop-filter: blur(80px);
-	transform: translateX(-50%);
-	border-radius: solid #776ecb 5px;
+.contenedor {
+	position: relative;
+	width: 400px;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	-webkit-border-radius: solid #776ecb 5px;
-	-moz-border-radius: solid #776ecb 5px;
-	-ms-border-radius: solid #776ecb 5px;
-	-o-border-radius: solid #776ecb 5px;
-}
-.login_logo {
-	background-color: #776ecb;
-	border-radius: 50%;
-	width: 130px;
 }
 
 .contenedor h2 {
@@ -62,11 +47,6 @@ section {
 	transition: 0.6s;
 	pointer-events: none;
 	font-weight: bold;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-	top: -5px;
 }
 
 .input-contenedor input {
@@ -112,20 +92,26 @@ input:valid ~ label {
 	text-decoration: underline;
 }
 
+input:focus ~ label,
+input:valid ~ label {
+	top: -5px;
+}
+
 .ingresar {
 	width: 100%;
 	height: 50px;
+	margin: 20px 0px;
 	background-color: #58247667;
 	border-radius: 40px;
 	border: none;
-	color: #fff;
 	cursor: pointer;
 	outline: none;
 	font-size: 1rem;
 }
+
 .ingresar:hover {
-	background: #776ecb;
 	opacity: 0.9;
+	background: #776ecb;
 }
 
 .crear_cuenta {
@@ -146,5 +132,31 @@ input:valid ~ label {
 .crear_cuenta p a:hover {
 	text-decoration: underline;
 }
-@media (max-width: 375px) {
+
+/* Breakpoints */
+/*? Falla en tamaño tableta!!  */
+
+@media (max-width: 768px) {
+	.contenedor {
+		width: 330px;
+		height: 450px;
+	}
+	.contenedor h2 {
+		font-size: 1.5rem;
+	}
+	.input-contenedor input {
+		font-size: 1rem;
+	}
+	.input-contenedor span {
+		font-size: 1rem;
+	}
+	.ingresar {
+		font-size: 1rem;
+	}
+	.crear_cuenta {
+		font-size: 0.8rem;
+	}
+	.recuperar {
+		font-size: 0.8rem;
+	}
 }

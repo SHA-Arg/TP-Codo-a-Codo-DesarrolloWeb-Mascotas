@@ -6,24 +6,16 @@
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
 }
-/* ::-webkit-scrollbar {
-	display: none;
-} */
 
-/* body {
-	width: 100%;
-	min-height: 100vh;
-	background: url(/img/inicio.jpg) no-repeat;
-	background-size: cover;
-	background-position: center;
-	background: #fff;
-} */
+::-webkit-scrollbar {
+	display: none;
+}
 
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 60px;
+	height: 80px;
 	width: 100%;
 	padding: 5px 5%;
 	display: flex;
@@ -73,12 +65,17 @@
 
 /* NAVBAR */
 
+.logo {
+	width: 75px;
+	height: 75px;
+}
+
 .navbar a {
 	font-size: 1rem;
 	color: #0e0d0d;
 	text-decoration: none;
 	font-weight: 500;
-	margin: 1rem;
+	margin: 0.8rem;
 }
 
 #icon_log {
@@ -86,6 +83,15 @@
 	font-size: 1.5rem;
 	justify-content: center;
 	align-items: baseline;
+}
+.brand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.brand_logo {
+	font-size: large;
+	margin-left: 20px;
 }
 
 #check {
@@ -101,17 +107,58 @@
 	display: none;
 }
 
+/* Pagina Cosntruccion  */
+
+.construccion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	background-color: #b6aff0;
+	color: #fff;
+}
+.construccion h1 {
+	font-size: 10rem;
+}
+
+.construccion h2 {
+	font-size: 3rem;
+}
+
+.construccion a {
+	width: 30%;
+	height: 40px;
+	margin: 20px;
+	font-size: 1.5rem;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background-color: #58247667;
+	border-radius: 40px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.construccion a:hover {
+	opacity: 0.9;
+	background: #776ecb;
+}
+
 /* FOOTER */
 
 .pie {
 	background-color: #b6aff0;
 	color: #fff;
+	/* position: relative; */
 }
 
 .contenerdorPie {
 	display: flex;
-	justify-content: space-around;
-	gap: 7rem;
+	height: 90px;
+	justify-content: space-evenly;
+	/* gap: 5rem;  */
 	flex-direction: row;
 	align-items: center;
 }
@@ -128,8 +175,8 @@ div.list {
 	font-size: 0.6rem;
 	color: #000000;
 	text-decoration: none;
-	font-weight: 400;
-	margin: 5px;
+	font-weight: 700;
+	margin: 10px;
 }
 .item-Txt:hover {
 	color: #fff;
@@ -137,8 +184,8 @@ div.list {
 
 .redesSociales {
 	display: flex;
-	justify-content: space-evenly;
-	gap: 50px;
+	justify-content: space-around;
+	gap: 4rem;
 	margin: 20px;
 }
 
@@ -158,6 +205,7 @@ div.list {
 }
 h3.contact_foot {
 	font-size: 0.8rem;
+	margin: 9px;
 }
 
 .formContacto {
@@ -166,9 +214,10 @@ h3.contact_foot {
 
 .inputContact {
 	margin-top: 0;
-	height: 35px;
+	height: 30px;
+	width: 300px;
 	text-align: center;
-	background: #ffffff36;
+	background: #ffffff;
 	border-radius: 50px;
 	border: none;
 	color: #000000;
@@ -199,25 +248,27 @@ h3.contact_foot {
 
 /* BREAKPOINTS */
 
-@media (max-width: 992px) {
-	.header {
-		padding: 0rem 5%;
+@media (max-width: 778px) {
+	.logo {
+		width: 50px;
+		height: 50px;
 	}
-	.navbar a {
-		font-size: 1rem;
-		margin: 1rem;
+	.brand {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-	.user i {
-		color: #fff;
-		margin-left: 1rem;
+	.brand_logo {
+		font-size: small;
+		margin-left: 0;
+		font-weight: 700;
 	}
-}
 
-@media (max-width: 768px) {
 	.menu {
 		display: inline-flex;
 		align-items: center;
 		font-size: 1.9rem;
+		margin-top: 30px;
 	}
 
 	#check:checked ~ .menu #menu-icon {
@@ -226,7 +277,8 @@ h3.contact_foot {
 
 	#menu-icon {
 		display: block;
-		margin-left: 10px;
+		margin-left: 15px;
+		font-size: 2rem;
 	}
 
 	.menu #close-icon {
@@ -245,21 +297,23 @@ h3.contact_foot {
 		left: 0;
 		width: 100%;
 		height: 0;
-		background-color: rgba(0, 0, 0, 0.1);
+		margin: 0;
+		align-items: space-around;
+		background-color: rgba(255, 255, 255, 0.452);
 		backdrop-filter: blur(50px);
-		box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 		overflow: hidden;
 		transition: 0.5s ease-in-out;
 	}
 
 	#check:checked ~ .navbar {
-		height: 10rem;
+		height: 12rem;
 	}
 
 	nav.navbar a {
 		display: flex;
-		font-size: 1rem;
-		justify-content: left;
+		font-size: 1.5rem;
+		margin: 20px;
+		justify-content: space-around;
 		align-items: baseline;
 		text-align: center;
 		transform: translateY(-50px);
@@ -278,8 +332,11 @@ h3.contact_foot {
 	}
 
 	#menu_log {
-		font-size: 1.6rem;
+		font-size: 1.9rem;
 		color: #000000;
+	}
+	.img_foot {
+		display:none;
 	}
 
 	.pie {
@@ -288,9 +345,15 @@ h3.contact_foot {
 		color: #fff;
 		width: 100%;
 	}
+
 	.contenerdorPie {
 		width: 100%;
 	}
+
+	.img_foot {
+		display: none;
+	}
+
 	.list {
 		display: none;
 	}
@@ -302,21 +365,17 @@ h3.contact_foot {
 		margin: 0;
 		width: 100%;
 		font-size: larger;
+		display: flex;
+		justify-content: space-evenly;
+		gap: 50px;
 	}
 
 	.contacto {
 		display: none;
 	}
 
-	.redesSociales {
-		display: flex;
-		justify-content: space-evenly;
-		gap: 50px;
-		margin: 10px;
-	}
-
 	.social-link {
-		font-size: 1rem;
+		font-size: 2rem;
 		color: #000000;
 		text-decoration: none;
 		font-weight: 200;
@@ -324,12 +383,5 @@ h3.contact_foot {
 	}
 	.social-link:hover {
 		color: aliceblue;
-	}
-}
-
-@media screen and (min-width= 800px) {
-	.navbar {
-		display: block;
-		position: absolute;
 	}
 }

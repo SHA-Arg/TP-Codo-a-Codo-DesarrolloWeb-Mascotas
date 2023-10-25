@@ -1,27 +1,99 @@
 import { recuperarData, getMascotas, crearCards } from './cards.js';
 
-async function filtrarMascotas(tipo) {
-    const DATA = await recuperarData();
-    const dataMascotas = DATA.mascotas;
-    console.log(dataMascotas)
-    const result = [];
+async function selectUbicacion() {
+    const DATA = await recuperarData();  
+    const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
+    const ubicacionesUnicas = new Set();
 
-    const btnEsp = document.querySelectorAll('.btnEsp')
-
-    for (let i = 0; i < btnEsp.length; i++) {
-        const btnClick = btnEsp[i].addEventListener('click', (value) => {
-
-                    const mascotaFilter = dataMascotas[tipo][i];
+    for (let i = 0; i < tipoMasc.length; i++) {
+      const datosUbicacion = tipoMasc[i].ubicacion;
+      ubicacionesUnicas.add(datosUbicacion); 
+    }
+  
+    const ubicacionesArray = Array.from(ubicacionesUnicas); 
+  
+    const ubicaciones = document.querySelector('#ubicaciones'); 
+       
+    for (let i = 0; i < ubicacionesArray.length; i++) {        
+        const option = document.createElement("option");
+        option.classList.add('optionUbic');
         
-                    result.push(mascotaFilter);
-                    console.log(result)
-        
-            });
+        option.value = ubicacionesArray[i];
+
+        ubicaciones.appendChild(option); 
+    }
+}
+
+selectUbicacion()
+
+ 
+async function filtrarMascotas() {
+    const DATA = await recuperarData();  
+    const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
+
+    const selectUbic = document.querySelector('#ubicaciones')    
+   
+        selectUbic.addEventListener('change', () => {
             
-        };
+            const optionSelec = selectUbic.value
+                            
+                const mascSelect = tipoMasc.filter(mascota => mascota.ubicacion === optionSelec)
+                console.log(mascSelect)
+        })
+    }
+
+    async function selectTypeMasc() {
+        const DATA = await recuperarData();  
+    // const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros);
+
+        const ubicSelect =  await filtrarMascotas()
+        console.log(ubicSelect)
+
+        if(ubicSelect > 0) {
+            const btnEsp = document.querySelectorAll('.btnEsp')
+
+            for (let i = 0; i < btnEsp.length; i++) {
+                const tipoMasc = DATA.filter(mascota => mascota.tipo === btnEsp.values)
+            console.log(tipoMasc)
+                
+            }
+            
+        }
+    }
+    selectTypeMasc()
+   
+    
+    
+//     const selectMasc = selectUbicacion()
+// console.log(selectMasc)
+    // if(selectMasc) {
+    //     const mascotaSelec = await selectMasc.filter(mascota => mascota.ubicacion === ubicacion)
+    //     console.log(mascotaSelec)
+    // }
+
+
+// async function filtrarMascotas(tipo) {
+//     const DATA = await recuperarData();
+//     const dataMascotas = DATA.mascotas;
+//     console.log(dataMascotas)
+//     const result = [];
+
+//     const btnEsp = document.querySelectorAll('.btnEsp')
+
+//     for (let i = 0; i < btnEsp.length; i++) {
+//         const btnClick = btnEsp[i].addEventListener('click', (value) => {
+
+//                     const mascotaFilter = dataMascotas[tipo][i];
         
-    } 
-    return result;
+//                     result.push(mascotaFilter);
+//                     console.log(result)
+        
+//             });
+            
+//         };
+        
+//     } 
+//     return result;
     // console.log(btnEsp)
     // perros.addEventListener('click', () => {
     //     for (let i = 0; i < dataMascotas.perros.length; i++) {
@@ -32,7 +104,7 @@ async function filtrarMascotas(tipo) {
     //     }
     
 
-filtrarMascotas()
+// filtrarMascotas()
 // async function filtrarSexMascota(perros, sexo) {
 //     const tipoMascota = await filtrarMascotas(perros)
 //     console.log(tipoMascota)

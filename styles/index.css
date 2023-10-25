@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.fontStyle {
+    margin-top: 10%;
+    font-size: 0.9rem;
+}
+
+h1 {
+    margin: 0 auto 10% auto;
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: "Oswald", sans-serif;
+
+}
+
+a {
+    color: #8074eb;
+}
+
+.textoInicial {
+    display: none;
+}
+
+.fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+    width: 100%;
+    min-height: 82vh;
+    background: url("/img/matchea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* opacity: .8; */
+}
+
+.landing {
+    display: flex;
+    margin: 10% auto 5% auto;
+    background-color: #BBB9B9;
+    opacity: .85;
+    border-radius: 30px;
+    width: 80%;
+    padding: 0 auto;
+}
+
+/* .imgMatch {
+    display: flex;
+    background-image: url("/img/matchea.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 92%;
+    height: 30%;
+    border-radius: 5% 5% 0 0;
+
+} */
+
+.matchea {
+    margin: 12% auto;
+    padding: 10% auto;
+    width: 70%;
+
+
+}
+
+.selectStyle {
+    width: 100%;
+    height: 6%;
+    background-color: white;
+    border-radius: 7px;
+    border-color: #B6AFF0;
+}
+
+.btnEspecie {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.btnEsp {
+    border-radius: 20%;
+    padding: 6%;
+    border-width: 1px;
+    background-color: #B6AFF0;
+    border-color: #B6AFF0;
+}
+
+.btnSexo {
+    display: flex;
+    height: 8%;
+    margin-top: 15%;
+    text-align: center;
+
+}
+
+.btnIzqSex {
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+    background-color: #B6AFF0;
+    width: 50%;
+    border-width: 1px;
+    border-color: #B6AFF0;
+}
+
+.btnDerSex {
+    border-top-right-radius: 100px 100px;
+    border-bottom-right-radius: 100px 100px;
+    width: 50%;
+    border-width: 1px;
+    border-color: #B6AFF0;
+}
+
+
+.btnFooter {
+    margin-top: 20%;
+}
+
+.cardFooter {
+    display: flex;
+    border-radius: 100px;
+    background-color: #B6AFF0;
+    padding: 3% 10%;
+    margin: auto;
+    border-color: #B6AFF0;
+    border-width: 1px;
+    font-family: "Oswald", sans-serif;
+
+
+}
+
+.question {
+    margin: 10% auto;
+    text-align: center;
+}
+
+
+/* @media screen and (max-width: 350px) {
+
+    .fontStyle {
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin: 25%;
+    }
+
+    a{
+        color: #8074eb;
+    }
+
+
+    .landing {
+        display: flex;
+        margin: 25% 3% 10% 3%;
+        padding: 0 0 10% 0;
+        border-radius: 3%;
+    }
+
+
+    .matchea {
+        margin-top: 95%;
+        margin-left: 10%;
+
+    }
+
+    .selectStyle {
+     width:200px;
+     background-color: white;
+     border-radius: 5px;
+     border-color: #B6AFF0;
+    }
+
+    .btnEspecie {
+        display: inline-flex;
+        padding-right: 5%;
+    }
+
+    .btnEsp {
+        border-radius: 20%;
+        padding: 10%;
+        margin: 30% 40% 0 5%;
+        border-width: 1px;
+        background-color: #B6AFF0;
+        justify-content: center;
+        border-color: #B6AFF0;
+        display: flex;
+    }
+
+
+    .btnSexo {
+        display: flex;
+        height: 8%;
+        margin-top: 15%;
+        text-align: center;
+
+    }
+
+    .btnIzqSex {
+        padding: 1% 19% 1% 19%;
+    }
+
+    .btnDerSex {
+        padding: 1% 19% 1% 19%;
+    }
+
+
+    .btnFooter {
+        margin-top: 15%;
+    }
+
+    .cardFooter {
+        border-radius:100px;
+        background-color: #B6AFF0;
+        padding: 3%;
+        margin: 25% 0 5% 25%;
+        border-color: #B6AFF0;
+        border-width: 1px;
+        display: flex;
+
+    }
+
+    .question {
+        padding: 3% 0 5% 0;
+        text-align: center;
+    }
+
+} */
+@media screen and (max-width: 350px) {}
+
+@media screen and (min-width: 540px) {
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 7%;
+        letter-spacing: 0.25em;
+    }
+
+    .fondo {
+        margin-top: 10%;
+        min-height: 90vh;
+    }
+
+    .landing {
+        margin: 10% auto 5% auto;
+    }
+
+    .matchea {
+        margin: 10% auto;
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    h1 {
+        font-size: 2.1rem;
+        margin-bottom: 7%;
+        letter-spacing: 0.2em;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
+
+    .fontStyle {
+        font-size: 1.5rem;
+    }
+
+    .fondo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+        min-height: 91vh;
+        background: url("/img/matchea.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* opacity: .8; */
+    }
+
+    .landing {
+        display: flex;
+        margin: 15% auto 5% auto;
+        background-color: #BBB9B9;
+        opacity: .85;
+        border-radius: 30px;
+        width: 80%;
+        padding: auto;
+    }
+
+
+    .matchea {
+        padding: 2%;
+        margin: 10% auto;
+        width: 80%;
+
+    }
+
+    .selectStyle {
+        width: 100%;
+        height: 5%;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+
+    .btnEspecie {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    .btnEsp {
+        margin-top: 5%;
+    }
+
+    .btnIzqSex,
+    .btnDerSex {
+        height: 70%;
+    }
+
+
+    /* .cardFooter {
+        margin: auto;
+        font-size: 1.2rem;
+
+    } */
+
+    .btnFooter {
+        margin-top: 20%;
+    }
+
+    .cardFooter {
+        color: #ffffff;
+        font-size: 1.3rem;
+    }
+
+    /* .question {
+        padding-bottom: 2%;
+        font-size: 1.5rem;
+        text-align: center;
+    } */
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .textoInicialCelu {
+        display: none;
+    }
+
+    .textoInicial {
+        display: flex;
+    }
+
+    h1 {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-top: 5%;
+        font-weight: bolder;
+        letter-spacing: 0.15em;
+
+    }
+
+    .fontStyle {
+        font-size: 1.5rem;
+    }
+
+    .selectStyle {
+        width: 100%;
+        height: 30px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
+
+    .fondo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+        min-height: 91vh;
+        background: url("/img/matchea.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* opacity: .8; */
+    }
+
+    .landing {
+        display: flex;
+        margin: 12% 0 5% 10%;
+        background-color: #BBB9B9;
+        opacity: .85;
+        border-radius: 30px;
+        width: 37%;
+        height: 45vw;
+        padding: 0 2% 5% 2%;
+    }
+
+
+    .matchea {
+        padding: 0 2% 2% 2%;
+        width: 80%;
+        height: 40vw;
+
+    }
+
+    /* .matchea {
+        margin: 12% 0 5% 57%;
+        display: inline-block;
+        padding: 2% 3% 2% 3%;
+        width: 35%;
+        height: 31%;
+        background-color: #BBB9B9;
+        border-color: #BBB9B9;
+        border-width: 3px;
+        border-style: dotted;
+        border-radius: 5%;
+        opacity: .8;
+
+    } */
+
+    .btnEspecie {
+        margin-top: 2%;
+    }
+
+    .btnEsp {
+        margin-top: 4%;
+    }
+
+    .btnsexo {
+        margin-top: 5%;
+    }
+
+    .btnFooter {
+        margin-top: 15%;
+    }
+
+    .cardFooter {
+        color: #ffffff;
+        font-size: 1.3rem;
+    }
+
+    .question {
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+}
+
+/* @media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 2.7rem;
+        margin-left: 15%;
+        font-weight: bolder;
+    }
+
+    .fontStyle {
+        font-size: 1.5rem;
+    }
+
+    .selectStyle {
+        width: 100%;
+        height: 30px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
+
+    .landing {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .imgMatch {
+        background-size: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: none;
+    }
+
+    .matchea {
+        margin: 12% 0 5% 57%;
+        display: inline-block;
+        padding: 2% 3% 2% 3%;
+        width: 30%;
+        height: 31%;
+        background-color: #BBB9B9;
+        border-color: #BBB9B9;
+        border-width: 3px;
+        border-style: dotted;
+        border-radius: 5%;
+        opacity: .8;
+
+    }
+
+    .btnEspecie {
+        margin-top: 2%;
+    }
+
+    .btnEsp {
+        margin-top: 4%;
+    }
+
+    .btnsexo {
+        margin-top: 5%;
+    }
+
+    .btnIzqSex,
+    .btnDerSex {
+        padding: 1% 21%;
+    }
+
+    .btnFooter {
+        margin-top: 15%;
+    }
+
+    .cardFooter {
+        padding: 3% 10% 3% 10%;
+        margin: 20% 0 2% 20%;
+
+    }
+
+    .question {
+        padding-bottom: 5%;
+        text-align: center;
+
+    }
+
+}
+@media screen and (min-width: 1440px){
+
+    .matchea {
+        margin: 7% 0 2% 57%;
+        padding-top: 2%;
+
+    }
+    .btnsexo {
+        margin-top: 2%;
+    }
+    .btnFooter {
+        margin: 5% auto 0 auto;
+
+    }
+
+    .cardFooter {
+        padding: 3% 10% 3% 10%;
+        margin: 20% auto 0 auto;
+    }
+    .question {
+        margin: 5% 0 5% 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+} */
