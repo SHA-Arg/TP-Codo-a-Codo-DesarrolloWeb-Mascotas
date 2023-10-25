@@ -151,13 +151,14 @@
 .pie {
 	background-color: #b6aff0;
 	color: #fff;
+	/* position: relative; */
 }
 
 .contenerdorPie {
 	display: flex;
 	height: 90px;
 	justify-content: space-evenly;
-	gap: 5rem;
+	/* gap: 5rem;  */
 	flex-direction: row;
 	align-items: center;
 }
@@ -184,7 +185,7 @@ div.list {
 .redesSociales {
 	display: flex;
 	justify-content: space-around;
-	gap: inherit;
+	gap: 4rem;
 	margin: 20px;
 }
 
@@ -333,6 +334,9 @@ h3.contact_foot {
 	#menu_log {
 		font-size: 1.9rem;
 		color: #000000;
+	}
+	.img_foot {
+		display:none;
 	}
 
 	.pie {

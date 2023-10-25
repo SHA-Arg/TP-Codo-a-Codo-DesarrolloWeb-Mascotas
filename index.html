@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Patitas Felices</title>
 	<link rel="stylesheet" href="../styles/estilos.css" />
-	<link rel="stylesheet" href="/styles/landing.css">
+	<link rel="stylesheet" href="/styles/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 	<link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
@@ -14,59 +14,87 @@
 </head>
 
 <body>
+
 	<!-- CABECERA  -->
 	<header class="header" id="header">
 		<!-- ACÁ SE CARGA EL HEADER -->
 	</header>
 
-	<!-- MAIN
-	<h1 class="eslogan">Por un mundo mejor</h1>
-	otro div con la carD -->
+	<!-- MAIN -->
 
-	<div class="landing">
-		<div class="imgMatch">
-			<h1> MATCHEA</h1>
-		</div>
+	<div class="fondo">
+		<div class="textoInicial">
+			<h1> ¡ENCUENTRA A TU MATCH!</h1>
+		</div> 
+		<div class="landing">
 
-		<div class="matchea">
+			<div class="matchea">
+				<div class="textoInicialCelu">
+					<h1> ¡ENCUENTRA A TU MATCH!</h1>
+				</div> 
+				<label>
+					<p>Ubicación</p>
+					<input list="ubicaciones" class="selectStyle"></input>
+				</label>
+				<datalist id="ubicaciones">
+					<option value="Buenos Aires, Argentina"></option>
+					<option value="Ciudad Autónoma de Buenos Aires, Argentina"></option>
+					<option value="Catamarca, Argentina"></option>
+					<option value="Chaco, Argentina"></option>
+					<option value="Chubut, Argentina"></option>
+					<option value="Córdoba, Argentina"></option>
+					<option value="Corrientes, Argentina"></option>
+					<option value="Entre Ríos, Argentina"></option>
+					<option value="Formosa, Argentina"></option>
+					<option value="Jujuy, Argentina"></option>
+					<option value="La Pampa, Argentina"></option>
+					<option value="La Rioja, Argentina"></option>
+					<option value="Mendoza, Argentina"></option>
+					<option value="Misiones, Argentina"></option>
+					<option value="Neuquén, Argentina"></option>
+					<option value="Río Negro, Argentina"></option>
+					<option value="Salta, Argentina"></option>
+					<option value="San Juan, Argentina"></option>
+					<option value="San Luis, Argentina"></option>
+					<option value="Santa Cruz, Argentina"></option>
+					<option value="Santa Fe, Argentina"></option>
+					<option value="Santiago del Estero, Argentina"></option>
+					<option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur, Argentina"></option>
+					<option value="Tucumán, Argentina"></option>
+				</datalist>
 
-			<p>Quiero</p>
 
-			<div class="btnQuiero">
-				<button class="btnIzq">Adoptar</button>
-				<button class="btnDer">Transitar</button>
+				<p class="fontStyle">Busco</p>
+
+				<div class="btnEspecie">
+					<button class="btnEsp"><img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAS9JREFUSEvt1b8uRUEQx/HPlag9gELjAahEJSqFJ1B4DIXQUKgEhYhEpRO1UkIlISEeQEgUCpXQiIbsyTmyTvb8u3Ebsd3uzvy+uzOzsz0DHr0B6+sKuMMudtoerCvgMxeexG0bSL+AWPsBazhMAX8DUOguYbMMiQFn+eZszdWLEBUmM2R5PC/5hHmmEwNeMIIxPFZAUoBhnCbsM+0YcIJ57OUxfU44FYdoyu8TRsuAUBnXJWgsNIV1zDWpYwMrZUCYT+OiQmALR7hqANxjAm8pQFgrx7nQC+shqUN5SYZcxeMdB1jFa7GRKtMqQPD5wDL2sYgFjGM7F/8W7hdQ+N3kpXmJ47qQdb1B58f69wFVvSouhNp+1hSif0Dyy2wT3zY2WUl3/XBa9LmfJgMHfAGOZDsZ0X53jQAAAABJRU5ErkJggg==" /></button>
+					<button class="btnEsp"><img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXFJREFUSEvt1b9LVlEcx/GXhBiBs+BUEDhKi6PSoNg/IP0D/QFRjpLi5K9FNw2pMWxyCIKGWnPJXVx0MEcFBxGTk+c+HO9vHnygobPce8793s/7+5PTp8err8f62gB+4BrPozPvsNDgWMemCfAEhzjFUBT9g1msVkDeYoVb5+sAw5jHK+xgJgGE1zJIJt7RzgNGsYExDETBEzxDeIYVImizChGMYD8RPsJHLOM8Uewa8AUvEAq0jeMKNzPAREzx92iX3xciOMNgjOCyJgcpoB/fEkC6LwB+IdRgDh9qIgi1yDqqyo8rBNidLhrHVzys8X4abzDZUOW92CiFNg3dspYMVV7nM7aiI3WMl/hUNwdVnRImOszDYyzhQQnlfZydv5+qBq2uFUN+Q4p+4zWm8Ag/sYndFNoNIPx/gUWsx/dw9hQH+Yi6BVTlv6D3TwBSJ9LaZOdlZ50I20TwH1DaEFV5vbcatLlQWtk03cmtROqMbgC7g04ZecME9AAAAABJRU5ErkJggg==" /></button>
+					<button class="btnEsp"><span class="material-symbols-outlined">
+							raven
+						</span></button>
+				</div>
+
+
+				<div class="btnSexo">
+					<button class="btnIzqSex" value="hembra" onclick="filtrarSexMascota(this.value, sexo)"><span
+							class="material-symbols-outlined">
+							female
+						</span></button>
+					<button class="btnDerSex" value="macho" onclick="filtrarSexMascota(this.value, sexo)"><span
+							class="material-symbols-outlined">
+							male
+						</span></button>
+				</div>
+
+
+
+				<div class="btnFooter">
+					<button class="cardFooter">Ver resultados</button>
+				</div>
+				<p class="question">¿Ya tienes cuenta? <a href="/pages/login.html">Ingresa</a></p>
 			</div>
-			<p>Busco</p>
-
-			<div class="btnEspecie">
-				<button class="btnEsp" id="btnPerro" value="perros" onclick="filtrarMascotas(value)">
-					<img
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAS9JREFUSEvt1b8uRUEQx/HPlag9gELjAahEJSqFJ1B4DIXQUKgEhYhEpRO1UkIlISEeQEgUCpXQiIbsyTmyTvb8u3Ebsd3uzvy+uzOzsz0DHr0B6+sKuMMudtoerCvgMxeexG0bSL+AWPsBazhMAX8DUOguYbMMiQFn+eZszdWLEBUmM2R5PC/5hHmmEwNeMIIxPFZAUoBhnCbsM+0YcIJ57OUxfU44FYdoyu8TRsuAUBnXJWgsNIV1zDWpYwMrZUCYT+OiQmALR7hqANxjAm8pQFgrx7nQC+shqUN5SYZcxeMdB1jFa7GRKtMqQPD5wDL2sYgFjGM7F/8W7hdQ+N3kpXmJ47qQdb1B58f69wFVvSouhNp+1hSif0Dyy2wT3zY2WUl3/XBa9LmfJgMHfAGOZDsZ0X53jQAAAABJRU5ErkJggg==" />
-				</button>
-				<button class="btnEsp" id="btnGato" data-value="gatos" onclick="filtrarMascotas(value)">
-					<img
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXFJREFUSEvt1b9LVlEcx/GXhBiBs+BUEDhKi6PSoNg/IP0D/QFRjpLi5K9FNw2pMWxyCIKGWnPJXVx0MEcFBxGTk+c+HO9vHnygobPce8793s/7+5PTp8err8f62gB+4BrPozPvsNDgWMemCfAEhzjFUBT9g1msVkDeYoVb5+sAw5jHK+xgJgGE1zJIJt7RzgNGsYExDETBEzxDeIYVImizChGMYD8RPsJHLOM8Uewa8AUvEAq0jeMKNzPAREzx92iX3xciOMNgjOCyJgcpoB/fEkC6LwB+IdRgDh9qIgi1yDqqyo8rBNidLhrHVzys8X4abzDZUOW92CiFNg3dspYMVV7nM7aiI3WMl/hUNwdVnRImOszDYyzhQQnlfZydv5+qBq2uFUN+Q4p+4zWm8Ag/sYndFNoNIPx/gUWsx/dw9hQH+Yi6BVTlv6D3TwBSJ9LaZOdlZ50I20TwH1DaEFV5vbcatLlQWtk03cmtROqMbgC7g04ZecME9AAAAABJRU5ErkJggg==" />
-				</button>
-				<button class="btnEsp" id="btnOtro" value="otros"><span class="material-symbols-outlined">
-						raven
-					</span></button>
-			</div>
-
-			<div class="btnSexo">
-				<button class="btnIzqSex" value="hembra" onclick="filtrarSexMascota(this.value, sexo)"><span
-						class="material-symbols-outlined">
-						female
-					</span></button>
-				<button class="btnDerSex" value="macho" onclick="filtrarSexMascota(this.value, sexo)"><span
-						class="material-symbols-outlined">
-						male
-					</span></button>
-			</div>
-
-			<div class="btnFooter">
-				<button class="cardFooter">Ver resultados</button>
-			</div>
-			<p class="question">¿Ya tienes cuenta? <a href="/Prototipo/pages/login.html">Ingresa</a></p>
 		</div>
 	</div>
 
@@ -74,6 +102,7 @@
 	<footer class="pie">
 		<!-- ACÁ SE CARGA EL FOOTER -->
 	</footer>
+
 	<!-- Los Scripts -->
 	<script src="./js/header_footer.js"></script>
 	<script type="module" src="./js/cards.js"></script>
