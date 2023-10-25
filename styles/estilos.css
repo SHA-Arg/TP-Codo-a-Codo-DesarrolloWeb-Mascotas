@@ -65,6 +65,11 @@
 
 /* NAVBAR */
 
+.logo {
+	width: 75px;
+	height: 75px;
+}
+
 .navbar a {
 	font-size: 1rem;
 	color: #0e0d0d;
@@ -102,9 +107,9 @@
 	display: none;
 }
 
-/* Pagina 404  */
+/* Pagina Cosntruccion  */
 
-.error {
+.construccion {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -114,15 +119,15 @@
 	background-color: #b6aff0;
 	color: #fff;
 }
-.error h1 {
+.construccion h1 {
 	font-size: 10rem;
 }
 
-.error h2 {
+.construccion h2 {
 	font-size: 3rem;
 }
 
-.error a {
+.construccion a {
 	width: 30%;
 	height: 40px;
 	margin: 20px;
@@ -136,51 +141,7 @@
 	cursor: pointer;
 	outline: none;
 }
-.error a:hover {
-	opacity: 0.9;
-	background: #776ecb;
-}
-
-/* Mensaje Enviado */
-
-.mensaje_enviado {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	width: 100%;
-	background-color: #b6aff0;
-	color: #fff;
-}
-
-.mensaje_enviado h1 {
-	font-size: 4rem;
-	text-align: center;
-}
-
-.mensaje_enviado h2 {
-	font-size: 2rem;
-	text-align: center;
-	justify-content: center;
-}
-
-.mensaje_enviado a {
-	width: 50%;
-	height: 40px;
-	margin: 20px;
-	font-size: 1.5rem;
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
-	background-color: #58247667;
-	border-radius: 40px;
-	border: none;
-	cursor: pointer;
-	outline: none;
-}
-
-.mensaje_enviado a:hover {
+.construccion a:hover {
 	opacity: 0.9;
 	background: #776ecb;
 }
@@ -288,13 +249,17 @@ h3.contact_foot {
 /* BREAKPOINTS */
 
 @media (max-width: 778px) {
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
 	.brand {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 	.brand_logo {
-		font-size: large;
+		font-size: small;
 		margin-left: 0;
 		font-weight: 700;
 	}
@@ -313,7 +278,6 @@ h3.contact_foot {
 	#menu-icon {
 		display: block;
 		margin-left: 15px;
-
 		font-size: 2rem;
 	}
 
@@ -342,13 +306,13 @@ h3.contact_foot {
 	}
 
 	#check:checked ~ .navbar {
-		height: 10rem;
+		height: 12rem;
 	}
 
 	nav.navbar a {
 		display: flex;
-		font-size: 1.3rem;
-		margin: 15px;
+		font-size: 1.5rem;
+		margin: 20px;
 		justify-content: space-around;
 		align-items: baseline;
 		text-align: center;
@@ -385,6 +349,11 @@ h3.contact_foot {
 	.contenerdorPie {
 		width: 100%;
 	}
+
+	.img_foot {
+		display: none;
+	}
+
 	.list {
 		display: none;
 	}
@@ -399,7 +368,6 @@ h3.contact_foot {
 		display: flex;
 		justify-content: space-evenly;
 		gap: 50px;
-		/* margin: 10px; */
 	}
 
 	.contacto {
@@ -415,12 +383,5 @@ h3.contact_foot {
 	}
 	.social-link:hover {
 		color: aliceblue;
-	}
-}
-
-@media screen and (min-width= 800px) {
-	.navbar {
-		display: block;
-		position: absolute;
 	}
 }
