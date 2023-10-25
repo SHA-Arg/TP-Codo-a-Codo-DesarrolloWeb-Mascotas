@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patitas Felices</title>
+    <link rel="stylesheet" href="../styles/estilos.css" />
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png" />
+</head>
+
+<body>
+    <!-- CABECERA  -->
+    <header class="header" id="header">
+        <!-- ACÁ SE CARGA EL HEADER -->
+    </header>
+
+    <!-- SECCION CONTACTO -->
+    <section>
+        <!-- inicio de sesion -->
+        <div class="contenedor">
+            <div class="login_formulario">
+                <!-- Formulario funcionanado con Netlify, con CAPTCHA -->
+                <form id="form" action="mensaje_enviado.html" method="POST" netlify data-netlify="true">
+                    <h2>Contacto</h2>
+
+                    <div class="input-contenedor">
+                        <input type="text" name="name" id="nombre" required>
+                        <label for="name">Nombre</label>
+                    </div>
+
+                    <div class="input-contenedor">
+                        <input type="email" name="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-contenedor">
+                        <label class="mensaje" for="">Mensaje</label>
+                        <textarea class="text_area" name="message" id="message" cols="30" required> </textarea>
+                    </div>
+                    <button type="submit" class="enviar_form">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <!-- ACÁ SE CARGA EL FOOTER -->
+    </footer>
+
+    <script src="/js/header_footer.js"></script>
+</body>
+
+</html>

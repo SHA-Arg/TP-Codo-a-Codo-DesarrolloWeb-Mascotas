@@ -1,20 +1,21 @@
-import { recuperarData } from './cards.js';
+import { recuperarData } from "./cards.js";
 
 async function verPerfil() {
-    const params = new URLSearchParams(window.location.search);
-    const index = params.get('index');
+	const params = new URLSearchParams(window.location.search);
+	const index = params.get("index");
+    const tipoMasc = params.get("tipo");
 
-    const DATA = await recuperarData();
-    const datosMascotas = DATA.mascotas;
-    const mascotaPerro = datosMascotas.perros[index];
-    const mascotaGato = datosMascotas.gatos[index];
-   
-    const containerProfile = document.querySelector('.x');
+	const DATA = await recuperarData();
+	const datosMascotas = DATA.mascotas;
+	const mascotaPerro = datosMascotas.perros[index];
+	const mascotaGato = datosMascotas.gatos[index];
 
-    if (mascotaPerro && index !== null) {
+	const containerProfile = document.querySelector(".profile");
+
+    if (tipoMasc == 'perro' && index !== null) {
         const perfil = crearPerfil(mascotaPerro, index);
         containerProfile.innerHTML = perfil;
-    } else if (mascotaGato && index !== null) {
+    } else if (tipoMasc == 'gato' && index !== null) {
         const perfil = crearPerfil(mascotaGato, index);
         containerProfile.innerHTML = perfil;
     } else {
@@ -22,16 +23,15 @@ async function verPerfil() {
     }
 }
 
-verPerfil()
+verPerfil();
 
 function crearPerfil(mascota, index) {
-    let perfil =
-        `<div class="profile-header">
-        <div class="profile-img">
-            <img src="${mascota.img}" alt="imagen mascota">
+	let perfil = `<div class="profile-header">
+        <div >
+            <img class="profile-img" src="${mascota.img}" alt="imagen mascota">
         </div>
         <div class="profile-header-data">
-            <h2 class="profile-header-title">${mascota.nombre}</h2>
+            <h1 class="profile-header-title">${mascota.nombre}</h1>
             <p><b>Ubicación:</b> ${mascota.ubicacion}</p>
         </div>
     </div>
@@ -76,9 +76,7 @@ function crearPerfil(mascota, index) {
             <a href="apadrinar.html" value="${index}"><button type="button" class="btn-profile">Apadrinar</button></a>
             <a href="transitar.html" value="${index}"><button type="button" class="btn-profile">Transitar</button></a>
         </div>
-    </div>`
+    </div>`;
 
-    return perfil;
+	return perfil;
 }
-
-

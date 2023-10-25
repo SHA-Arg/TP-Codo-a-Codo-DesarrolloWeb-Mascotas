@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+	width: 100%;
+	height: 100vh;
+	background: url(/img/matchea.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.contenedor {
+	position: relative;
+	width: 400px;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img {
+	top: 90px;
+	left: 50%;
+	backdrop-filter: blur(80px);
+	transform: translateX(-50%);
+	border-radius: solid #776ecb 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor h2 {
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.input-contenedor {
+	position: relative;
+	margin: 30px 30px;
+	width: 300px;
+	border-bottom: 2px solid #fff;
+}
+
+.input-contenedor label {
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	color: #fff;
+	font-size: 1rem;
+	transform: translateY(-50%);
+	transition: 0.6s;
+	pointer-events: none;
+	font-weight: bold;
+}
+
+.input-contenedor input {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: -35 0 5px;
+	height: 50px;
+}
+
+#message {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 1.2rem;
+	height: 100px;
+	margin-top: 10px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+	top: -5px;
+}
+
+label.mensaje {
+	margin-top: 10px;
+	top: -15px;
+}
+
+.enviar_form {
+	width: 100%;
+	height: 50px;
+	background-color: #58247667;
+	border-radius: 40px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+}
+.enviar_form:hover {
+	background: #776ecb;
+	opacity: 0.9;
+}

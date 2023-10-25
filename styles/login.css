@@ -1,17 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-/* ESTILOS GLOBALES */
-* {
-	font-family: "Roboto", sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,800&display=swap");
 
 section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 41px;
 	width: 100%;
 	min-height: 100vh;
 	background: url(/img/inicio.jpg) no-repeat;
@@ -22,23 +15,10 @@ section {
 .contenedor {
 	position: relative;
 	width: 400px;
-	border: 2px solid rgba(211, 88, 207, 0.6);
+	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
 	backdrop-filter: blur(15px);
 	height: 500px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.login_logo {
-	position: absolute;
-	top: -90px;
-	left: 50%;
-	background-color: #776ecb;
-	backdrop-filter: blur(80px);
-	transform: translateX(-50%);
-	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -67,11 +47,6 @@ section {
 	transition: 0.6s;
 	pointer-events: none;
 	font-weight: bold;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-	top: -5px;
 }
 
 .input-contenedor input {
@@ -117,20 +92,26 @@ input:valid ~ label {
 	text-decoration: underline;
 }
 
+input:focus ~ label,
+input:valid ~ label {
+	top: -5px;
+}
+
 .ingresar {
 	width: 100%;
 	height: 50px;
-	background-color: #7a707067;
+	margin: 20px 0px;
+	background-color: #58247667;
 	border-radius: 40px;
 	border: none;
-	color: #fff;
 	cursor: pointer;
 	outline: none;
 	font-size: 1rem;
 }
+
 .ingresar:hover {
-	background: #776ecb;
 	opacity: 0.9;
+	background: #776ecb;
 }
 
 .crear_cuenta {
@@ -150,4 +131,32 @@ input:valid ~ label {
 
 .crear_cuenta p a:hover {
 	text-decoration: underline;
+}
+
+/* Breakpoints */
+/*? Falla en tamaño tableta!!  */
+
+@media (max-width: 768px) {
+	.contenedor {
+		width: 330px;
+		height: 450px;
+	}
+	.contenedor h2 {
+		font-size: 1.5rem;
+	}
+	.input-contenedor input {
+		font-size: 1rem;
+	}
+	.input-contenedor span {
+		font-size: 1rem;
+	}
+	.ingresar {
+		font-size: 1rem;
+	}
+	.crear_cuenta {
+		font-size: 0.8rem;
+	}
+	.recuperar {
+		font-size: 0.8rem;
+	}
 }
