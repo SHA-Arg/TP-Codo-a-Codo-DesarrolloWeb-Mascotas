@@ -4,34 +4,21 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 60px;
+	margin-top: 41px;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background: url(/img/matchea.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .contenedor {
-	margin: 30px;
 	position: relative;
 	width: 400px;
 	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 20px;
 	backdrop-filter: blur(15px);
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.img {
-	top: 90px;
-	left: 50%;
-	backdrop-filter: blur(80px);
-	transform: translateX(-50%);
-	border-radius: solid #776ecb 5px;
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,7 +32,7 @@ section {
 
 .input-contenedor {
 	position: relative;
-	margin: 30px 30px;
+	margin: 30px 10px;
 	width: 300px;
 	border-bottom: 2px solid #fff;
 }
@@ -104,11 +91,10 @@ label.mensaje {
 .enviar_form {
 	width: 100%;
 	height: 50px;
-	margin-top: 60px;
+	margin: 20px 0px;
 	background-color: #58247667;
 	border-radius: 40px;
 	border: none;
-	color: #fff;
 	cursor: pointer;
 	outline: none;
 	font-size: 1rem;
@@ -118,16 +104,15 @@ label.mensaje {
 	opacity: 0.9;
 }
 
-/* @media (min-width: 778px) and (max-width: 1280px) {
-	section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-top: 60px;
-		width: 100%;
-		height: 100vh;
-		background: url(/img/matchea.jpg) no-repeat;
-		background-size: cover;
-		background-position: center;
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+	.contenedor {
+		width: 80%;
 	}
-} */
+}
+
+@media only screen and (max-width: 480px) {
+	.input-contenedor {
+		width: 90%;
+	}
+}
