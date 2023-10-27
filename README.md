@@ -9,10 +9,6 @@ Documentación del proyecto - Sitio Web Patitas Felices
 Sofía Egaña Jiménez, Sebastián Hereñu Amaral, Andrea Jiménez Espinoza,
 Moises Edson Yañez Villa
 
-Documentación del proyecto - Sitio Web Patitas Felices
-Sofía Egaña Jiménez, Sebastián Hereñu Amaral, Andrea Jiménez Espinoza,
-Moises Edson Yañez Villa
-
 **Título y Descripción del Proyecto:**
 
 Título: “Patitas Felices” (https://patitasfelices-tpo.netlify.app)
@@ -124,7 +120,12 @@ Proyecto Frontend: 27.10.2023
 
 # Patitas Felices
 
-[![Patitas Felices](https://patitasfelices-tpo.netlify.app)](https://patitasfelices-tpo.netlify.app)
+<h1 align="center">PATITAS FELICES<img src="https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png" style="width: 200px; height: 200px"> </h1>
+
+<p align="right">
+   <h2>Proyecto DesarrolloWeb CodoaCodo</h2>
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   </p>
 
 **Description**
 
