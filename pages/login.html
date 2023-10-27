@@ -59,18 +59,33 @@
     </footer>
 
     <!-- Script para validar el formulario -->
-    <script> function validateForm() {
+    <script>
+
+        function validateForm() {
             const emailOrId = document.getElementById('emailOrId').value;
             const password = document.getElementById('password').value;
+
+            // Email validation using regular expression
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (emailOrId == '') {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'Email incorrecto!',
+                    text: 'Email esta vacio!',
                 });
                 return false;
             }
+
+            if (!emailRegex.test(emailOrId)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor, introduce un email válido',
+                });
+                return false;
+            }
+
 
             if (password == '') {
                 Swal.fire({
@@ -81,7 +96,7 @@
                 return false;
             }
 
-            if (emailOrId == 'admin' && password == '1234') {
+            if (emailOrId == '' && password == '') {
                 Swal.fire(
                     'Bienvenido!',
                     'Acceso correcto!',

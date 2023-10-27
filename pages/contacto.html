@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -22,21 +24,21 @@
     <section>
         <div class="contenedor">
             <div class="login_formulario">
-                <form action="" id="form" autocomplete="off" method="POST">
+                <form id="form">
                     <h2>Contacto</h2>
                     <div class="input-contenedor">
-                        <input type="text" name="name" class="form-control" id="">
-                        <label for="name" for="" class="form-label">Nombre</label>
+                        <input type="text" name="name">
+                        <label>Nombre</label>
                     </div>
                     <div class="input-contenedor">
-                        <input type="email" name="email" id="email">
-                        <label for="email" for="" class="form-label">Email</label>
+                        <input type="email" id="email">
+                        <label>Email</label>
                     </div>
                     <div class="input-contenedor">
-                        <label class="mensaje" for="">Mensaje</label>
+                        <label>Mensaje</label>
                         <textarea class="text_area" name="message" id="message" cols="30"></textarea>
                     </div>
-                    <button class="enviar_form" type="submit" onclick="validateForm()">Enviar</button>
+                    <button class="enviar_form" onclick="validateForm()">Enviar</button>
                 </form>
             </div>
         </div>
@@ -55,17 +57,37 @@
             let message = document.getElementById("message").value;
 
             if (name == "") {
-                alert("Por favor, ingrese su nombre.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Nombre vacio!',
+                });
                 return false;
             }
 
             if (email == "") {
-                alert("Por favor, ingrese su dirección de correo electrónico.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Email esta vacio!',
+                });
+                return false;
+            }
+            if (!emailRegex.test(email)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Por favor, introduce un email válido',
+                });
                 return false;
             }
 
             if (message == "") {
-                alert("Por favor, ingrese un mensaje.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'No te olvides el mensaje!',
+                });
                 return false;
             }
 
