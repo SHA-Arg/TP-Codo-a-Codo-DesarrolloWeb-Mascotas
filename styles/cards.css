@@ -7,7 +7,7 @@
 }
 
 .container-cards {
-    margin-top: 18%;
+    margin-top: 25%;
     width: 100%;
 }
 
@@ -145,8 +145,13 @@ p.color {
 
 @media screen and (min-width: 768px) {
 
+    .container-cards {
+        margin-top: 15%;
+        width: 100%;
+    }
     .container-cards h2 {
         font-size: 1.5rem;
+        font-family: "Oswald", sans-serif;
     }
 
     .cards-group {
