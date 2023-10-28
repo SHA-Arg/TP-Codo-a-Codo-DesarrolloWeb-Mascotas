@@ -54,7 +54,7 @@ Personas naturales, mayores de 18 años, residentes en Argentina y/o Organizacio
 
 Contenido: información personal de cada animal puesto en adopción o en transición, información de contacto y fotos del equipo detrás del proyecto (equipo ficticio), información de contacto y logos de las organizaciones participantes (organizaciones ficticias), imágenes de animales (en adopción/transición, o decorativas), preguntas de formularios de adopción y transición.
 
-Funcionalidades: formulario corto en landing page para hacer matcheo, formulario de adopción, formulario de transición, formulario de donación,formulario de incio de sesión, formulario de contacto, busqueda avanzada por ubicación, tipo y sexo del animal.
+Funcionalidades: formulario corto en landing page para hacer matcheo, formulario de adopción, formulario de transición, formulario de donación, formulario de incio de sesión y formulario de contacto
 
 **Responsabilidades del Equipo:**
 
@@ -90,7 +90,7 @@ Recursos gráficos: Google icons, Google Fonts, Freepiks, iconify y unplash (Fig
 
 **Desarrollos futuros:**
 
-Elementos a añadir: página de registro, página de voluntariado, página venta de emprendimientos de organizaciones, blog de noticias/tenencia responsable de animales, página de veterinarias, menú e interfaz específica para organizaciones (con apartado de publicaciones hechas, formularios recibidos, estadísticas, etc.)
+Elementos a añadir: página de registro, página de voluntariado, página venta de emprendimientos de organizaciones, blog de noticias/tenencia responsable de animales, página de veterinarias, menú e interfaz específica para organizaciones (con apartado de publicaciones hechas, formularios recibidos, estadísticas, etc.), busqueda avanzada por ubicación, tipo y sexo del animal (filtro).
 
 **A mejorar:**
 
@@ -295,7 +295,7 @@ Opción b) varias páginas
 
 ## Diseño
 
-Color: recomendación colores cálidos (amarillo = positivadad, naranja = franqueza, etc)
+Color: recomendación colores cálidos (amarillo = positivdad, naranja = franqueza, etc)
 
 Font: no letra muy formal (tipo times new roman)
 
