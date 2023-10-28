@@ -25,21 +25,43 @@
 	<div class="fondo">
 		<div class="textoInicial">
 			<h1> ¡ENCUENTRA A TU MATCH!</h1>
-		</div>
+		</div> 
 		<div class="landing">
 
 			<div class="matchea">
 				<div class="textoInicialCelu">
 					<h1> ¡ENCUENTRA A TU MATCH!</h1>
-				</div>
+				</div> 
 				<label>
 					<p>Ubicación</p>
 					<input list="ubicaciones" class="selectStyle"></input>
 				</label>
-				<select id="ubicaciones">
-				
-					<!-- ACÁ SE CARGAN LOS OPTION DE MANERA DINÁMICA, DE ACUERDO A LA UBICACIÓN DE LAS MASCOTAS EXISTENTES EN EL ARCHIVO DATA.JSON -->
-				</select>
+				<datalist id="ubicaciones">
+					<option value="Buenos Aires, Argentina"></option>
+					<option value="Ciudad Autónoma de Buenos Aires, Argentina"></option>
+					<option value="Catamarca, Argentina"></option>
+					<option value="Chaco, Argentina"></option>
+					<option value="Chubut, Argentina"></option>
+					<option value="Córdoba, Argentina"></option>
+					<option value="Corrientes, Argentina"></option>
+					<option value="Entre Ríos, Argentina"></option>
+					<option value="Formosa, Argentina"></option>
+					<option value="Jujuy, Argentina"></option>
+					<option value="La Pampa, Argentina"></option>
+					<option value="La Rioja, Argentina"></option>
+					<option value="Mendoza, Argentina"></option>
+					<option value="Misiones, Argentina"></option>
+					<option value="Neuquén, Argentina"></option>
+					<option value="Río Negro, Argentina"></option>
+					<option value="Salta, Argentina"></option>
+					<option value="San Juan, Argentina"></option>
+					<option value="San Luis, Argentina"></option>
+					<option value="Santa Cruz, Argentina"></option>
+					<option value="Santa Fe, Argentina"></option>
+					<option value="Santiago del Estero, Argentina"></option>
+					<option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur, Argentina"></option>
+					<option value="Tucumán, Argentina"></option>
+				</datalist>
 
 
 				<p class="fontStyle">Busco</p>
@@ -56,11 +78,11 @@
 
 
 				<div class="btnSexo">
-					<button class="btnIzqSex" value="hembra" onclick="filtrarSexMascota(this.value, sexo)"><span
+					<button class="btnIzqSex" value="hembra" ><span
 							class="material-symbols-outlined">
 							female
 						</span></button>
-					<button class="btnDerSex" value="macho" onclick="filtrarSexMascota(this.value, sexo)"><span
+					<button class="btnDerSex" value="macho" ><span
 							class="material-symbols-outlined">
 							male
 						</span></button>
@@ -69,7 +91,7 @@
 
 
 				<div class="btnFooter">
-					<button class="cardFooter" href="/pages/cards.html">Ver resultados</button>
+					<a href="./pages/cards.html"><button class="cardFooter">Ver resultados</button></a>
 				</div>
 				<p class="question">¿Ya tienes cuenta? <a href="/pages/login.html">Ingresa</a></p>
 			</div>
