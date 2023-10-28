@@ -151,20 +151,21 @@
 .pie {
 	background-color: #b6aff0;
 	color: #fff;
-	/* position: relative; */
+	position: relative;
 }
 
 .contenerdorPie {
 	display: flex;
 	height: 90px;
 	justify-content: space-evenly;
-	/* gap: 5rem;  */
 	flex-direction: row;
 	align-items: center;
 }
 
 div.list {
 	color: #fff;
+	font-size: 0.8rem;
+	margin: 0;
 }
 
 .item-Txt {
@@ -185,7 +186,7 @@ div.list {
 .redesSociales {
 	display: flex;
 	justify-content: space-around;
-	gap: 4rem;
+	gap: 3rem;
 	margin: 20px;
 }
 
@@ -248,7 +249,7 @@ h3.contact_foot {
 
 /* BREAKPOINTS */
 
-@media (max-width: 778px) {
+@media (max-width: 992px) {
 	.logo {
 		width: 50px;
 		height: 50px;
@@ -336,7 +337,7 @@ h3.contact_foot {
 		color: #000000;
 	}
 	.img_foot {
-		display:none;
+		display: none;
 	}
 
 	.pie {

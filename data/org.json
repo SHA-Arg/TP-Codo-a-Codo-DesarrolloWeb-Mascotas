@@ -1,63 +1,63 @@
 {
     "organizaciones": [
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/patita.jpg",
             "nombre": "Patitas",
             "ubicacion": "Av. Rivadavia 1050, Rafaela, Santa Fe",
             "telefono": 24767865,
             "mail": "patitas@gmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/logo3.jpg",
             "nombre": "Techito",
             "ubicacion": "Solis 578, Bahía Blanca, Buenos Aires",
             "telefono": 1134751244,
             "mail": "techito_2@hotmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/pets2.jpg",
             "nombre": "Vida Buena",
             "ubicacion": "Av. 9 de Julio 3022, CABA, Buenos Aires",
             "telefono": 1126435786,
             "mail": "vida.buena@gmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/petss.jpg",
             "nombre": "Silvestre",
             "ubicacion": "Av. Corrientes 1345, CABA, Buenos Aires",
             "telefono": 1165673421,
             "mail": "silvestre2@gmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/ave.jpg",
             "nombre": "Team Aves",
             "ubicacion": "Pi y Margall 675, Jujuy",
             "telefono": 99213421,
             "mail": "avesxn@gmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/dog.jpg",
             "nombre": "Pepito",
             "ubicacion": "Av. 3 de Febrero 900, San Vicente, Buenos Aires",
             "telefono": 34516754,
             "mail": "pepito@yahoo.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/rescate.jpg",
             "nombre": "Fundación Esperanza",
             "ubicacion": "Av. Tomasso 456, Salta",
             "telefono": 58328988,
             "mail": "fesperanza@hotmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/rat.jpg",
             "nombre": "GoRats",
             "ubicacion": "Av. Juan Garay 1954, el Chaco",
             "telefono": 66572343,
             "mail": "gorats@gmail.com"
         },
         {
-            "img": "https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg",
+            "img": "../img/logo2.jpg",
             "nombre": "Pet Care",
             "ubicacion": "Av. Belgrano 5897, CABA, Buenos Aires",
             "telefono": 1124354467,
