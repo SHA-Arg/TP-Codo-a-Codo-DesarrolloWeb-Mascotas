@@ -1,145 +1,160 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid red;  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red;  */
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 80px 0;
-    padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0;
+  padding-left: 15px;
 }
 
 .dashboard-header {
-    margin: 30px auto;
+  margin: 30px auto;
 }
 
 .container-btn-create {
-    width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 30px;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 30px;
 }
 
 .container-dashboard {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    width: 100%;
-    margin-top: 25px;    
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  width: 100%;
+  margin-top: 25px;
 }
 
-.pet-info{
-    width: 80%;
-    padding-left: 5px;
+.pet-info {
+  width: 80%;
+  padding-left: 5px;
+  line-height: 1.5;
 }
 
 .dash-buttons {
-    display: flex;
-    width: 200%;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  width: 200%;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .dash-name {
-    text-align: center;
+  text-align: center;
 }
 
 .dash-img {
-    width: 150px;
-    height: 180px;
-    object-fit: cover;
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
 }
 
 .dash-body-description {
-    overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
-            text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto recortado */
-            white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-            max-width: 200px; /* Establece el ancho máximo del contenedor (ajústalo según tus necesidades) */
-            cursor: pointer; /* Muestra un cursor indicando que el texto es interactivo */
+  overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto recortado */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  max-width: 200px; 
+  cursor: pointer; 
 }
 
 .parrafo-completo {
-    overflow: visible; 
-    white-space: normal; /* Permite que el texto se divida en varias líneas */
-    max-width: 100%;
+  overflow: visible;
+  white-space: normal; /* Permite que el texto se divida en varias líneas */
+  max-width: 100%;
 }
 
 .dashboard-btn {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
-    margin: 0 auto;
-    background: #B6AFF0;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    width: 50%;
-    height: 30px;
-    padding-bottom: 2%;
-    cursor: pointer;
-    margin: 0 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  background: #b6aff0;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  width: 50%;
+  height: 30px;
+  padding-bottom: 2%;
+  cursor: pointer;
+  margin: 0 20px;
 }
 
-
-
 .dashboard-btn:hover {
-    background: white;
-    color: black;
-    border: 2px solid #b6aff0;
+  background: white;
+  color: black;
+  border: 2px solid #b6aff0;
 }
 
 .dash-buttons {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .dash-buttons2 {
-    display: none;
+  display: none;
 }
 
 .line {
-    border: 2px solid #b6aff0;
-    width: 95%;
+  border: 2px solid rgb(207, 207, 207);
+  width: 95%;
 }
 
 @media screen and (min-width: 768px) {
-    .container-dashboard {
-        grid-template-columns: 1fr 3fr 1fr; 
-        align-items: center;
-    }
+  .dashboard-header {
+    margin: 30px 15px;
+  }
 
-    .dash-img { 
-        width: 174.59px; 
-    }
+  .container-dashboard {
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+  }
 
-    .dash-buttons {
-        display: none;
-        
-    }   
+  .dash-img {
+    width: 174.59px;
+  }
 
-    .dashboard-btn {
-        font-size: 1.2rem;
-        width: 55%;
-        height: 40px;
-        margin-top: 15px;
-    }
+  .dash-buttons {
+    display: none;
+  }
 
-    .dash-buttons2 {
-        grid-column: 3; 
-            display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            margin-top: 15px;
-    }
+  .dashboard-btn {
+    font-size: 1.2rem;
+    width: 25%;
+    height: 40px;
+    margin-top: 15px;
+  }
 
-    .pet-info {
-        width: 100%;
-        display: flex;
-    }
+  #btn-edit,
+  #btn-delete {
+    width: 55%;
+  }
 
-    .pet-info-basic, .pet-info-aditional {
-        width: 100%;
-        padding: 0 15px;
-    }
+  .dash-buttons2 {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .pet-info {
+    width: 100%;
+    display: flex;
+  }
+
+  .pet-info-basic,
+  .pet-info-aditional {
+    width: 100%;
+    padding: 0 15px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dash-img {
+    width: 253px;
+  }
 }
