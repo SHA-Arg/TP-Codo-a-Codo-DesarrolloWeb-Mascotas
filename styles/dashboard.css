@@ -89,6 +89,11 @@ main {
   border: 2px solid #b6aff0;
 }
 
+.dashboard-btn img {
+  width: 25px;
+  padding-right: 10px;
+}
+
 .dash-buttons {
   margin: 20px 0;
 }
