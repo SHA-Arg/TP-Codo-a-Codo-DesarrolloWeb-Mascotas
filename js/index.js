@@ -1,5 +1,7 @@
 import { recuperarData, getMascotas, crearCards } from './cards.js';
 
+let mascotasFilter = [];
+
 async function selectUbicacion() {
     const DATA = await recuperarData();  
     const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
@@ -21,7 +23,9 @@ async function selectUbicacion() {
         option.value = ubicacionesArray[i];
 
         ubicaciones.appendChild(option); 
+       
     }
+    return ubicaciones;
 }
 
 selectUbicacion()
@@ -29,27 +33,28 @@ selectUbicacion()
  
 async function filtrarMascotas() {
     const DATA = await recuperarData();  
+
+//     const select = await selectUbicacion()
+// console.log(select)
     const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
 
     const selectUbic = document.querySelector('#ubicaciones')    
-   
-        selectUbic.addEventListener('change', () => {
-            
-            const optionSelec = selectUbic.value
-                            
-                const mascSelect = tipoMasc.filter(mascota => mascota.ubicacion === optionSelec)
-                console.log(mascSelect)
+   console.log(selectUbic)
+    
+        const optionUbic = selectUbic.value
+        console.log(optionUbic)
+        optionUbic.addEventListener('change', () => {           
+                mascotasFilter = tipoMasc.filter(mascota => mascota.ubicacion === optionUbic)
+                console.log(mascotasFilter)
         })
+        console.log(mascotasFilter + '1')
     }
+    filtrarMascotas()
+    console.log(mascotasFilter + '2')
 
-    async function selectTypeMasc() {
-        const DATA = await recuperarData();  
-    // const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros);
-
-        const ubicSelect =  await filtrarMascotas()
-        console.log(ubicSelect)
-
-        if(ubicSelect > 0) {
+function selectTypeMasc() {
+        
+        if(mascotasFilter > 0) {
             const btnEsp = document.querySelectorAll('.btnEsp')
 
             for (let i = 0; i < btnEsp.length; i++) {
