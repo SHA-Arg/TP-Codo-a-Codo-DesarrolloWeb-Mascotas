@@ -1,57 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
 }
 
-
 .fontStyle {
-    margin-top: 10%;
-    font-size: 0.9rem;
+	margin-top: 10%;
+	font-size: 0.9rem;
 }
 
 h1 {
-    margin: 0 auto 10% auto;
-    font-size: 1.1rem;
-    text-align: center;
-    letter-spacing: 0.06em;
-    font-family: "Oswald", sans-serif;
-
+	margin: 0 auto 10% auto;
+	font-size: 1.1rem;
+	text-align: center;
+	letter-spacing: 0.06em;
+	font-family: "Oswald", sans-serif;
 }
 
 a {
-    color: #8074eb;
+	color: #8074eb;
 }
 
 .textoInicial {
-    display: none;
+	display: none;
 }
 
 .fondo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 18%;
-    width: 100%;
-    min-height: 82vh;
-    background: url("/img/matchea.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* opacity: .8; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 18%;
+	width: 100%;
+	min-height: 82vh;
+	background: url("/img/matchea.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* opacity: .8; */
 }
 
 .landing {
-    display: flex;
-    margin: 10% auto 5% auto;
-    background-color: #BBB9B9;
-    opacity: .85;
-    border-radius: 30px;
-    width: 80%;
-    padding: 0 auto;
+	display: flex;
+	margin: 10% auto 5% auto;
+	background-color: #bbb9b9;
+	opacity: 0.85;
+	border-radius: 30px;
+	width: 80%;
+	padding: 0 auto;
 }
 
 /* .imgMatch {
@@ -67,84 +65,79 @@ a {
 } */
 
 .matchea {
-    margin: 12% auto;
-    padding: 10% auto;
-    width: 70%;
-
-
+	margin: 12% auto;
+	padding: 10% auto;
+	width: 70%;
 }
 
 .selectStyle {
-    width: 100%;
-    height: 6%;
-    background-color: white;
-    border-radius: 7px;
-    border-color: #B6AFF0;
+	width: 100%;
+	height: 6%;
+	background-color: white;
+	border-radius: 7px;
+	border-color: #b6aff0;
 }
 
 .btnEspecie {
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    margin-top: 5%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 5%;
 }
 
 .btnEsp {
-    border-radius: 20%;
-    padding: 6%;
-    border-width: 1px;
-    background-color: #B6AFF0;
-    border-color: #B6AFF0;
+	border-radius: 20%;
+	padding: 6%;
+	border-width: 1px;
+	background-color: #b6aff0;
+	border-color: #b6aff0;
 }
 
 .btnSexo {
-    display: flex;
-    height: 8%;
-    margin-top: 15%;
-    text-align: center;
-
+	display: flex;
+	height: 8%;
+	margin-top: 15%;
+	text-align: center;
 }
 
 .btnIzqSex {
-    border-top-left-radius: 100px 100px;
-    border-bottom-left-radius: 100px 100px;
-    background-color: #B6AFF0;
-    width: 50%;
-    border-width: 1px;
-    border-color: #B6AFF0;
+	border-top-left-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
+	background-color: #b6aff0;
+	width: 50%;
+	border-width: 1px;
+	border-color: #b6aff0;
 }
 
 .btnDerSex {
-    border-top-right-radius: 100px 100px;
-    border-bottom-right-radius: 100px 100px;
-    width: 50%;
-    border-width: 1px;
-    border-color: #B6AFF0;
+	border-top-right-radius: 100px 100px;
+	border-bottom-right-radius: 100px 100px;
+	width: 50%;
+	border-width: 1px;
+	border-color: #b6aff0;
 }
 
-
 .btnFooter {
-    margin-top: 20%;
+	margin-top: 20%;
 }
 
 .cardFooter {
-    display: flex;
-    border-radius: 100px;
-    background-color: #B6AFF0;
-    padding: 3% 10%;
-    margin: auto;
-    border-color: #B6AFF0;
-    border-width: 1px;
-    font-family: "Oswald", sans-serif;
-
-
+	display: flex;
+	border-radius: 100px;
+	background-color: #b6aff0;
+	padding: 3% 10%;
+	margin: auto;
+	border-color: #b6aff0;
+	border-width: 1px;
+	font-family: "Oswald", sans-serif;
+	text-decoration: none;
 }
 
 .question {
-    margin: 10% auto;
-    text-align: center;
+	margin: 10% auto;
+	text-align: center;
+	text-decoration: none;
 }
-
 
 /* @media screen and (max-width: 350px) {
 
@@ -238,195 +231,183 @@ a {
     }
 
 } */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+}
 
 @media screen and (min-width: 540px) {
+	h1 {
+		font-size: 1.2rem;
+		margin-bottom: 7%;
+		letter-spacing: 0.25em;
+	}
 
-    h1 {
-        font-size: 1.2rem;
-        margin-bottom: 7%;
-        letter-spacing: 0.25em;
-    }
+	.fondo {
+		margin-top: 10%;
+		min-height: 90vh;
+	}
 
-    .fondo {
-        margin-top: 10%;
-        min-height: 90vh;
-    }
+	.landing {
+		margin: 10% auto 5% auto;
+	}
 
-    .landing {
-        margin: 10% auto 5% auto;
-    }
-
-    .matchea {
-        margin: 10% auto;
-    }
+	.matchea {
+		margin: 10% auto;
+	}
 }
 
 @media screen and (min-width: 720px) {
+	h1 {
+		font-size: 2.1rem;
+		margin-bottom: 7%;
+		letter-spacing: 0.2em;
+	}
 
-    h1 {
-        font-size: 2.1rem;
-        margin-bottom: 7%;
-        letter-spacing: 0.2em;
-    }
+	p {
+		font-size: 1.5rem;
+		margin-bottom: 4%;
+	}
 
-    p {
-        font-size: 1.5rem;
-        margin-bottom: 4%;
-    }
+	.fontStyle {
+		font-size: 1.5rem;
+	}
 
-    .fontStyle {
-        font-size: 1.5rem;
-    }
+	.fondo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0;
+		width: 100%;
+		min-height: 91vh;
+		background: url("/img/matchea.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		/* opacity: .8; */
+	}
 
-    .fondo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        width: 100%;
-        min-height: 91vh;
-        background: url("/img/matchea.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        /* opacity: .8; */
-    }
+	.landing {
+		display: flex;
+		margin: 15% auto 5% auto;
+		background-color: #bbb9b9;
+		opacity: 0.85;
+		border-radius: 30px;
+		width: 80%;
+		padding: auto;
+	}
 
-    .landing {
-        display: flex;
-        margin: 15% auto 5% auto;
-        background-color: #BBB9B9;
-        opacity: .85;
-        border-radius: 30px;
-        width: 80%;
-        padding: auto;
-    }
+	.matchea {
+		padding: 2%;
+		margin: 10% auto;
+		width: 80%;
+	}
 
+	.selectStyle {
+		width: 100%;
+		height: 5%;
+		border-width: 3px;
+		border-radius: 10px;
+	}
 
-    .matchea {
-        padding: 2%;
-        margin: 10% auto;
-        width: 80%;
+	.btnEspecie {
+		display: flex;
+		margin: auto;
+		justify-content: space-between;
+	}
 
-    }
+	.btnEsp {
+		margin-top: 5%;
+	}
 
-    .selectStyle {
-        width: 100%;
-        height: 5%;
-        border-width: 3px;
-        border-radius: 10px;
-    }
+	.btnIzqSex,
+	.btnDerSex {
+		height: 70%;
+	}
 
-    .btnEspecie {
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-
-    }
-
-    .btnEsp {
-        margin-top: 5%;
-    }
-
-    .btnIzqSex,
-    .btnDerSex {
-        height: 70%;
-    }
-
-
-    /* .cardFooter {
+	/* .cardFooter {
         margin: auto;
         font-size: 1.2rem;
 
     } */
 
-    .btnFooter {
-        margin-top: 20%;
-    }
+	.btnFooter {
+		margin-top: 20%;
+	}
 
-    .cardFooter {
-        color: #ffffff;
-        font-size: 1.3rem;
-    }
+	.cardFooter {
+		color: #ffffff;
+		font-size: 1.3rem;
+	}
 
-    /* .question {
+	/* .question {
         padding-bottom: 2%;
         font-size: 1.5rem;
         text-align: center;
     } */
-
 }
 
-
 @media screen and (min-width: 1024px) {
+	.textoInicialCelu {
+		display: none;
+	}
 
+	.textoInicial {
+		display: flex;
+	}
 
-    .textoInicialCelu {
-        display: none;
-    }
+	h1 {
+		color: #ffffff;
+		font-size: 2rem;
+		margin-top: 5%;
+		font-weight: bolder;
+		letter-spacing: 0.15em;
+	}
 
-    .textoInicial {
-        display: flex;
-    }
+	.fontStyle {
+		font-size: 1.5rem;
+	}
 
-    h1 {
-        color: #ffffff;
-        font-size: 2rem;
-        margin-top: 5%;
-        font-weight: bolder;
-        letter-spacing: 0.15em;
+	.selectStyle {
+		width: 100%;
+		height: 30px;
+	}
 
-    }
+	p {
+		font-size: 1.5rem;
+		margin-bottom: 4%;
+	}
 
-    .fontStyle {
-        font-size: 1.5rem;
-    }
+	.fondo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0;
+		width: 100%;
+		min-height: 91vh;
+		background: url("/img/matchea.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		/* opacity: .8; */
+	}
 
-    .selectStyle {
-        width: 100%;
-        height: 30px;
-    }
+	.landing {
+		display: flex;
+		margin: 12% 0 5% 10%;
+		background-color: #bbb9b9;
+		opacity: 0.85;
+		border-radius: 30px;
+		width: 37%;
+		height: 45vw;
+		padding: 0 2% 5% 2%;
+	}
 
-    p {
-        font-size: 1.5rem;
-        margin-bottom: 4%;
-    }
+	.matchea {
+		padding: 0 2% 2% 2%;
+		width: 80%;
+		height: 40vw;
+	}
 
-    .fondo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        width: 100%;
-        min-height: 91vh;
-        background: url("/img/matchea.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        /* opacity: .8; */
-    }
-
-    .landing {
-        display: flex;
-        margin: 12% 0 5% 10%;
-        background-color: #BBB9B9;
-        opacity: .85;
-        border-radius: 30px;
-        width: 37%;
-        height: 45vw;
-        padding: 0 2% 5% 2%;
-    }
-
-
-    .matchea {
-        padding: 0 2% 2% 2%;
-        width: 80%;
-        height: 40vw;
-
-    }
-
-    /* .matchea {
+	/* .matchea {
         margin: 12% 0 5% 57%;
         display: inline-block;
         padding: 2% 3% 2% 3%;
@@ -441,32 +422,31 @@ a {
 
     } */
 
-    .btnEspecie {
-        margin-top: 2%;
-    }
+	.btnEspecie {
+		margin-top: 2%;
+	}
 
-    .btnEsp {
-        margin-top: 4%;
-    }
+	.btnEsp {
+		margin-top: 4%;
+	}
 
-    .btnsexo {
-        margin-top: 5%;
-    }
+	.btnsexo {
+		margin-top: 5%;
+	}
 
-    .btnFooter {
-        margin-top: 15%;
-    }
+	.btnFooter {
+		margin-top: 15%;
+	}
 
-    .cardFooter {
-        color: #ffffff;
-        font-size: 1.3rem;
-    }
+	.cardFooter {
+		color: #ffffff;
+		font-size: 1.3rem;
+	}
 
-    .question {
-        padding-bottom: 5%;
-        text-align: center;
-    }
-
+	.question {
+		padding-bottom: 5%;
+		text-align: center;
+	}
 }
 
 /* @media screen and (min-width: 1280px) {
