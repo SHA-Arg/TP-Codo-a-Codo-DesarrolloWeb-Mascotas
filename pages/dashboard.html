@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+
+<body>
+    <!-- CABECERA  -->
+    <header class="header" id="header">
+        <!-- ACÁ SE CARGA EL HEADER -->
+    </header>
+    <main>
+        <div class="dashboard-header">
+            <h1>Mis publicaciones</h1>
+            <p>En esta sección puedes ver tus publicaciones existentes, editarlas, eliminarlas, o crear nuevas
+                publicaciones
+            </p>
+        </div>
+        <div class="container-btn-create">
+            <a href=""><button class="dashboard-btn">Crear mascota</button>
+        </div></a>
+        <div class="container-dashboard">
+
+            <div class="pet-image">
+                <img class="dash-img" src="https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg" alt="imagen mascota">
+                <h3 class="dash-name"><b>Chuli</b></h3>
+            </div>
+            <div class="pet-info">
+                <div class="pet-info-basic">
+                    <p class="dash-type"><b>Tipo:</b> Gato</p>
+                    <p class="dash-sex"><b>Sexo:</b> Macho</p>
+                    <p class="dash-age"><b>Edad:</b> 2 años</p>
+                    <p class="dash-race"><b>Raza:</b> Mestizo</p>
+                    <p class="dash-body-size"><b>Tamaño:</b> Pequeño</p>
+                    <p class="dash-health"><b>Estado de salud:</b> Saludable</p>
+                </div>
+                <div class="pet-info-aditional">
+                    <p class="dash-body-description" onclick="expandirParrafo(this)"><b>Descripción:</b>
+                        Aliquid eos laborum dicta laudantium mollitia consequatur perferendis sequi nam! Repellendus
+                        recusandae commodi totam enim autem voluptatum ea ut sit, atque voluptate distinctio hic
+                        explicabo
+                        facere accusamus earum architecto et?
+                        Placeat deleniti sit molestiae sint odio quia corrupti nostrum aut inventore, quasi provident
+                        vel
+                        repudiandae a eum aliquam fugiat, et cum recusandae mollitia vitae quod atque non similique
+                        laudantium. Aspernatur.
+                        Fuga ut et in a earum quidem, nesciunt dicta at fugiat, magnam veritatis minus exercitationem
+                        quo
+                        voluptates, non sunt praesentium repellendus quam minima maxime aliquid tempora eum quod? Nam,
+                        exercitationem.
+                        Expedita ad itaque, esse exercitationem autem velit ea provident. Quam blanditiis dolore atque,
+                        ducimus eius iste necessitatibus dolor, consectetur, ratione sapiente unde illo sint deleniti.
+                        Libero impedit quasi minima nesciunt.</p>
+                    <p class="dash-body-vaccine"><b>Desparasitación:</b>sí</p>
+                    <p class="dahs-body-sterilization"><b>Esterilización:</b> Sí</p>
+                    <p class="dash-body-adress"><b>Ubicación:</b> CABA</p>
+                </div>
+            </div>
+            <div class="dash-buttons2">
+                <button class="dashboard-btn" id="btn-edit"> Editar</button>
+                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+            </div>
+            <div class="dash-buttons">
+                <button class="dashboard-btn" id="btn-edit">Editar</button>
+                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+            </div>
+        </div>
+        <hr class="line">
+
+
+        <div class="container-dashboard">
+
+            <div class="pet-image">
+                <img class="dash-img" src="https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg" alt="imagen mascota">
+                <h3 class="dash-name"><b>Chuli</b></h3>
+            </div>
+            <div class="pet-info">
+                <div class="pet-info-basic">
+                    <p class="dash-type"><b>Tipo:</b> Gato</p>
+                    <p class="dash-sex"><b>Sexo:</b> Macho</p>
+                    <p class="dash-age"><b>Edad:</b> 2 años</p>
+                    <p class="dash-race"><b>Raza:</b> Mestizo</p>
+                    <p class="dash-body-size"><b>Tamaño:</b> Pequeño</p>
+                    <p class="dash-health"><b>Estado de salud:</b> Saludable</p>
+                </div>
+                <div class="pet-info-aditional">
+                    <p class="dash-body-description" onclick="expandirParrafo(this)"><b>Descripción:</b>
+                        Aliquid eos laborum dicta laudantium mollitia consequatur perferendis sequi nam! Repellendus
+                        recusandae commodi totam enim autem voluptatum ea ut sit, atque voluptate distinctio hic
+                        explicabo
+                        facere accusamus earum architecto et?
+                        Placeat deleniti sit molestiae sint odio quia corrupti nostrum aut inventore, quasi provident
+                        vel
+                        repudiandae a eum aliquam fugiat, et cum recusandae mollitia vitae quod atque non similique
+                        laudantium. Aspernatur.
+                        Fuga ut et in a earum quidem, nesciunt dicta at fugiat, magnam veritatis minus exercitationem
+                        quo
+                        voluptates, non sunt praesentium repellendus quam minima maxime aliquid tempora eum quod? Nam,
+                        exercitationem.
+                        Expedita ad itaque, esse exercitationem autem velit ea provident. Quam blanditiis dolore atque,
+                        ducimus eius iste necessitatibus dolor, consectetur, ratione sapiente unde illo sint deleniti.
+                        Libero impedit quasi minima nesciunt.</p>
+                    <p class="dash-body-vaccine"><b>Desparasitación:</b>sí</p>
+                    <p class="dahs-body-sterilization"><b>Esterilización:</b> Sí</p>
+                    <p class="dash-body-adress"><b>Ubicación:</b> CABA</p>
+                </div>
+            </div>
+            <div class="dash-buttons2">
+                <button class="dashboard-btn" id="btn-edit">Editar</button>
+                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+            </div>
+            <div class="dash-buttons">
+                <button class="dashboard-btn" id="btn-edit">Editar</button>
+                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+            </div>
+        </div>
+        <hr class="line">
+
+
+        <div class="container-dashboard">
+
+            <div class="pet-image">
+                <img class="dash-img" src="https://cdn2.thecatapi.com/images/bsr5KQSJ6.jpg" alt="imagen mascota">
+                <h3 class="dash-name"><b>Chuli</b></h3>
+            </div>
+            <div class="pet-info">
+                <div class="pet-info-basic">
+                    <p class="dash-type"><b>Tipo:</b> Gato</p>
+                    <p class="dash-sex"><b>Sexo:</b> Macho</p>
+                    <p class="dash-age"><b>Edad:</b> 2 años</p>
+                    <p class="dash-race"><b>Raza:</b> Mestizo</p>
+                    <p class="dash-body-size"><b>Tamaño:</b> Pequeño</p>
+                    <p class="dash-health"><b>Estado de salud:</b> Saludable</p>
+                </div>
+                <div class="pet-info-aditional">
+                    <p class="dash-body-description" onclick="expandirParrafo(this)"><b>Descripción:</b>
+                        Aliquid eos laborum dicta laudantium mollitia consequatur perferendis sequi nam! Repellendus
+                        recusandae commodi totam enim autem voluptatum ea ut sit, atque voluptate distinctio hic
+                        explicabo
+                        facere accusamus earum architecto et?
+                        Placeat deleniti sit molestiae sint odio quia corrupti nostrum aut inventore, quasi provident
+                        vel
+                        repudiandae a eum aliquam fugiat, et cum recusandae mollitia vitae quod atque non similique
+                        laudantium. Aspernatur.
+                        Fuga ut et in a earum quidem, nesciunt dicta at fugiat, magnam veritatis minus exercitationem
+                        quo
+                        voluptates, non sunt praesentium repellendus quam minima maxime aliquid tempora eum quod? Nam,
+                        exercitationem.
+                        Expedita ad itaque, esse exercitationem autem velit ea provident. Quam blanditiis dolore atque,
+                        ducimus eius iste necessitatibus dolor, consectetur, ratione sapiente unde illo sint deleniti.
+                        Libero impedit quasi minima nesciunt.</p>
+                    <p class="dash-body-vaccine"><b>Desparasitación:</b>sí</p>
+                    <p class="dahs-body-sterilization"><b>Esterilización:</b> Sí</p>
+                    <p class="dash-body-adress"><b>Ubicación:</b> CABA</p>
+                </div>
+            </div>
+            <div class="dash-buttons2">
+                <button class="dashboard-btn" id="btn-edit">Editar</button>
+                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+            </div>
+            <div class="dash-buttons">
+                <button class="dashboard-btn" id="btn-edit">Editar</button>
+                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+            </div>
+        </div>
+        <hr class="line">
+
+
+    </main>
+    <footer class="pie">
+        ACÁ VA EL FOOTER
+    </footer>
+
+    <script type="module" src="../js/perfil.js"></script>
+    <script src="../js/header_footer.js"></script>
+    <script>
+        function expandirParrafo(elemento) {
+            elemento.classList.toggle('parrafo-completo');
+        }
+    </script>
+</body>
+
+</html>
