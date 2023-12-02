@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const adoptForm = document.forms['adopt-form'];
+    const editForm = document.forms['adopt-form'];
 
-    if (adoptForm) {
-        adoptForm.addEventListener('submit', function (event) {
+    if (editForm) {
+        editForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
             // Aquí agregar lógica para procesar el formulario
@@ -20,3 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+const getFormValues = () => {
+    values = {
+        "photo": editForm.elements["agree-pet"].value,
+        "fullname": editForm.elements["full-name"].value,
+        "age": editForm.elements["full-name"].value,
+        "address": editForm.elements["full-name"].value,
+        "gender": editForm.elements["full-name"].value,
+       
+    }
+    return values
+}
