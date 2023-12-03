@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const editForm = document.forms['adopt-form'];
+    const editForm = document.forms['edit-form'];
 
     if (editForm) {
         editForm.addEventListener('submit', function (event) {
@@ -31,4 +31,12 @@ const getFormValues = () => {
        
     }
     return values
+}
+
+const clearForm = () => {
+    editForm.elements["photo"].value = "";
+    editForm.elements["fullname"].value = "";
+    editForm.elements["age"].value = "";
+    editForm.elements["address"].value = "";
+    editForm.elements["gender"].value = "";
 }
