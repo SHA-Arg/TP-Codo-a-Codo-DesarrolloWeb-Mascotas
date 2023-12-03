@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas Felices</title>
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- CABECERA  -->
+    <header class="header" id="header">
+        <!-- ACÁ SE CARGA EL HEADER -->
+    </header>
+
+    <section>
+        <!-- Formulario de registro -->
+        <div class="cont-registro">
+            <header>Registro</header>
+
+            <div class="progress-bar">
+                <div class="paso">
+                    <p>Rol</p>
+                    <div class="num">
+                        <span>1</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="paso">
+                    <p>Datos</p>
+                    <div class="num">
+                        <span>2</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="paso">
+                    <p>Contraseña</p>
+                    <div class="num">
+                        <span>3</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+
+            </div>
+
+            <div class="form-princ">
+                <form action="#">
+
+                    <!-- Paso 1 -->
+                    <div class="paso1 mov-pag">
+                        <div class="titulo">Paso 1: Elige tu rol!</div>
+                        <button class="ingresar">Usuario</button>
+                        <button class="adelante-pag2 ingresar">Organizacion</button>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="paso2 mov-pag">
+                        <div class="titulo">Paso 2: Datos de la organizacion</div>
+                        <div class="campo">
+                            <label class="labelsCampo" for="nombre">Nombre de la organizacion*: <b class="error"
+                                    id="nombre-error"></b> </label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre de la organizacion">
+                        </div>
+                        <div class="campo">
+                            <label class="labelsCampo" for="direccion">Direccion*:<b class="error"
+                                    id="direccion-error"></b></label>
+                            <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                        </div>
+                        <div class="campo">
+                            <label class="labelsCampo" for="mail">E-Mail*:<b class="error" id="email-error"></b></label>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="campo">
+                            <label class="labelsCampo" for="telefono">Telefono*:<b class="error"
+                                    id="telefono-error"></b></label>
+                            <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+                        </div>
+                        <div class="campo">
+                            <div class="campoBtn">
+                                <button class="volver-pag1 ingresar">Volver</button>
+                                <button class="adelante-pag3 ingresar">Siguiente</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="paso3 mov-pag">
+                        <div class="titulo">Paso 3: Datos de la cuenta</div>
+                        <div class="campo mov-pag">
+                            <label class="labelsCampo" for="nombre">Nombre de la cuenta*:<b class="error"
+                                    id="nombreCuenta-error"></b></label>
+                            <input type="text" name="nombre" id="nombreCuenta" placeholder="Nombre de la cuenta">
+                        </div>
+                        <div class="campo">
+                            <label class="labelsCampo" for="password">Contraseña*:<b class="error"
+                                    id="password-error"></b></label>
+                            <input type="password" name="password" id="password" placeholder="Contraseña">
+                            <span class="ojitos" onclick="mostrarPassword()">
+                                <i id="mostrar" class="fa fa-eye" title="Mostrar Contraseña"></i>
+                                <i id="ocultar" class="fa fa-eye-slash" title="Ocultar Contraseña"></i>
+                            </span>
+                        </div>
+                        <div class="campo">
+                            <label class="labelsCampo" for="password2">Repetir Contraseña*:<b class="error"
+                                    id="password2-error"></b></label>
+                            <input type="password" name="password2" id="password2" placeholder="Repetir Contraseña">
+                            <span class="ojitos" onclick="mostrarPassword2()">
+                                <i id="mostrar2" class="fa fa-eye" title="Mostrar Contraseña"></i>
+                                <i id="ocultar2" class="fa fa-eye-slash" title="Ocultar Contraseña"></i>
+                            </span>
+                        </div>
+                        <div class="campo ">
+                            <button class="volver-pag2 ingresar">Volver</button>
+                            <button class="fin ingresar">Finalizar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pie">
+        <!-- ACÁ SE CARGA EL FOOTER -->
+    </footer>
+
+    <script>
+        function mostrarPassword() {
+            var x = document.getElementById("password");
+            var y = document.getElementById("ocultar");
+            var z = document.getElementById("mostrar");
+
+            if (x.type == 'password') {
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            } else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }        
+    </script>
+    <script>
+        function mostrarPassword2() {
+            var x = document.getElementById("password2");
+            var y = document.getElementById("ocultar2");
+            var z = document.getElementById("mostrar2");
+
+            if (x.type == 'password2') {
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            } else {
+                x.type = "password2";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+
+    <script src="../js/registro_usuario.js"></script>
+
+
+
+    <!-- Los Script´s -->
+    <script src="../js/header_footer.js"></script>
+    <script type="module" src="../js/cards.js"></script>
+    <script type="module" src="../js/index.js"></script>
+
+</body>
+
+</html>

@@ -22,6 +22,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .contenedor h2 {
@@ -133,13 +134,279 @@ input:valid ~ label {
 	text-decoration: underline;
 }
 
+/* Estilos de registro de usuarios*/
+
+.cont-registro {
+	width: 450px;
+	height: 600px;
+	border: 2px solid rgba(255, 255, 255, 0.6);
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	text-align: center;
+	padding: 0px 35px;
+}
+
+.cont-registro header {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 20px 0 30px 0;
+	color: #fff;
+}
+
+.cont-registro .form-princ {
+	width: 100%;
+	margin: 20px 0 30px 0;
+	overflow: hidden;
+}
+
+.form-princ form {
+	display: flex;
+	width: 300%;
+}
+
+/* Estilos Barra de Progreso */
+.cont-registro .progress-bar {
+	display: flex;
+	margin: 40px 0;
+	color: #fff;
+}
+
+.cont-registro .progress-bar .paso {
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.progress-bar .paso p {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.progress-bar .paso p.active {
+	color: #776ecb;
+	font-weight: 700;
+	font-size: 21px;
+}
+
+.progress-bar .paso .num {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	transition: 0.2s;
+}
+.progress-bar .paso .num.active {
+	border-color: #776ecb;
+	background: #776ecb;
+}
+
+.progress-bar .paso .num span {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.progress-bar .paso .num.active span {
+	display: none;
+}
+
+.progress-bar .paso .check {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	font-size: 15px;
+	transform: translate(-50%, -50%);
+}
+
+.progress-bar .paso .check.active {
+	display: block;
+	color: #fff;
+}
+
+.progress-bar .paso .num:before,
+.progress-bar .paso .num:after {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 4px;
+	bottom: 11px;
+	right: -90px;
+	background: #fff;
+}
+
+.progress-bar .paso:last-child .num:before,
+.progress-bar .paso:last-child .num:after {
+	display: none;
+}
+
+.progress-bar .paso .num.active:after {
+	background: #58247667;
+	color: #fff;
+	animation: mov_linea 0.3s linear forwards;
+	transform: scaleX(0);
+	transform-origin: left;
+}
+
+@keyframes mov_linea {
+	100% {
+		transform: scaleX(1);
+	}
+}
+/* Estilos paso 1 */
+
+.form-princ form .paso1 {
+	width: 35%;
+	transition: margin-left 0.3s ease-in-out;
+}
+
+.form-princ form .paso1 .titulo {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+.form-princ form .paso1 .campo {
+	height: 35px;
+	width: 350px;
+	margin: 40px 0;
+}
+
+/*  Estilos paso 2 */
+
+.form-princ form .paso2 {
+	width: 33%;
+	margin-left: 50px;
+}
+
+.form-princ form .paso2 .titulo {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+.form-princ form .paso2 .campo {
+	height: 35px;
+	width: 90%;
+	margin: 40px 0;
+	display: flex;
+	position: relative;
+}
+
+.form-princ form .paso2 .campoBtn {
+	height: 35px;
+	width: 100%;
+	margin: 0;
+	margin-top: -50px;
+	display: flex;
+	position: relative;
+}
+
+.labelsCampo {
+	position: absolute;
+	top: -30px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+.form-princ form .paso2 .campo input {
+	height: 100%;
+	width: 100%;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+/*  Estilos paso 3 */
+
+.form-princ form .paso3 {
+	width: 33%;
+}
+
+.form-princ form .paso3 .titulo {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+.form-princ form .paso3 .campo {
+	height: 35px;
+	width: 350px;
+	margin: 40px 0;
+	display: flex;
+	position: relative;
+}
+
+.form-princ form .paso3 .campo .label {
+	position: absolute;
+	top: -30px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+.form-princ form .paso3 .campo input {
+	height: 100%;
+	width: 100%;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+/* Estilos de mostrar / ocultar contraseña */
+
+.ojitos {
+	position: absolute;
+	top: 29%;
+	right: 7px;
+	font-size: 18px;
+	color: #58247667;
+}
+
+/* Estilos de mensaje de erro */
+.error {
+	color: red;
+	font-size: 17px;
+	float: right;
+	margin: -4px;
+	text-align: right;
+}
+
+#ocultar,
+#ocultar2 {
+	display: none;
+	cursor: pointer;
+}
+#ocultar,
+#ocultar2 {
+	cursor: pointer;
+}
+
 /* Breakpoints */
 /*? Falla en tamaño tableta!!  */
 
 @media (max-width: 768px) {
 	.contenedor {
-		width: 330px;
-		height: 450px;
+		width: 100%;
+		height: 100vh;
 	}
 	.contenedor h2 {
 		font-size: 1.5rem;
