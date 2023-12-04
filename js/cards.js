@@ -1,5 +1,10 @@
 export async function recuperarData() {
-    const response = await fetch('../data/data.json');
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+        mode:  'no-cors'
+    };
+    const response = await fetch('https://sofiae99.pythonanywhere.com/mascotas', requestOptions);
     try {
 
         if (response.ok) {
