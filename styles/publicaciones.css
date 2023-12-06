@@ -55,6 +55,7 @@
 }
 
 .container-from-imput input {
+    margin-top: 0.7em;
     border: 3px solid #B6AFF0;
     border-radius: 5px;
     height: 2em;
@@ -66,7 +67,8 @@
 }
 
 .container-from-textarea textarea {
-    border: 2px solid #B8B7B7;
+    margin-top: 0.7em;
+    border: 3px solid #B6AFF0;
     border-radius: 5px;
     resize: none;
     width: 100%;
