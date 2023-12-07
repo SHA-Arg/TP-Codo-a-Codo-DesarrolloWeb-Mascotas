@@ -1,3 +1,5 @@
+import { postData } from "./utils.js";
+
 document.addEventListener('DOMContentLoaded', function () {
     const editForm = document.forms['edit-form'];
 
@@ -36,10 +38,6 @@ const getFormValues = () => {
         "deworming": editForm.elements["deworming"].value,
         "sterilization": editForm.elements["sterilization"].value,
         "health": editForm.elements["health"].value
-
-
-        
-       
     }
     return values
 }

@@ -50,7 +50,6 @@ async function filtrarMascotas() {
         console.log(mascotasFilter + '1')
     }
     filtrarMascotas()
-    console.log(mascotasFilter + '2')
 
 function selectTypeMasc() {
         

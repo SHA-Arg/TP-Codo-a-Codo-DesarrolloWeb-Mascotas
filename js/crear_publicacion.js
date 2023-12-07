@@ -1,3 +1,5 @@
+import { postData } from "./utils.js";
+
 document.addEventListener('DOMContentLoaded', function () {
     const crearForm = document.forms['crear-form'];
 
@@ -5,17 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
         crearForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
-            // Aquí agregar lógica para procesar el formulario
-            // ...
-
-            // si el formulario se rellena adecuadamente: aparece el sweet alert :)
-
-            Swal.fire({
-                icon: "success",
-                title: "Su publicación ha sido creada con éxito",
-                confirmButtonText: "Cerrar"
-
-            });
+            const valuesForm = getFormValues()
+            clearForm()
+            
+            postData("https://sofiae99.pythonanywhere.com/mascotas", valuesForm, "POST")
+            
+            Swal.fire( 
+                'Gracias', 
+                'Su solicitud fue realizada con éxito', 
+                'success' 
+            );
 
         });
     }
@@ -36,10 +37,6 @@ const getFormValues = () => {
         "deworming": crearForm.elements["deworming"].value,
         "sterilization": crearForm.elements["sterilization"].value,
         "health": crearForm.elements["health"].value
-
-
-        
-       
     }
     return values
 }
@@ -58,6 +55,4 @@ const clearForm = () => {
     crearForm.elements["deworming"].value = "";
     crearForm.elements["sterilization"].value = "";
     crearForm.elements["health"].value = "";
-    
-    
 }

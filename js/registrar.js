@@ -1,3 +1,5 @@
+import { postData } from "./utils.js";
+
 const registerForm = document.forms["register-form"]; 
 
 registerForm.onsubmit = (e) => {
@@ -5,10 +7,10 @@ registerForm.onsubmit = (e) => {
     valuesForm = getFormValues()
     clearForm()
     console.log(values);
-    postData("http://127.0.0.1:5000/mascotas/mascotas", valuesForm)
+    postData("python/anywhere", valuesForm, "POST")
     Swal.fire( 
         'Gracias', 
-        'Su solicitud fue enviada con éxito', 
+        'Su solicitud fue realizada con éxito', 
         'success' 
     );
 }
@@ -40,17 +42,4 @@ const clearForm = () => {
     registerForm.elements["desparasitacion"].value = "";
 }
 
-const postData = async (url, data) => {
-    const response = await fetch(url, {
-        method: 'POST',
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
-        body: JSON.stringify(data)
-    })
-}
+
