@@ -3,24 +3,27 @@ import { recuperarData } from "./cards.js";
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
 	const index = params.get("index");
-    const tipoMasc = params.get("tipo");
+    // const tipoMasc = params.get("tipo");
 
 	const DATA = await recuperarData();
-	const datosMascotas = DATA.mascotas;
-	const mascotaPerro = datosMascotas.perros[index];
-	const mascotaGato = datosMascotas.gatos[index];
+	const datosMascotas = DATA.pets;
+    console.log(datosMascotas)
+	// const mascotaPerro = datosMascotas.perros[index];
+	// const mascotaGato = datosMascotas.gatos[index];
 
 	const containerProfile = document.querySelector(".profile");
 
-    if (tipoMasc == 'perro' && index !== null) {
-        const perfil = crearPerfil(mascotaPerro, index);
+    // if (index !== null) {
+        const perfil = crearPerfil(datosMascotas[index], index);
         containerProfile.innerHTML = perfil;
-    } else if (tipoMasc == 'gato' && index !== null) {
-        const perfil = crearPerfil(mascotaGato, index);
-        containerProfile.innerHTML = perfil;
-    } else {
-        console.log('Índice no encontrado en la URL');
-    }
+    // } 
+    // else if (tipoMasc == 'gato' && index !== null) {
+    //     const perfil = crearPerfil(mascotaGato, index);
+    //     containerProfile.innerHTML = perfil;
+    // } 
+    // else {
+    //     console.log('Índice no encontrado en la URL');
+    // }
 }
 
 verPerfil();
@@ -28,27 +31,27 @@ verPerfil();
 function crearPerfil(mascota, index) {
 	let perfil = `<div class="profile-header">
         <div >
-            <img class="profile-img" src="${mascota.img}" alt="imagen mascota">
+            <img class="profile-img" src="${mascota.image}" alt="imagen mascota">
         </div>
         <div class="profile-header-data">
-            <h1 class="profile-header-title">${mascota.nombre}</h1>
-            <p><b>Ubicación:</b> ${mascota.ubicacion}</p>
+            <h1 class="profile-header-title">${mascota.name}</h1>
+            <p><b>Ubicación:</b> ${mascota.ubication}</p>
         </div>
     </div>
     <div class="container-profile-description">
         <div class="profile-data">
             <div class="general-profile">
                 <h6 class="profile-title"><b>Información general</b></h6>
-                <p><b>Edad:</b> ${mascota.edad}</p>
-                <p><b>Sexo:</b> ${mascota.sexo}</p>
-                <p><b>Raza:</b> ${mascota.raza}</p>
-                <p><b>Tamaño:</b> ${mascota.tamaño}</p>
+                <p><b>Edad:</b> ${mascota.age}</p>
+                <p><b>Sexo:</b> ${mascota.sex}</p>
+                <p><b>Raza:</b> ${mascota.race}</p>
+                <p><b>Tamaño:</b> ${mascota.size}</p>
             </div>
             <div class="health-profile">
                 <h6 class="health-title"><b>Datos de salud</b></h6>
-                <p><b>Desparacitación:</b> ${mascota.vacunas}</p>
-                <p><b>Esterilización:</b> ${mascota.esterilizacion}</p>
-                <p><b>Estado de salud:</b> ${mascota.estado_de_salud}</p>
+                <p><b>Desparacitación:</b> ${mascota.vaccine}</p>
+                <p><b>Esterilización:</b> ${mascota.sterilizaiton}</p>
+                <p><b>Estado de salud:</b> ${mascota.health_status}</p>
             </div>
             <div class="profile-icons">
                 <span class="material-symbols-outlined">
@@ -60,8 +63,8 @@ function crearPerfil(mascota, index) {
             </div>
         </div>
         <div class="profile-description">
-            <p>${mascota.descripcion}</p>
-            <p><b>Organización:</b> ${mascota.organizacion}</p>
+            <p>${mascota.descripiton}</p>
+            <p><b>Organización:</b> ${mascota.organization}</p>
         </div>
         <ul class="adoption-require">
             <h6><b>Requisitos de adopción</b></h6>
