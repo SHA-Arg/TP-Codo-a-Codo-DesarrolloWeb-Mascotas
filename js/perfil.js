@@ -1,54 +1,55 @@
-import { recuperarData } from "./cards.js";
+async function getMascota(idPet) {
+    const response = await fetch(`https://sofiae99.pythonanywhere.com/mascotas/${idPet}`);
+    try {
+        if (response.ok) {
+            const DATA = await response.json();
+            return DATA;
+        } else {
+            console.error('Algo no funcionó')
+        }
+    } catch {
+        console.error('Error en el servidor')
+    }
+}
 
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
-	const index = params.get("index");
-    const tipoMasc = params.get("tipo");
+	const petId = params.get("id");
 
-	const DATA = await recuperarData();
-	const datosMascotas = DATA.mascotas;
-	const mascotaPerro = datosMascotas.perros[index];
-	const mascotaGato = datosMascotas.gatos[index];
-
+	const DATA = await getMascota(petId)
+	const pet = DATA.pet;
 	const containerProfile = document.querySelector(".profile");
 
-    if (tipoMasc == 'perro' && index !== null) {
-        const perfil = crearPerfil(mascotaPerro, index);
-        containerProfile.innerHTML = perfil;
-    } else if (tipoMasc == 'gato' && index !== null) {
-        const perfil = crearPerfil(mascotaGato, index);
-        containerProfile.innerHTML = perfil;
-    } else {
-        console.log('Índice no encontrado en la URL');
-    }
+    const perfil = crearPerfil(pet);
+    containerProfile.innerHTML = perfil;
 }
 
 verPerfil();
 
-function crearPerfil(mascota, index) {
+function crearPerfil(mascota) {
 	let perfil = `<div class="profile-header">
         <div >
-            <img class="profile-img" src="${mascota.img}" alt="imagen mascota">
+            <img class="profile-img" src="${mascota.image}" alt="imagen mascota">
         </div>
         <div class="profile-header-data">
-            <h1 class="profile-header-title">${mascota.nombre}</h1>
-            <p><b>Ubicación:</b> ${mascota.ubicacion}</p>
+            <h1 class="profile-header-title">${mascota.name}</h1>
+            <p><b>Ubicación:</b> ${mascota.ubication}</p>
         </div>
     </div>
     <div class="container-profile-description">
         <div class="profile-data">
             <div class="general-profile">
                 <h6 class="profile-title"><b>Información general</b></h6>
-                <p><b>Edad:</b> ${mascota.edad}</p>
-                <p><b>Sexo:</b> ${mascota.sexo}</p>
-                <p><b>Raza:</b> ${mascota.raza}</p>
-                <p><b>Tamaño:</b> ${mascota.tamaño}</p>
+                <p><b>Edad:</b> ${mascota.age}</p>
+                <p><b>Sexo:</b> ${mascota.sex}</p>
+                <p><b>Raza:</b> ${mascota.race}</p>
+                <p><b>Tamaño:</b> ${mascota.size}</p>
             </div>
             <div class="health-profile">
                 <h6 class="health-title"><b>Datos de salud</b></h6>
-                <p><b>Desparacitación:</b> ${mascota.vacunas}</p>
-                <p><b>Esterilización:</b> ${mascota.esterilizacion}</p>
-                <p><b>Estado de salud:</b> ${mascota.estado_de_salud}</p>
+                <p><b>Desparacitación:</b> ${mascota.vaccine}</p>
+                <p><b>Esterilización:</b> ${mascota.sterilization}</p>
+                <p><b>Estado de salud:</b> ${mascota.health_status}</p>
             </div>
             <div class="profile-icons">
                 <span class="material-symbols-outlined">
@@ -60,8 +61,8 @@ function crearPerfil(mascota, index) {
             </div>
         </div>
         <div class="profile-description">
-            <p>${mascota.descripcion}</p>
-            <p><b>Organización:</b> ${mascota.organizacion}</p>
+            <p>${mascota.description}</p>
+            <p><b>Organización:</b> ${mascota.organization}</p>
         </div>
         <ul class="adoption-require">
             <h6><b>Requisitos de adopción</b></h6>
@@ -71,10 +72,10 @@ function crearPerfil(mascota, index) {
             <li>Compromiso de seguimiento de calendario de vacunas</li>
         </ul>
         <div class="buttons-groups">
-            <a href="adoptar.html" value="${index}"><button type="button" href="adoptar.html" class="btn-profile"
+            <a href="adoptar.html" value="${mascota.id}"><button type="button" href="adoptar.html" class="btn-profile"
                     title="Felicidades por este gran paso">Adoptar</button></a>
-            <a href="apadrinar.html" value="${index}"><button type="button" class="btn-profile">Apadrinar</button></a>
-            <a href="transitar.html" value="${index}"><button type="button" class="btn-profile">Transitar</button></a>
+            <a href="apadrinar.html" value="${mascota.id}"><button type="button" class="btn-profile">Apadrinar</button></a>
+            <a href="transitar.html" value="${mascota.id}"><button type="button" class="btn-profile">Transitar</button></a>
         </div>
     </div>`;
 
