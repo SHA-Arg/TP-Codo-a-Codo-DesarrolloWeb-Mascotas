@@ -1,30 +1,16 @@
 const postData = async (url, data, request = 'POST') => {
-    const response = await fetch(url, {
-        method: request,
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
-        body: JSON.stringify(data)
-    })
-}
-
-var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    mode:  'no-cors'
-};
-
-const getData = async (url) => {
-    const response = await fetch(url, requestOptions)
-    const data = await response.json()
     console.log(data);
-    return data
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const raw = JSON.stringify(data);
+    const requestOptions = {
+        method: request,
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+    return await fetch(url, requestOptions)
 }
 
 
-export { postData, getData }
+export { postData }

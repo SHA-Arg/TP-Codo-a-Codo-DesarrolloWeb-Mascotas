@@ -1,58 +1,63 @@
-import { postData } from "./utils.js";
+const registerForm = document.forms["adopt-form"]; 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const crearForm = document.forms['crear-form'];
+registerForm.onsubmit = (e) =>  {
 
-    if (crearForm) {
-        crearForm.addEventListener('submit', function (event) {
-            event.preventDefault();
+    e.preventDefault();
 
-            const valuesForm = getFormValues()
-            clearForm()
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const valuesForm = getFormValues()
+    clearForm()
+
+    const raw = JSON.stringify(valuesForm);
             
-            postData("https://sofiae99.pythonanywhere.com/mascotas", valuesForm, "POST")
-            
-            Swal.fire( 
-                'Gracias', 
-                'Su solicitud fue realizada con éxito', 
-                'success' 
-            );
+    const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+    
+    fetch("https://sofiae99.pythonanywhere.com/mascotas", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 
-        });
-    }
-});
+}
 
 const getFormValues = () => {
     values = {
-        "fullname": crearForm.elements["full-name"].value,
-        "photo": crearForm.elements["photo"].value,
-        "description": crearForm.elements["description"].value,
-        "address": crearForm.elements["adress"].value,
-        "species": crearForm.elements["species"].value,
-        "gender": crearForm.elements["gender"].value,
-        "age": crearForm.elements["age"].value,
-        "race": crearForm.elements["race"].value,
-        "size": crearForm.elements["size"].value,
-        "color": crearForm.elements["color"].value,
-        "deworming": crearForm.elements["deworming"].value,
-        "sterilization": crearForm.elements["sterilization"].value,
-        "health": crearForm.elements["health"].value
+        "name": registerForm.elements["full-name"].value,
+        "pet_type": registerForm.elements["species"].value,
+        "race": registerForm.elements["race"].value,
+        "color": registerForm.elements["color"].value,
+        "size": registerForm.elements["size"].value,
+        "sex": registerForm.elements["gender"].value,
+        "age": registerForm.elements["age"].value,
+        "vaccine": registerForm.elements["deworming"].value,
+        "sterilization": registerForm.elements["sterilization"].value,
+        "health_status": registerForm.elements["health"].value,
+        "description": registerForm.elements["description"].value,
+        "organization": 1,
+        "image": registerForm.elements["photo"].value,
+        "ubication": registerForm.elements["address"].value
     }
     return values
 }
 
 const clearForm = () => {
-    crearForm.elements["fullname"].value = "";
-    crearForm.elements["photo"].value = "";
-    crearForm.elements["description"].value = "";
-    crearForm.elements["address"].value = "";
-    crearForm.elements["species"].value = "";
-    crearForm.elements["gender"].value = "";
-    crearForm.elements["age"].value = "";
-    crearForm.elements["race"].value = "";
-    crearForm.elements["size"].value = "";
-    crearForm.elements["color"].value = "";
-    crearForm.elements["deworming"].value = "";
-    crearForm.elements["sterilization"].value = "";
-    crearForm.elements["health"].value = "";
+    registerForm.elements["full-name"].value = "";
+    registerForm.elements["photo"].value = "";
+    registerForm.elements["description"].value = "";
+    registerForm.elements["address"].value = "";
+    registerForm.elements["species"].value = "";
+    registerForm.elements["gender"].value = "";
+    registerForm.elements["age"].value = "";
+    registerForm.elements["race"].value = "";
+    registerForm.elements["size"].value = "";
+    registerForm.elements["color"].value = "";
+    registerForm.elements["deworming"].value = "";
+    registerForm.elements["sterilization"].value = "";
+    registerForm.elements["health"].value = "";
 }
