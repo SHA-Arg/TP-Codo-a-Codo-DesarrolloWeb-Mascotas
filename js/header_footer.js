@@ -29,7 +29,7 @@ function createHeader() {
 				<a href="/pages/nosotros.html" style="--i: 1">Nosotros</a>
 				<a href="/pages/organizaciones.html" style="--i: 2">Organizaciones</a>
 				<a href="/pages/contacto.html" style="--i: 3">Contacto</a>	
-				<a href="/pages/dashboard.html" style="--i: 3">Registrar Mascota</a>	
+				<a href="/pages/dashboard.html" style="--i: 3">Dashboard</a>	
 				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
 			</nav>`;
 
