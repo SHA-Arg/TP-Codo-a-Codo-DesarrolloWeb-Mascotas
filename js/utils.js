@@ -39,4 +39,15 @@ const updateData = async (url, id, data) => {
     return await response.json()
 }
 
-export { postData, getDataById, updateData }
+const deleteData = async (url, id) => {
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const requestOptions = {
+        method: 'DELETE',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+    return await fetch(`${url}/${id}`, requestOptions)
+}
+
+export { postData, getDataById, updateData, deleteData }
