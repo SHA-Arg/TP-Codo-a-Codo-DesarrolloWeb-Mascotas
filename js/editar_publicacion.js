@@ -1,61 +1,56 @@
-import { postData } from "./utils.js";
+import { getDataById, updateData } from "./utils.js";
 
-document.addEventListener('DOMContentLoaded', function () {
-    const editForm = document.forms['edit-form'];
+const registerForm = document.forms["adopt-form"]; 
 
-    if (editForm) {
-        editForm.addEventListener('submit', function (event) {
-            event.preventDefault();
+const params = new URLSearchParams(window.location.search);
+const petId = params.get("id");
 
-            // Aquí agregar lógica para procesar el formulario
-            // ...
+const loadPet = async () => {
+    const data = await getDataById("https://sofiae99.pythonanywhere.com/mascotas", petId);
+    const pet = data.pet;
+    updateForm(pet);
+}
 
-            // si el formulario se rellena adecuadamente: aparece el sweet alert :)
-
-            Swal.fire({
-                icon: "success",
-                title: "Su publicación ha sido editada con éxito",
-                confirmButtonText: "Cerrar"
-
-            });
-
-        });
-    }
-});
+registerForm.onsubmit = (e) =>  {
+    e.preventDefault();
+    const valuesForm = getFormValues()
+    console.log(valuesForm);
+    updateData("https://sofiae99.pythonanywhere.com/mascotas", petId, valuesForm)
+}
 
 const getFormValues = () => {
-    values = {
-        "fullname": editForm.elements["full-name"].value,
-        "photo": editForm.elements["photo"].value,
-        "description": editForm.elements["description"].value,
-        "address": editForm.elements["adress"].value,
-        "species": editForm.elements["species"].value,
-        "gender": editForm.elements["gender"].value,
-        "age": editForm.elements["age"].value,
-        "race": editForm.elements["race"].value,
-        "size": editForm.elements["size"].value,
-        "color": editForm.elements["color"].value,
-        "deworming": editForm.elements["deworming"].value,
-        "sterilization": editForm.elements["sterilization"].value,
-        "health": editForm.elements["health"].value
+    const values = {
+        "name": registerForm.elements["full-name"].value,
+        "image": registerForm.elements["photo"].value,
+        "description": registerForm.elements["description"].value,
+        "ubication": registerForm.elements["address"].value,
+        "pet_type": registerForm.elements["species"].value,
+        "sex": registerForm.elements["gender"].value,
+        "age": registerForm.elements["age"].value,
+        "race": registerForm.elements["race"].value,
+        "size": registerForm.elements["size"].value,
+        "color": registerForm.elements["color"].value,
+        "vaccine": registerForm.elements["deworming"].value,
+        "sterilization": registerForm.elements["sterilization"].value,
+        "health_status": registerForm.elements["health"].value
     }
     return values
 }
 
-const clearForm = () => {
-    editForm.elements["fullname"].value = "";
-    editForm.elements["photo"].value = "";
-    editForm.elements["description"].value = "";
-    editForm.elements["address"].value = "";
-    editForm.elements["species"].value = "";
-    editForm.elements["gender"].value = "";
-    editForm.elements["age"].value = "";
-    editForm.elements["race"].value = "";
-    editForm.elements["size"].value = "";
-    editForm.elements["color"].value = "";
-    editForm.elements["deworming"].value = "";
-    editForm.elements["sterilization"].value = "";
-    editForm.elements["health"].value = "";
-    
-    
+const updateForm = (pet) => {
+    registerForm.elements["full-name"].value = pet.name;
+    registerForm.elements["photo"].value = pet.image;
+    registerForm.elements["description"].value = pet.description;
+    registerForm.elements["address"].value = pet.ubication;
+    registerForm.elements["species"].value = pet.pet_type;
+    registerForm.elements["gender"].value = pet.sex;
+    registerForm.elements["age"].value = pet.age;
+    registerForm.elements["race"].value =  pet.race;
+    registerForm.elements["size"].value = pet.size;
+    registerForm.elements["color"].value = pet.color;
+    registerForm.elements["deworming"].value = pet.vaccine;
+    registerForm.elements["sterilization"].value = pet.sterilization;
+    registerForm.elements["health"].value = pet.health_status;
 }
+
+loadPet()

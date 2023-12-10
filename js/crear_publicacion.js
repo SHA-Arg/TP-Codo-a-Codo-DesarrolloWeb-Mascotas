@@ -1,33 +1,22 @@
+import { postData } from "./utils.js";
+
+
 const registerForm = document.forms["adopt-form"]; 
 
 registerForm.onsubmit = (e) =>  {
 
     e.preventDefault();
 
-    let myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-
     const valuesForm = getFormValues()
     clearForm()
 
     const raw = JSON.stringify(valuesForm);
-            
-    const requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
-    };
-    
-    fetch("https://sofiae99.pythonanywhere.com/mascotas", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
 
+    postData("https://sofiae99.pythonanywhere.com/mascotas", valuesForm)
 }
 
 const getFormValues = () => {
-    values = {
+    const values = {
         "name": registerForm.elements["full-name"].value,
         "pet_type": registerForm.elements["species"].value,
         "race": registerForm.elements["race"].value,
