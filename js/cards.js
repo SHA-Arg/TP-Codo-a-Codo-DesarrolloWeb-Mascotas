@@ -1,33 +1,31 @@
 export async function recuperarData() {
-    const response = await fetch('https://sofiae99.pythonanywhere.com/mascotas');
-    try {
-
-        if (response.ok) {
-            const DATA = await response.json();
-            return DATA;
-        } else {
-            console.error('Algo no funcionó')
-        }
-    } catch {
-        console.error('Error en el servidor')
-    }
+	const response = await fetch("https://sofiae99.pythonanywhere.com/mascotas");
+	try {
+		if (response.ok) {
+			const DATA = await response.json();
+			return DATA;
+		} else {
+			console.error("Algo no funcionó");
+		}
+	} catch {
+		console.error("Error en el servidor");
+	}
 }
 
 export async function getMascotas() {
-    const DATA = await recuperarData();
-    let datosMascotas = DATA.pets;
-    let listadoMascotas = '';
-    let cardMascotas = document.querySelector('.cards-group');
-    await datosMascotas.forEach((e) => {
-            listadoMascotas += crearCards(e)
-    });
+	const DATA = await recuperarData();
+	let datosMascotas = DATA.pets;
+	let listadoMascotas = "";
+	let cardMascotas = document.querySelector(".cards-group");
+	await datosMascotas.forEach((e) => {
+		listadoMascotas += crearCards(e);
+	});
 
-    cardMascotas.innerHTML = listadoMascotas
+	cardMascotas.innerHTML = listadoMascotas;
 }
 
 export function crearCards(mascota) {
-    let card =
-        `<div class="card">
+	let card = `<div class="card">
                 <div class="card-principal">
                     <a href="perfil.html?id=${mascota.id}"><img class="card-img" src="${mascota.image}" alt="imagen mascota"></a>
                     <div class="name-box">
@@ -54,15 +52,12 @@ export function crearCards(mascota) {
                         </div>
                     </div>
                     <div class="card-button">
-                    <a href="perfil.html?id=${mascota.id}" type="button" class="btnProfile">Ver más</a>
-                        
+                    <a href="perfil.html?id=${mascota.id}" type="button" class="btnProfile">Ver más</a>                        
                     </div>
                 </div>      
-            </div>`
+            </div>`;
 
-    return card;
-};
+	return card;
+}
 
 getMascotas();
-
-

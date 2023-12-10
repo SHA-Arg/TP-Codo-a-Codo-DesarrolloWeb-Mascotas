@@ -60,6 +60,7 @@ export function Mascotas(mascota) {
                     <p class="dash-body-adress"><b>Ubicación:</b> CABA</p>
                 </div>
             </div>
+            // ? Porque hay dos buttons de editar y eliminar?
             <div class="dash-buttons2">
                 <button class="dashboard-btn" id="btn-edit"> <a href="./editar_publicacion.html">Editar</a></button>
                 <button class="dashboard-btn" id="btn-delete">Eliminar</button>
@@ -68,10 +69,9 @@ export function Mascotas(mascota) {
                 <button class="dashboard-btn" id="btn-edit"><a href="./editar_publicacion.html">Editar</a></button>
                 <button class="dashboard-btn" id="btn-delete">Eliminar</button>
             </div>
-            <div class="dash-buttons">
-                <button class="dashboard-btn" id="btn-edit"><a href="./editar_publicacion.html">Editar</a></button>
-                <button class="dashboard-btn" id="btn-delete">Eliminar</button>
-            </div>`;
+             <div class="card-button">
+                    <a href="perfil.html?id=${mascota.id}" type="button" class="btnProfile">Ver más</a>                        
+                    </div>`;
 
 	return dash;
 }
