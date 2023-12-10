@@ -19,7 +19,7 @@ function createHeader() {
 			<input type="checkbox" id="check" />
 			
 			<label for="check" class="menu">
-				<a href="/pages/login.html" style="--i: 4"><i id="menu_log" class="bx bxs-user"></i></a></i>
+				<a href="/pages/login.html" style="--i: 6"><i id="menu_log" class="bx bxs-user"></i></a></i>
 				<i class="bx bx-menu" id="menu-icon"></i>
 				<i class="bx bx-x" id="close-icon"></i>
 			</label>
@@ -29,8 +29,8 @@ function createHeader() {
 				<a href="/pages/nosotros.html" style="--i: 1">Nosotros</a>
 				<a href="/pages/organizaciones.html" style="--i: 2">Organizaciones</a>
 				<a href="/pages/contacto.html" style="--i: 3">Contacto</a>	
-				<a href="/pages/dashboard.html" style="--i: 3">Dashboard</a>	
-				<a href="/pages/login.html" style="--i: 4"><i id="icon_log" class="bx bxs-user"></i></a></i>			
+				<a href="/pages/dashboard.html" style="--i: 4">Dashboard</a>	
+				<a href="/pages/login.html" style="--i: 5"><i id="icon_log" class="bx bxs-user"></i></a></i>			
 			</nav>`;
 
 	return headerCode;
