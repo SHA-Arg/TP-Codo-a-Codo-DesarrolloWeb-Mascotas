@@ -23,7 +23,6 @@ export async function getMascotas() {
     });
 
     cardMascotas.innerHTML = listadoMascotas
-    changePage()
 }
 
 export function crearCards(mascota) {

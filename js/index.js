@@ -4,13 +4,13 @@ let mascotasFilter = [];
 
 async function selectUbicacion() {
     const DATA = await recuperarData();  
-    const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
+    // const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
     const ubicacionesUnicas = new Set();
 
-    for (let i = 0; i < tipoMasc.length; i++) {
-      const datosUbicacion = tipoMasc[i].ubicacion;
-      ubicacionesUnicas.add(datosUbicacion); 
-    }
+    // for (let i = 0; i < tipoMasc.length; i++) {
+    //   const datosUbicacion = tipoMasc[i].ubicacion;
+    //   ubicacionesUnicas.add(datosUbicacion); 
+    // }
   
     const ubicacionesArray = Array.from(ubicacionesUnicas); 
   
@@ -31,25 +31,25 @@ async function selectUbicacion() {
 selectUbicacion()
 
  
-async function filtrarMascotas() {
-    const DATA = await recuperarData();  
+// async function filtrarMascotas() {
+//     const DATA = await recuperarData();  
 
-//     const select = await selectUbicacion()
-// console.log(select)
-    const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
+// //     const select = await selectUbicacion()
+// // console.log(select)
+//     const tipoMasc = DATA.mascotas.gatos.concat(DATA.mascotas.perros); 
 
-    const selectUbic = document.querySelector('#ubicaciones')    
-   console.log(selectUbic)
+//     const selectUbic = document.querySelector('#ubicaciones')    
+//    console.log(selectUbic)
     
-        const optionUbic = selectUbic.value
-        console.log(optionUbic)
-        optionUbic.addEventListener('change', () => {           
-                mascotasFilter = tipoMasc.filter(mascota => mascota.ubicacion === optionUbic)
-                console.log(mascotasFilter)
-        })
-        console.log(mascotasFilter + '1')
-    }
-    filtrarMascotas()
+//         const optionUbic = selectUbic.value
+//         console.log(optionUbic)
+//         optionUbic.addEventListener('change', () => {           
+//                 mascotasFilter = tipoMasc.filter(mascota => mascota.ubicacion === optionUbic)
+//                 console.log(mascotasFilter)
+//         })
+//         console.log(mascotasFilter + '1')
+//     }
+//     filtrarMascotas()
 
 function selectTypeMasc() {
         
