@@ -1,5 +1,5 @@
 const url = 'https://sofiae99.pythonanywhere.com/mascotas';
-    console.log(url)
+    
 
 export async function recuperarData() {
     
@@ -22,21 +22,14 @@ export async function getMascotas() {
     const DATA = await recuperarData();
     let datosMascotas = DATA.pets;
     let listadoMascotas = '';
-
     let cardMascotas = document.querySelector('.cards-group');
-
-
+   
     await datosMascotas.forEach((e, index) => {
         listadoMascotas += crearCards(e, index)
 
     });
 
-    // await datosMascotas.perros.forEach((e, index) => {
-    //     listadoMascotas += crearCards(e, index, 'perro')
-
-    // });
-
-    cardMascotas.innerHTML = listadoMascotas
+    cardMascotas.innerHTML = listadoMascotas;
 
     changePage()
 }
@@ -45,7 +38,7 @@ export function crearCards(mascota, index) {
     let card =
         `<div class="card">
                 <div class="card-principal">
-                    <a href="perfil.html?index=${index}" data-index="${index}" onclick="verPerfil(${index})"><img class="card-img" src="${mascota.image}" alt="imagen mascota"></a>
+                    <a href="perfil.html?id=${mascota.id}" onclick="verPerfil(${mascota.id})"><img class="card-img" src="${mascota.image}" alt="imagen mascota"></a>
                     <div class="name-box">
                     <h3 class="card-title"><b>${mascota.name}</b></h3>
                     </div>
@@ -70,7 +63,7 @@ export function crearCards(mascota, index) {
                         </div>
                     </div>
                     <div class="card-button">
-                    <a href="perfil.html?index=${index}" type="button" class="btnProfile">Ver más</a>
+                    <a href="perfil.html?id=${mascota.id}" type="button" class="btnProfile">Ver más</a>
                         
                     </div>
                 </div>      
@@ -78,6 +71,7 @@ export function crearCards(mascota, index) {
 
     return card;
 };
+
 
 getMascotas();
 

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap");
+
+.centered_title{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: white;
+}
+
+.main-container-form {
+    margin: 7em 1.5em 2em 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #626262;
+}
+
+.desciption-title {
+    font-size: 1.25em;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 1em;
+    color: #000;
+}
+
+.description-text {
+    font-size: 0.875em;
+    margin-bottom: 1em;
+    text-align: justify;
+    
+}
+
+.container-form {
+    border: 3px solid #B8B7B7;
+    border-radius: 10px;
+}
+
+.container-from-gobal {
+    margin: 1.5em 1em 2em 1em;
+}
+
+.container-from-title {
+    font-size: 1.3em;
+    color: #000000;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container-from-imput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.9375em;
+    justify-content: start;
+}
+
+.container-from-imput input {
+    margin-top: 0.7em;
+    border: 3px solid #B6AFF0;
+    border-radius: 5px;
+    height: 2em;
+}
+
+.container-from-textarea {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.container-from-textarea textarea {
+    margin-top: 0.7em;
+    border: 3px solid #B6AFF0;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+}
+
+.checkbox {
+    margin-top: 1em;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.checkbox input {
+    border: 2px solid #B8B7B7;
+    height: 20px;
+    width: 20px;
+    margin-right: 0.5em;
+}
+
+.button-send {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-send button {
+    background-color: #B6AFF0;
+    width: 125px;
+    height: 30px;
+    border-radius: 6px;
+    border: #B6AFF0;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button-send button:hover {
+    background: white;
+    color: #b6aff0;
+    border: 1px solid #b6aff0;
+}
+
+@media (min-width: 768px) {
+    .centered_title{
+        font-size: 3em;
+        font-family: Impact, sans-serif;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .banner img {
+        height: 450px;
+    }
+    .centered_title{
+        font-size: 6em;
+    }
+
+    .main-container-form{
+        margin: 4.9375em;
+        margin-top: 8em;
+    }
+
+    .desciption-title {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    .description-text {
+        font-size: 1.25em;
+    }
+
+    .container-from-gobal {
+        margin: 2em 4em 3em 4em;
+    }
+
+    .container-from-data {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container-from-imput {
+        width: 45%;
+    }
+
+    .container-from-textarea{
+        width: 45%;
+    }
+
+    .button-send {
+        justify-content: center;
+    }
+
+    .button-send button {
+        width: 350px;
+    }
+}
+
+
