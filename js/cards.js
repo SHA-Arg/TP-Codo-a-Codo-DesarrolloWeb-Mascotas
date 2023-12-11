@@ -1,14 +1,9 @@
-const url = 'https://sofiae99.pythonanywhere.com/mascotas';
-    
-
 export async function recuperarData() {
-    
-    const response = await fetch(url);
+    const response = await fetch('https://sofiae99.pythonanywhere.com/mascotas');
     try {
 
         if (response.ok) {
             const DATA = await response.json();
-            console.log(DATA.pets)
             return DATA;
         } else {
             console.error('Algo no funcionó')
@@ -23,22 +18,18 @@ export async function getMascotas() {
     let datosMascotas = DATA.pets;
     let listadoMascotas = '';
     let cardMascotas = document.querySelector('.cards-group');
-   
-    await datosMascotas.forEach((e, index) => {
-        listadoMascotas += crearCards(e, index)
-
+    await datosMascotas.forEach((e) => {
+            listadoMascotas += crearCards(e)
     });
 
-    cardMascotas.innerHTML = listadoMascotas;
-
-    changePage()
+    cardMascotas.innerHTML = listadoMascotas
 }
 
-export function crearCards(mascota, index) {
+export function crearCards(mascota) {
     let card =
         `<div class="card">
                 <div class="card-principal">
-                    <a href="perfil.html?id=${mascota.id}" onclick="verPerfil(${mascota.id})"><img class="card-img" src="${mascota.image}" alt="imagen mascota"></a>
+                    <a href="perfil.html?id=${mascota.id}"><img class="card-img" src="${mascota.image}" alt="imagen mascota"></a>
                     <div class="name-box">
                     <h3 class="card-title"><b>${mascota.name}</b></h3>
                     </div>
@@ -71,7 +62,6 @@ export function crearCards(mascota, index) {
 
     return card;
 };
-
 
 getMascotas();
 

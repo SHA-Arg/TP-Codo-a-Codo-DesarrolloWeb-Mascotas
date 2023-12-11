@@ -1,12 +1,13 @@
+import { deleteData } from "./utils.js";
+
 const url = "https://sofiae99.pythonanywhere.com/mascotas";
-console.log(url);
 
 export async function recuperarData() {
   const response = await fetch(url);
   try {
     if (response.ok) {
       const DATA = await response.json();
-      console.log(DATA.pets);
+      
       return DATA;
     } else {
       console.error("Algo no funcionó");
@@ -26,9 +27,16 @@ export async function getMascotas() {
     listadoMascotas += crearPublic(e, index);
   });
 
-  cardMascotas.innerHTML = listadoMascotas;
-  changePage();
+  cardMascotas.innerHTML = listadoMascotas;  
 }
+
+document.addEventListener('click', async (e) => {
+ 
+  if(e.target.id === 'btn-delete') {
+    await deleteData(url, e.target.name)
+    window.location.href ='../pages/dashboard.html';
+  }
+})
 
 export function crearPublic(mascota, index) {
     let publication = `
@@ -39,7 +47,6 @@ export function crearPublic(mascota, index) {
       </div>
       <div class="pet-info">
           <div class="pet-info-basic">
-              <p class="dash-type"><b>Tipo:</b> ${mascota.pet_type}</p>
               <p class="dash-sex"><b>Sexo:</b> ${mascota.sex}</p>
               <p class="dash-age"><b>Edad:</b> ${mascota.age} meses</p>
               <p class="dash-race"><b>Raza:</b> ${mascota.race}</p>
@@ -55,12 +62,12 @@ export function crearPublic(mascota, index) {
           </div>
       </div>
       <div class="dash-buttons2">
-          <button class="dashboard-btn" id="btn-edit"> <a href="./editar_publicacion.html">Editar</a></button>
-          <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+          <button class="dashboard-btn" id="btn-edit"> <a href="./editar_publicacion.html?id=${mascota.id}">Editar</a></button>
+          <button class="dashboard-btn" id="btn-delete" name="${mascota.id}">Eliminar</button>
       </div>
       <div class="dash-buttons">
-          <button class="dashboard-btn" id="btn-edit"><a href="./editar_publicacion.html">Editar</a></button>
-          <button class="dashboard-btn" id="btn-delete">Eliminar</button>
+          <button class="dashboard-btn" id="btn-edit"><a href="./editar_publicacion.html?id=${mascota.id}">Editar</a></button>
+          <button class="dashboard-btn" id="btn-delete" name="${mascota.id}">Eliminar</button>
       </div>
       </div>
       `;
@@ -69,3 +76,4 @@ export function crearPublic(mascota, index) {
   }
   
 getMascotas();
+

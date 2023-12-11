@@ -306,7 +306,7 @@ h3.contact_foot {
 	}
 
 	#check:checked ~ .navbar {
-		height: 12rem;
+		height: 16rem;
 	}
 
 	nav.navbar a {
@@ -336,7 +336,7 @@ h3.contact_foot {
 		color: #000000;
 	}
 	.img_foot {
-		display:none;
+		display: none;
 	}
 
 	.pie {

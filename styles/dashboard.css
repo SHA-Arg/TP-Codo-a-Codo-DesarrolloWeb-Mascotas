@@ -110,6 +110,11 @@ main {
   padding-right: 10px;
 }
 
+.dashboard-btn a:hover {
+  background: white;
+  color: black;
+}
+
 .dash-buttons {
   margin: 20px 0;
 }

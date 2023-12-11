@@ -1,33 +1,53 @@
-const postData = async (url, data, request = 'POST') => {
-    const response = await fetch(url, {
-        method: request,
-        mode: 'cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        redirect: 'follow',
-        referrerPolicy: 'no-referrer',
-        body: JSON.stringify(data)
-    })
+const postData = async (url, data) => {
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const raw = JSON.stringify(data);
+    const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+    return await fetch(url, requestOptions)
 }
 
-var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    mode:  'no-cors'
-};
+const getDataById = async (url, id) => {
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    }
 
-const getData = async (url) => {
-    const response = await fetch(url, requestOptions)
+    const response = await fetch(`${url}/${id}`, requestOptions)
     const data = await response.json()
-    console.log(data);
     return data
 }
 
+const updateData = async (url, id, data) => {
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const raw = JSON.stringify(data);
+    const requestOptions = {
+        method: 'PUT',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+    const response = await fetch(`${url}/${id}`, requestOptions)
+    return await response.json()
+}
 
-export { postData, getData }
+const deleteData = async (url, id) => {
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    const requestOptions = {
+        method: 'DELETE',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+    return await fetch(`${url}/${id}`, requestOptions)
+}
 
-
-
+export { postData, getDataById, updateData, deleteData }

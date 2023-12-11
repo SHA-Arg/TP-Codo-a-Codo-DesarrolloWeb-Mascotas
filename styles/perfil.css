@@ -181,7 +181,7 @@ p {
 
 	.container-profile-description {
 		border: 4px solid #b6aff0;
-		background-color: #ffffff;
+		background-color: #f1efef;
 		border-radius: 20px;
 	}
 
@@ -262,7 +262,6 @@ p {
 	.profile-header,
 	.container-profile-description {
 		border: none;
-		background-color: #ffffff;
 	}
 
 	.general-profile p,

@@ -3,7 +3,6 @@ async function getMascota(idPet) {
     try {
         if (response.ok) {
             const DATA = await response.json();
-            console.log(DATA)
             return DATA;
         } else {
             console.error('Algo no funcionó')
@@ -15,16 +14,14 @@ async function getMascota(idPet) {
 
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
-	const idPet = params.get("id");
-    
-	const DATA = await getMascota(idPet);
-	const datosMascotas = DATA.pet;
-	
+	const petId = params.get("id");
+
+	const DATA = await getMascota(petId)
+	const pet = DATA.pet;
 	const containerProfile = document.querySelector(".profile");
 
-    const perfil = crearPerfil(datosMascotas);
+    const perfil = crearPerfil(pet);
     containerProfile.innerHTML = perfil;
-
 }
 
 verPerfil();
@@ -65,7 +62,6 @@ function crearPerfil(mascota) {
         </div>
         <div class="profile-description">
             <p>${mascota.description}</p>
-            <p><b>Organización:</b> ${mascota.organization && mascota.organization.name ? mascota.organization.name : mascota.organization}</p>
         </div>
         <ul class="adoption-require">
             <h6><b>Requisitos de adopción</b></h6>

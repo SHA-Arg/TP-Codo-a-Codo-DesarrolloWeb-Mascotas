@@ -1,60 +1,55 @@
-import { postData, getData } from "./utils.js";
+import { postData } from "./utils.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-  const crearForm = document.forms["crear-form"];
 
-  if (crearForm) {
-    crearForm.addEventListener("submit", function (event) {
-      event.preventDefault();
+const registerForm = document.forms["adopt-form"]; 
 
-      const valuesForm = getFormValues();
-      clearForm();
+ registerForm.onsubmit = async (e) =>  {
 
-      postData(
-        "https://sofiae99.pythonanywhere.com/mascotas",
-        valuesForm,
-        "POST"
-      );
+    e.preventDefault();
 
-      Swal.fire("Gracias", "Su solicitud fue realizada con éxito", "success");
-    });
-  }
-});
+    const valuesForm = getFormValues()
+    clearForm()
+
+    const raw = JSON.stringify(valuesForm);
+
+    await postData("https://sofiae99.pythonanywhere.com/mascotas", valuesForm)
+
+    window.location.href ='../pages/dashboard.html';
+}
 
 const getFormValues = () => {
-  values = {
-    name: crearForm.elements["name"].value,
-    image: crearForm.elements["image"].value,
-    description: crearForm.elements["description"].value,
-    address: crearForm.elements["adress"].value,
-    pet_type: crearForm.elements["pet_type"].value,
-    sex: crearForm.elements["sex"].value,
-    age: crearForm.elements["age"].value,
-    race: crearForm.elements["race"].value,
-    size: crearForm.elements["size"].value,
-    color: crearForm.elements["color"].value,
-    vaccine: crearForm.elements["vaccine"].value,
-    sterilization: crearForm.elements["sterilization"].value,
-    health_status: crearForm.elements["health_status"].value,
-    ubication: crearForm.elements["ubication"].value,
-  };
-  return values;
-};
+    const values = {
+        "name": registerForm.elements["full-name"].value,
+        "pet_type": registerForm.elements["species"].value,
+        "race": registerForm.elements["race"].value,
+        "color": registerForm.elements["color"].value,
+        "size": registerForm.elements["size"].value,
+        "sex": registerForm.elements["gender"].value,
+        "age": registerForm.elements["age"].value,
+        "vaccine": registerForm.elements["deworming"].value,
+        "sterilization": registerForm.elements["sterilization"].value,
+        "health_status": registerForm.elements["health"].value,
+        "description": registerForm.elements["description"].value,
+        "organization": 1,
+        "image": registerForm.elements["photo"].value,
+        "ubication": registerForm.elements["address"].value
+    }
+    return values
+}
 
 const clearForm = () => {
-  crearForm.elements["name"].value = "";
-  crearForm.elements["image"].value = "";
-  crearForm.elements["description"].value = "";
-  crearForm.elements["address"].value = "";
-  crearForm.elements["pet_type"].value = "";
-  crearForm.elements["sex"].value = "";
-  crearForm.elements["age"].value = "";
-  crearForm.elements["race"].value = "";
-  crearForm.elements["size"].value = "";
-  crearForm.elements["color"].value = "";
-  crearForm.elements["vaccine"].value = "";
-  crearForm.elements["sterilization"].value = "";
-  crearForm.elements["health_status"].value = "";
-  crearForm.elements["ubication"].value = "";
-};
+    registerForm.elements["full-name"].value = "";
+    registerForm.elements["photo"].value = "";
+    registerForm.elements["description"].value = "";
+    registerForm.elements["address"].value = "";
+    registerForm.elements["species"].value = "";
+    registerForm.elements["gender"].value = "";
+    registerForm.elements["age"].value = "";
+    registerForm.elements["race"].value = "";
+    registerForm.elements["size"].value = "";
+    registerForm.elements["color"].value = "";
+    registerForm.elements["deworming"].value = "";
+    registerForm.elements["sterilization"].value = "";
+    registerForm.elements["health"].value = "";
+}
 
