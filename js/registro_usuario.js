@@ -36,6 +36,7 @@ btn_adelelante3.addEventListener("click", function (e) {
 	var direccion = document.getElementById("direccion").value;
 	var email = document.getElementById("email").value;
 	var telefono = document.getElementById("telefono").value;
+
 	//* NOMBRE
 	if (nombre == "") {
 		//* Alerta en el HTML
@@ -75,6 +76,8 @@ btn_adelelante3.addEventListener("click", function (e) {
 		cont += 1;
 	}
 	//* EMAIL
+	var email = document.getElementById("email").value;
+	var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	if (email == "") {
 		//* Alerta en el HTML
 		document.getElementById("email-error").innerHTML =
@@ -152,6 +155,7 @@ btn_final.addEventListener("click", function (e) {
 		progressText[cont - 1].classList.add("active");
 		cont += 1;
 	}
+	window.location.href = "../pages/dashboard.html";
 });
 
 //* BOTONES DE VOLVER
