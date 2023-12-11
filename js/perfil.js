@@ -62,7 +62,6 @@ function crearPerfil(mascota) {
         </div>
         <div class="profile-description">
             <p>${mascota.description}</p>
-            <p><b>Organización:</b> ${mascota.organization}</p>
         </div>
         <ul class="adoption-require">
             <h6><b>Requisitos de adopción</b></h6>

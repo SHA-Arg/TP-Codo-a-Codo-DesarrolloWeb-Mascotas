@@ -45,7 +45,7 @@ export function crearCards(mascota) {
                                 </span>
                         </div>
                         <div class="card-text-lg">
-                            <p class="card-text edad"><b>Edad:</b> ${mascota.age} años</p>
+                            <p class="card-text edad"><b>Edad:</b> ${mascota.age} meses</p>
                             <p class="card-text sexo"><b>Sexo:</b> ${mascota.sex}</p>
                             <p class="card-text ubicacion"><b>Ubicación:</b> ${mascota.ubication}</p>
                             <p class="card-text raza"><b>Raza:</b> ${mascota.race}</p>

@@ -11,11 +11,13 @@ const loadPet = async () => {
     updateForm(pet);
 }
 
-registerForm.onsubmit = (e) =>  {
+registerForm.onsubmit = async (e) =>  {
     e.preventDefault();
     const valuesForm = getFormValues()
     console.log(valuesForm);
-    updateData("https://sofiae99.pythonanywhere.com/mascotas", petId, valuesForm)
+    await updateData("https://sofiae99.pythonanywhere.com/mascotas", petId, valuesForm)
+
+    window.location.href ='../pages/dashboard.html';
 }
 
 const getFormValues = () => {

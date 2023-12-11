@@ -3,7 +3,7 @@ import { postData } from "./utils.js";
 
 const registerForm = document.forms["adopt-form"]; 
 
-registerForm.onsubmit = (e) =>  {
+ registerForm.onsubmit = async (e) =>  {
 
     e.preventDefault();
 
@@ -12,7 +12,9 @@ registerForm.onsubmit = (e) =>  {
 
     const raw = JSON.stringify(valuesForm);
 
-    postData("https://sofiae99.pythonanywhere.com/mascotas", valuesForm)
+    await postData("https://sofiae99.pythonanywhere.com/mascotas", valuesForm)
+
+    window.location.href ='../pages/dashboard.html';
 }
 
 const getFormValues = () => {
@@ -50,3 +52,4 @@ const clearForm = () => {
     registerForm.elements["sterilization"].value = "";
     registerForm.elements["health"].value = "";
 }
+
