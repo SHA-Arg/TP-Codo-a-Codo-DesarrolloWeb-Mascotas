@@ -1,101 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Adoptar</title>
-		<link rel="stylesheet" href="../styles/estilos.css" />
-		<link rel="stylesheet" href="../styles/formulario.css" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"	rel="stylesheet" />
-		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-		<link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Adoptar</title>
+	<link rel="stylesheet" href="../styles/estilos.css" />
+	<link rel="stylesheet" href="../styles/formulario.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="/img/favicon_patitas.png">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
 
-	<body>
+<body>
 
-		<!-- CABECERA  -->
-		<header class="header" id="header">
-			<!-- ACÁ SE CARGA EL HEADER -->
-		</header>
+	<!-- CABECERA  -->
+	<header class="header" id="header">
+		<!-- ACÁ SE CARGA EL HEADER -->
+	</header>
 
-		<!-- MAIN -->
-		<section>
-			<main>
-				<div class="main-container-form">
-					<div class="description-form">
-						<p class="desciption-title">Formulario de <strong>Registro</strong></p>
-					</div>
-					<div class="container-form">
-						<form name="register-form">
-							<div class="container-from-gobal">
-								<p class="container-from-title">Información General</p>
-								<div class="container-from-data">
-									<div class="container-from-imput">
-										<label for="photo-url">Foto (URL):</label>
-										<input type="text" name="photo-url" required>
-									</div>
-									<div class="container-from-imput">
-										<label for="pet-name">Nombre:</label>
-										<input type="text" name="pet-name" required>
-									</div>
-                                    <div class="container-from-imput">
-										<label for="locale">Ubicación:</label>
-										<input type="text" name="locale" required>
-									</div>
-									<div class="container-from-imput">
-										<label for="pet-age">Edad*:</label>
-										<input type="number" name="pet-age" required>
-									</div>
-									<div class="container-from-imput">
-										<label for="sexo-pet">Sexo:</label>
-										<input type="text" name="sexo-pet" required>
-									</div>
-									<div class="container-from-imput">
-										<label for="zise-pet">Tamaño:</label>
-										<input type="text" name="zise-pet" required>
-									</div>
-								</div>
-							</div>
-							<hr>
-							<div class="container-from-gobal">
-								<p class="container-from-title">Datos de Salud</p>
-								<div class="container-from-data">
-									<div class="container-from-imput">
-										<label for="desparasitacion">Desparasitación:</label>
-										<input type="text" name="desparasitacion">
-									</div>
-									<div class="container-from-imput">
-										<label for="esterilizacion">Esterilización:</label>
-										<input type="text" name="esterilizacion">
-									</div>
-									<div class="container-from-imput">
-										<label for="salud">Estado de salud:</label>
-										<input type="text" name="salud" required>
-									</div>
-								</div>
-							</div>
-							<div class="container-from-gobal button-send">
-								<button id="sendForm" type="submit">Registrar</button>
-							</div>
-						</form>
-					</div>
-				</div>
+	<!-- MAIN -->
+	<section>
+		<div class="main-container-form">
+			<div class="description-form">
+				<p class="desciption-title">Formulario de <strong>Registro</strong></p>
 			</div>
-		</section>
-
-		<!-- FOOTER -->
-		<footer class="pie">
-			<!-- ACÁ SE CARGA EL FOOTER -->
-		</footer>
-		<div class="copyright">
-			&copy;Patitas Felices 2023. Todos los derechos reservados
+			<div class="container-form">
+				<form name="register-form">
+					<div class="container-from-gobal">
+						<p class="container-from-title">Información General</p>
+						<div class="container-from-data">
+							<div class="container-from-imput">
+								<label for="photo-url">Foto (URL):</label>
+								<input type="text" name="photo-url" required>
+							</div>
+							<div class="container-from-imput">
+								<label for="pet-name">Nombre:</label>
+								<input type="text" name="pet-name" required>
+							</div>
+							<div class="container-from-imput">
+								<label for="locale">Ubicación:</label>
+								<input type="text" name="locale" required>
+							</div>
+							<div class="container-from-imput">
+								<label for="pet-age">Edad*:</label>
+								<input type="number" name="pet-age" required>
+							</div>
+							<div class="container-from-imput">
+								<label for="sexo-pet">Sexo:</label>
+								<input type="text" name="sexo-pet" required>
+							</div>
+							<div class="container-from-imput">
+								<label for="zise-pet">Tamaño:</label>
+								<input type="text" name="zise-pet" required>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="container-from-gobal">
+						<p class="container-from-title">Datos de Salud</p>
+						<div class="container-from-data">
+							<div class="container-from-imput">
+								<label for="desparasitacion">Desparasitación:</label>
+								<input type="text" name="desparasitacion">
+							</div>
+							<div class="container-from-imput">
+								<label for="esterilizacion">Esterilización:</label>
+								<input type="text" name="esterilizacion">
+							</div>
+							<div class="container-from-imput">
+								<label for="salud">Estado de salud:</label>
+								<input type="text" name="salud" required>
+							</div>
+						</div>
+					</div>
+					<div class="container-from-gobal button-send">
+						<button id="sendForm" type="submit">Registrar</button>
+					</div>
+				</form>
 			</div>
+		</div>
+		</div>
+	</section>
 
-		<script src="../js/header_footer.js"></script>
-		<script src="../js/registrar.js"></script>
-	</body>
+	<!-- FOOTER -->
+	<footer class="pie">
+		<!-- ACÁ SE CARGA EL FOOTER -->
+	</footer>
+	<div class="copyright">
+		&copy;Patitas Felices 2023. Todos los derechos reservados
+	</div>
+
+	<script src="../js/header_footer.js"></script>
+	<script src="../js/registrar.js"></script>
+</body>
 
 </html>

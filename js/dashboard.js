@@ -1,45 +1,44 @@
 import { deleteData } from "./utils.js";
 
-const url = "https://sofiae99.pythonanywhere.com/mascotas";
+const url = "https://s3b4.pythonanywhere.com/";
 
 export async function recuperarData() {
-  const response = await fetch(url);
-  try {
-    if (response.ok) {
-      const DATA = await response.json();
-      
-      return DATA;
-    } else {
-      console.error("Algo no funcionó");
-    }
-  } catch {
-    console.error("Error en el servidor");
-  }
+	const response = await fetch(url);
+	try {
+		if (response.ok) {
+			const DATA = await response.json();
+
+			return DATA;
+		} else {
+			console.error("Algo no funcionó");
+		}
+	} catch {
+		console.error("Error en el servidor");
+	}
 }
 
 export async function getMascotas() {
-  const DATA = await recuperarData();
-  let datosMascotas = DATA.pets;
-  let listadoMascotas = "";
-  let cardMascotas = document.querySelector(".container-dashboard");
+	const DATA = await recuperarData();
+	let datosMascotas = DATA.pets;
+	let listadoMascotas = "";
+	let cardMascotas = document.querySelector(".container-dashboard");
 
-  await datosMascotas.forEach((e, index) => {
-    listadoMascotas += crearPublic(e, index);
-  });
+	await datosMascotas.forEach((e, index) => {
+		listadoMascotas += crearPublic(e, index);
+	});
 
-  cardMascotas.innerHTML = listadoMascotas;  
+	cardMascotas.innerHTML = listadoMascotas;
 }
 
-document.addEventListener('click', async (e) => {
- 
-  if(e.target.id === 'btn-delete') {
-    await deleteData(url, e.target.name)
-    window.location.href ='../pages/dashboard.html';
-  }
-})
+document.addEventListener("click", async (e) => {
+	if (e.target.id === "btn-delete") {
+		await deleteData(url, e.target.name);
+		window.location.href = "../pages/dashboard.html";
+	}
+});
 
 export function crearPublic(mascota, index) {
-    let publication = `
+	let publication = `
     <div class="publication">
     <div class="pet-image">
           <img class="dash-img" src="${mascota.image}" alt="imagen mascota">
@@ -71,9 +70,8 @@ export function crearPublic(mascota, index) {
       </div>
       </div>
       `;
-  
-    return publication;
-  }
-  
-getMascotas();
 
+	return publication;
+}
+
+getMascotas();

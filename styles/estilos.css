@@ -341,7 +341,7 @@ h3.contact_foot {
 
 	.pie {
 		background-color: #776ecb;
-		backdrop-filter: blur(-50px);
+		backdrop-filter: blur(50px);
 		color: #fff;
 		width: 100%;
 	}

@@ -1,27 +1,29 @@
 async function getMascota(idPet) {
-    const response = await fetch(`https://sofiae99.pythonanywhere.com/mascotas/${idPet}`);
-    try {
-        if (response.ok) {
-            const DATA = await response.json();
-            return DATA;
-        } else {
-            console.error('Algo no funcionó')
-        }
-    } catch {
-        console.error('Error en el servidor')
-    }
+	const response = await fetch(
+		`https://s3b4.pythonanywhere.com/mascotas/${idPet}`
+	);
+	try {
+		if (response.ok) {
+			const DATA = await response.json();
+			return DATA;
+		} else {
+			console.error("Algo no funcionó");
+		}
+	} catch {
+		console.error("Error en el servidor");
+	}
 }
 
 async function verPerfil() {
 	const params = new URLSearchParams(window.location.search);
 	const petId = params.get("id");
 
-	const DATA = await getMascota(petId)
+	const DATA = await getMascota(petId);
 	const pet = DATA.pet;
 	const containerProfile = document.querySelector(".profile");
 
-    const perfil = crearPerfil(pet);
-    containerProfile.innerHTML = perfil;
+	const perfil = crearPerfil(pet);
+	containerProfile.innerHTML = perfil;
 }
 
 verPerfil();
