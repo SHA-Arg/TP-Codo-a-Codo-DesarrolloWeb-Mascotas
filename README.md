@@ -1,345 +1,139 @@
 <h1 align="center">PATITAS FELICES<img src="https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png" style="width: 200px; height: 200px"> </h1>
 
-<p align="right">
-   <h2>Proyecto DesarrolloWeb CodoaCodo</h2>
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
-   </p>
+# 🐾 Patitas Felices – Frontend
 
-Documentación del proyecto - Sitio Web Patitas Felices
-Sofía Egaña Jiménez, Sebastián Hereñu Amaral, Andrea Jiménez Espinoza,
-Moises Edson Yañez Villa
+Interfaz web del proyecto **Patitas Felices**, construida con **HTML, CSS y JavaScript**, que consume la API backend desplegada con Flask.  
+El frontend está alojado en **Netlify** y se conecta con el backend para mostrar y gestionar información de mascotas.  
+🔗 https://patitas-felices-mascotas.netlify.app
 
-**Título y Descripción del Proyecto:**
+---
 
-Título: “Patitas Felices” (https://patitasfelices-tpo.netlify.app)
+## 🧠 Descripción del proyecto
 
-Descripción: se trata de un sitio web que conecta a organizaciones de rescate y cuidado animal con potenciales donantes, transitantes o adoptantes de animales, cuyos perfiles se encuentran en Patitas Felices, a través de los formularios que el sitio web dispone para dichos fines. El sitio web es de alcance nacional, y acepta la publicación de una variedad de mascotas, siempre y cuando ellas sean consideradas domésticas de acuerdo a la ley argentina.
+Este repositorio contiene el frontend de una aplicación web diseñada para gestionar un registro de mascotas.  
+La interfaz fue creada con HTML, CSS y JavaScript y se comunica con el backend usando **fetch API** para obtener, crear, actualizar y eliminar mascotas.
 
-**Público Objetivo:**
-Personas naturales, mayores de 18 años, residentes en Argentina y/o Organizaciones no gubernamentales.
+El objetivo es brindar una experiencia intuitiva y funcional usando tecnologías web básicas con integración a un backend real.
 
-**Estructura del Sitio:**
+---
 
-- Landing-page (formulario de matcheo)
-- Login
-- Mascotas (cards con mascotas)
-- Perfiles (información por mascota)
-- Formulario de adopción
-- Formulario de transición
-- Formulario de donación
-- Nosotros
-- Organizaciones
-- Contacto
-- En construcción
+## 🛠️ Tecnologías y herramientas utilizadas
 
-**Diseño y Estilo:**
+**Lenguajes**
 
-- Estilo visual: moderno, profesional y cálido; de navegación intuitiva y atractiva.
+- HTML
+- CSS
+- JavaScript (ES6+)
 
-- Colores: blanco, negro, variantes de violeta, y variantes de gris.-
+**Herramientas**
 
-- Tipografía: Roboto para textos comunes, Oswald para títulos y botones.-
+- Fetch API para consumo de datos
+- Control de versiones con Git y GitHub
+- Netlify para deploy y hosting
 
-- Elementos visuales: logo de Patitas felices, imágenes de animales, de personas, e íconos.
+---
+
+## 🚀 Deploy en producción
+
+🔗 **Frontend en Netlify:**  
+https://patitas-felices-mascotas.netlify.app
+
+Este frontend está configurado para consumir la API backend desplegada en Python + Flask.
+
+---
+
+## 📦 Instalación y uso
+
+No necesitás instalar nada si solo querés **visualizar la app**, ya que está desplegada.  
+Pero si querés correrla localmente:
+
+1. **Clonar este repositorio**
+
+```bash
+git clone https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas.git
+cd TP-Codo-a-Codo-DesarrolloWeb-Mascotas
+```
+
+Abrir el archivo index.html en tu navegador.
+Simplemente hacé doble click o abrilo desde tu editor favorito.
+
+🔌 Conexión con el Backend
+
+El frontend hace requests a la API para obtener y administrar datos de mascotas.
+
+Ejemplo de uso de Fetch API:
+
+```bash
+fetch("https://s3b4.pythonanywhere.com/mascotas")
+  .then(res => res.json())
+  .then(data => {
+    // Procesa los datos y actualiza la UI
+  })
+  .catch(error => console.error(error));
+```
+
+📂 Estructura del proyecto
+
+```text
+PatitasFelices-Frontend/
+               ├── css/
+               │   └── styles.css        # Estilos
+               ├── js/
+               │   └── main.js           # Lógica de interacción y fetch API
+               ├── index.html            # Interfaz principal
+               ├── README.md             # Documento de este repositorio
+               └── assets/               # Imágenes y recursos gráficos
+```
+
+🎯 Funcionalidades destacadas
+
+✔️ Listado de mascotas
+✔️ Formularios para agregar nuevas mascotas
+✔️ Posibilidad de modificar o eliminar mascotas (según la API)
+✔️ Interacción completa con el backend usando Fetch API
+
+📌 Cómo probarlo localmente
+
+Abre index.html en tu navegador.
+
+Asegurate de tener el backend corriendo (o apunta a la URL pública).
+
+Interactúa con la interfaz para ver, agregar o eliminar mascotas.
+
+🧠 Aprendizajes
+
+Este proyecto te permite demostrar:
+
+✔️ Integración frontend–backend con Fetch API
+✔️ Uso de JavaScript para manejo de datos
+✔️ Maquetación web con HTML & CSS
+✔️ Despliegue de un sitio estático en Netlify
+✔️ Buenas prácticas de estructura y orden de archivos
+
+## 📸 Capturas
 
 ## Mobile
 
-<img src="/img/figma1.jpg">
+![Inicio del proyecto](./img/figma1.jpg)
 
 ## Desktop
 
-<img src="/img/figma2.jpg">
+![Formulario de mascota](./img/figma2.jpg)
 
-**Contenido y Funcionalidades:**
+👤 Autores
+Andrea Jiménez Espinoza
+🔗 https://github.com/andreajimeneze
 
-Contenido: información personal de cada animal puesto en adopción o en transición, información de contacto y fotos del equipo detrás del proyecto (equipo ficticio), información de contacto y logos de las organizaciones participantes (organizaciones ficticias), imágenes de animales (en adopción/transición, o decorativas), preguntas de formularios de adopción y transición.
+Sofía Egaña Jiménez
+🔗 https://github.com/SofiaInSilico
 
-Funcionalidades: formulario corto en landing page para hacer matcheo, formulario de adopción, formulario de transición, formulario de donación, formulario de incio de sesión y formulario de contacto
+Sebastian Hereñu Amaral
+🔗 https://github.com/SHA-Arg
 
-**Responsabilidades del Equipo:**
+🌐 Portfolio: https://sha-arg.github.io
 
-Sofía Egaña: diseño Figma, landing page, organizaciones, documentación (Readme)
-
-Sebastián Hereñu: login, footer, menú/navbar, formulario de contacto, página en construcción
-
-Andrea Jiménez: cards de mascotas, perfiles de mascotas, nosotros
-
-Edson Yañez: formulario de adopción, formulario de tránsito, formulario de donación
-
-**Cronograma Tentativo:**
-
-Conociendo al grupo, e ideación del proyecto: 1 semana (29.08.2023)
-
-Diseño: 1 semana
-
-Desarrollo estructura general: 3 semanas
-
-Mejora de detalles estéticos/estructurales: 1.5 semanas
-
-Documentación y cierre: 1 semana (26.10.2023)
-
-**Recursos Externos:**
-
-APIs: https://reqres.in/ (en página nosotros)
-
-Librerías: Boxicon, Bootstrap (en formulario de contacto)
-
-Recursos gráficos: Google icons, Google Fonts, Freepiks, iconify y unplash (Figma), Photoshop (logo patitas felices)
-
-**Desarrollos Futuros y Mejoras Potenciales**
-
-**Desarrollos futuros:**
-
-Elementos a añadir: página de registro, página de voluntariado, página venta de emprendimientos de organizaciones, blog de noticias/tenencia responsable de animales, página de veterinarias, menú e interfaz específica para organizaciones (con apartado de publicaciones hechas, formularios recibidos, estadísticas, etc.), busqueda avanzada por ubicación, tipo y sexo del animal (filtro).
-
-**A mejorar:**
-
-Finalizar diseño antes del desarrollo del programa
-
-Establecer parámetros de trabajo (estructura y nomenclatura, breakpoints, idioma a utilizar - inglés o español -, etc)
-
-Adherirse a metodología ágil (Scrum)
-
-Trabajar desde un inicio en ramas, y luego hacer merge. No trabajar directamente sobre main.
-
-**Contacto:**
-
-Sofía Egaña, sofia.angaji@gmail.com
-
-Sebastián Hereñu, hereniu.amaral.sebastian@gmail.com
-
-Andrea Jiménez, andreacjimenez@gmail.com
-
-Edson Yañez, yanezvilla.edson@gmail.com
-
-**Fecha de Entrega:**
-
-Proyecto Frontend: 27.10.2023
-
-# README EN INGLES
-
-# Patitas Felices
-
-<h1 align="center">PATITAS FELICES<img src="https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png" style="width: 200px; height: 200px"> </h1>
-
-<p align="right">
-   <h2>Proyecto DesarrolloWeb CodoaCodo</h2>
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
-   </p>
-
-**Description**
-
-"Patitas Felices" is a website that connects animal rescue and care organizations with potential donors, transits, or adopters of animals whose profiles are found on Patitas Felices. The website operates nationally and allows the posting of a variety of pets, as long as they are considered domestic according to Argentine law.
-
-**Target Audience**
-
-- Individuals over 18 years old residing in Argentina
-- Non-governmental organizations
-
-**Site Structure**
-
-- Landing-page (matchmaking form)
-- Login
-- Pets (cards with pets)
-- Profiles (information per pet)
-- Adoption form
-- Transition form
-- Donation form
-- About Us
-- Organizations
-- Contact
-- Under Construction
-
-**Design and Style**
-
-- Visual Style: Modern, professional, and warm; intuitive and appealing navigation.
-- Colors: White, black, variations of violet, and shades of gray.
-- Typography: Roboto for common text, Oswald for titles and buttons.
-- Visual Elements: Patitas Felices logo, animal and human images, icons.
-
-**Content and Features**
-
-- Content: Personal information of each animal up for adoption or transition, contact information and photos of the fictional team behind the project, contact information and logos of participating organizations (fictional organizations), images of animals (for adoption/transition or decorative purposes), adoption and transition form questions.
-- Features: Short form on the landing page for matchmaking, adoption form, transition form, donation form, login form, contact form, advanced search by location, type, and sex of the animal.
-
-**Team Responsibilities**
-
-- Sofia Egaña: Figma Design, Landing page, organizations, documentation
-- Sebastián Hereñu: Login, Footer, menu/Navbar, contact form, under construction page
-- Andrea Jiménez: Pet cards, pet profiles, about us page
-- Edson Yañez: Adoption form, transition form, donation form
-
-**Tentative Schedule**
-
-1. Knowing the group and project ideation: 1 week (29.08.2023)
-2. Design: 1 week
-3. General structure development: 3 weeks
-4. Enhancement of aesthetic/structural details: 1.5 weeks
-5. Documentation and closure: 1 week (26.10.2023)
-
-**External Resources**
-
-- APIs: [Reqres.in](https://reqres.in/) (on the "About Us" page)
-- Libraries: Boxicon, Bootstrap (in the contact form)
-- Graphic Resources: Google icons, Google Fonts, Freepiks, Figma (iconify and unplash), Photoshop
-
-**Future Developments and Potential Improvements**
-
-- Additions: Registration page, volunteer page, sale page for organization projects, responsible animal ownership news/blog, veterinary page, menu, and specific interface for organizations (with sections for published content, received forms, statistics, etc.).
-- Improvements: Finalize design before program development, establish work parameters (structure and nomenclature, breakpoints, language to use - English or Spanish, etc.), adhere to agile methodology (Scrum), work from the start in branches, and then merge. Avoid working directly on main.
-
-**Contact**
-
-- Sofia Egaña, sofia.angaji@gmail.com
-- Sebastián Hereñu, hereniu.amaral.sebastian@gmail.com
-- Andrea Jiménez, andreacjimenez@gmail.com
-- Edson Yañez, yanezvilla.edson@gmail.com
-
-**Delivery Date**
-
-Frontend Project: 27.10.2023
-
-<!-- Equipo: 28
-
-## Problemática:
-
-Debido a la desigualdad y desamparo que sufren algunas mascotas, surgió la idea de intentar resolver por ejemplo la gran cantidad de animales domésticos en estado precario, los que están en situación de calle o los hogares de transición que se les dificulta darle una buena calidad de vida a los animales.
-
-## Vacancia:
-
-Ausencia de un lugar que una a los hogares de mascotas, los rescatistas, los centros de atención veterinaria, las tiendas de mascotas, etc.
-Con esta perspectiva buscamos crear una gran comunidad que mejore la calidad de vida de las mascotas y permita conectar a los interesados de manera más directa y efectiva.
-
-## :bulb:Propuesta:
-
-<p> Será la creación de un sitio web que conecte a quien esté interesado en cuidar transitoriamente u adoptar animales, los que prefieran donar o ser voluntarios ayudando en  organizaciones de rescate y cuidado animal, además de la satisfacción de las necesidades básicas como salud y alimento fomentando el comercio local. Comienza siendo de alcance provincial/nacional, y permitirá llevar a cabo dichas actividades de manera sencilla, rápida y efectiva.
-</p>
-
-## :hammer:Descripcion del desarrollo
-
-<h3>Desarrollo inicial:</h3>
-Mobile first, Full Responsive
-
-<h3>Meta 1:</h3> 18/09 - Maquetado / Ideado
-
-<h2>Secciones posibles (mínimo 4):</h2>
-
-Landing page (presentación, misión y visión, o ingreso a formulario de inscripción?)
-Log in/sign up
-Página de adopciones
-Página de transiciones
-Página de colaboración con organizaciones (donación/voluntariado)
-Blog (noticias importantes, recomendaciones, etc)
-Página de contacto (puede estar en el footer)
-Página venta de emprendimientos de organizaciones
-
-## :construction:Posibles elementos a incluir:
-
-Formulario de inscripción
-Formulario de contacto
-Formulario de adopción/transición
-Filtros
-——-
-
-## Roles dentro de la página:
-
-<p><b>Organizaciónes :</b> que pongan en adopción o reciban donaciones, tambien intituciones veterinarias y petshops.<br>
-<b>Refugios:</b> que comopartan las mascotas en adopcion para poder teneras en las bases de datos para conseguir un hogar temporal o definitivo.<br>
-<b>Usuario Adoptante:</b> persona física que cumpla con los requisitos necesario para poder hacerse cargo de una mascota y datos personales ( nombre completo, edad, C.I., etc.)<br>
-<b>Usuario Donante:</b> persona o grupo de personas que quieran colaborar con alguna agrupacion o actividad especifica, puede ser economicamente, como brindando su ayuda en la lista del Voluntariado.</p>
-
-## Posible recorrido de la App:
-
-Pantalla de inicio(Load)>>> Click en Logo >>> Pantalla index >>> <br>Iniciar Sesion (login) >>> Segun los datos ingresados sabe que tipo de acceso brindar.<br>
-Registrarse (Signup) >>> Como Adoptante ?? Como Donador ?? Como Roganizacion.
-
-## Posible recorrido del sitio web:
-
-Landing page >
-inscripción/ingreso >
-Opción A) ingreso a perfil de organización de cuidado animal, para administrar publicaciones (?)
-Opción B) Página de adopción/transición/colaboración, para usuario corriente (con filtros de búsqueda?) >
-perfil del animal a adoptar/transitar > formulario
-
-## Formulario de inscripción (idea):
-
-Pregunta inicial: Eres representante de una organización/ eres persona física o persona jurídica? / etc
-= si / no
-
-If si = formulario 1 (nombre de la organización, cantidad de integrantes, archivos respaldatorios, busca donaciones?, busca voluntarios?, tiene sede física?, ubicación, etc)
-
-If no = formulario 2, de intereses, tipo check list ( qué te interesa? : donar, adoptar, voluntariado, transitar, poner en adopción, etc), + información personal
-if interés adoptar/transitar: preferencias de animal.
-
-## Perfil de animal
-
-Adoptar/transitar contendrá: foto, nombre, sexo, edad, tramaño, ubicación, breve descripción (o keywords), si necesita o no cuidados especiales, requisitos del adoptante ( + de tal edad, ubicación, etc), …
-Se verá en modo card con información base, será clickeable para obtener + información sobre el perfil
-
-Filtro puede permitir buscar por: edad, tamaño, ubicación, sexo, -
-
-## Animales en adopción (clasificación/separación)
-
-Perros
-Gatos
-Especies exóticas (hámsters, peces, reptiles, ratas y ratones, etc)
-Cuidados especiales(?
-
-## Estética de la plataforma:
-
-## Cantidad de paginas:
-
-Opción a) Una sola página, múltiples secciones
-
-Opción b) varias páginas
-
-## Diseño
-
-Color: recomendación colores cálidos (amarillo = positivdad, naranja = franqueza, etc)
-
-Font: no letra muy formal (tipo times new roman)
-
-## Animaciones: si =)
-
-## Accesibilidad:
-
-lectura en F, letra grande y reconocible, iconos en donde los pueda haber, no mucha dificultad de uso.
-
-———————
-
-## Ideas de nombre del sitio web:
-
-patitas felices, Nuevo Hogar, find me a Pet, adoptemos, etc.
-
-(https://paginapropia.com/nombres-para-centros-de-rescate-de-animales-y-mascotas/#google_vignette)
-
-## Eslogan:
-
-## Logo:
-
-## :notebook: REFERENCIAS
-
-Benchmarking (links sitios Web de similar función):
-
-https://adopciones.puppis.com.ar
-
-https://www.mascotasenadopcion.com
-
-https://www.petfamily.pet/
-
-https://www.garrasypatas.cl/
-
-https://ayuda.miradaanimal.cl/
-
-https://www.adoptanocompres.org
-
-# Modelos de sitios web de búsqueda:
-
-https://www.zonaprop.com.ar
-
-https://www.airbnb.com.ar
-
-https://ar.computrabajo.com
+Edson Yañez
+🔗 https://github.com/edson-yanez-villa
 
 ## Organizaciones de rescate animal (perfiles de Instagram):
 
