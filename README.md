@@ -1,6 +1,6 @@
 <h1 align="center">PATITAS FELICES<img src="https://github.com/SHA-Arg/TP-Codo-a-Codo-DesarrolloWeb-Mascotas/blob/main/img/logo.png" style="width: 200px; height: 200px"> </h1>
 
-# 🐾 Patitas Felices – Frontend
+# 🐾 – Frontend
 
 Interfaz web del proyecto **Patitas Felices**, construida con **HTML, CSS y JavaScript**, que consume la API backend desplegada con Flask.  
 El frontend está alojado en **Netlify** y se conecta con el backend para mostrar y gestionar información de mascotas.  
