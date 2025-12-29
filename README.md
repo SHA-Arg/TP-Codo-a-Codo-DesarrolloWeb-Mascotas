@@ -137,7 +137,7 @@ Edson Yañez
 
 ## Organizaciones de rescate animal (perfiles de Instagram):
 
-## En Argentina:
+### En Argentina:
 
 Mascotas en adopción:
 https://instagram.com/mascotasenadopcionargentina?igshid=MzRlODBiNWFlZA==
@@ -252,7 +252,7 @@ https://instagram.com/cambiandovidas.ar?igshid=MzRlODBiNWFlZA==
 Chicas al rescate:
 https://instagram.com/chicas_al_rescate?igshid=MzRlODBiNWFlZA==
 
-## En Chile:
+### En Chile:
 
 Fundación Animalia:
 https://instagram.com/fundacionanimalia?igshid=MzRlODBiNWFlZA==
@@ -272,7 +272,7 @@ https://instagram.com/puertomascotas?igshid=MzRlODBiNWFlZA==
 Adopta V región:
 https://instagram.com/adopta.vregion?igshid=MzRlODBiNWFlZA==
 
-# En España:
+### En España:
 
 Asociación protectora de animales anaa:
 https://instagram.com/asociacion_anaa?igshid=MzRlODBiNWFlZA==
@@ -280,7 +280,7 @@ https://instagram.com/asociacion_anaa?igshid=MzRlODBiNWFlZA==
 Refugio puro amor:
 https://instagram.com/refugiopuroamor?igshid=MzRlODBiNWFlZA==
 
-# En México:
+### En México:
 
 Zadrigman:
 https://instagram.com/zadrigman?igshid=MzRlODBiNWFlZA== -->
